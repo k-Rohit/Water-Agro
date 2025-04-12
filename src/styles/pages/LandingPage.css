@@ -2,12 +2,85 @@
     height: 100vh;
     width: 100vw;
     background-color: #DEDBD3;
+    /* background-color: blueviolet; */
+    z-index: -10
 }
+
+.water, .agro-life{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 90px;
+}
+
+.water {
+    margin-bottom: -110px;
+}
+
+.content-description{
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
 
 .logo{
     height: 60px;
 }
 
+.landingpage-header{
+    /* background-color: fuchsia; */
+}
+
 .landingpage-mid{
+    width: 100vw;
     display: flex;
+    /* background-color: firebrick; */
+}
+
+.content{
+    width: 40vw;
+    padding-left: 80px;
+    padding-right: 20px;
+    /* background-color: aqua; */
+}
+
+.sapling-image-div{
+    width: 40vw;
+    /* background-color: aquamarine; */
+    z-index: 1;
+    margin-left: -140px;
+}
+
+.content-buttons{
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.view-button{
+    background-color: black;
+    color: rgb(212, 212, 212);
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 50px;
+}
+
+.arrow{
+    background-color: #FEB631;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 100px;
+}
+
+.arrow-img{
+    height: 30px;
+    width: 30px;
+}
+
+.tabs{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
 }
