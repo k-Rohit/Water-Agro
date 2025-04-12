@@ -1,0 +1,39 @@
+.aboutus-page {
+    background-color: #DEDBD3;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+.aboutus-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+  
+  }
+  
+  .aboutus-heading {
+    font-size: 70px;
+    font-family: 'Poppins';
+    color: #333;
+    padding-top: 50px;
+    padding-left: 520px;
+  }
+  
+  .who {
+    color: #125022;
+  }
+  
+  .aboutus-text {
+    max-width: 900px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #444;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 250px;
+  }
+  

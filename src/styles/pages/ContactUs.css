@@ -1,24 +1,70 @@
 .contactus-card {
     height: 700px;
-    width: 600px;
+    width: 500px;
     background-color: #6D8333;
     border-radius: 40px;
     border: none;
     position: absolute; /* Place it over the image */
     top: 50%;            /* Center vertically */
-    left: 75vw;           /* Center horizontally */
+    left: 80vw;           /* Center horizontally */
     transform: translate(-50%, -50%); /* Actual centering */
     z-index: 10;         /* Ensure it sits above the image */
   }
 
 .contactus-card-heading{
     font-family: 'Poppins';
-    padding-left: 150px;
+    font-weight: 200;
+    padding-left: 85px;
     padding-top: 20px;
     color: white;
-    font-size: 30px;
-    
+    font-size: 35px;
+    padding-bottom: 8px;
 }
 
+.us{
+    color: yellow;
+}
 
+.contact-options{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 90px;
+  }
+  
+  .icon-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .icon-text {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 180;
+  }
+  
+
+  .icon-text a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .cow-image-container {
+    position: absolute;
+    padding-top: 98px;
+    padding-left: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+  }
+  
+  .cow-image {
+    width: 280px;
+    height: auto;
+  }
+  
   

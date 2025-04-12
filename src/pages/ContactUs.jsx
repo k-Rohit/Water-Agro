@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import ContactUsBg from '../assets/ContactUsBg.png';
 import '../styles/pages/ContactUs.css'
+import PhoneImage from '../assets/phone.png'
+import gmailImage from '../assets/gmail-icon.png'
+import wpImage from '../assets/wp-icon.png'
+import locationImage from '../assets/location.png'
+import cowCall from '../assets/cow-calling.png'
 
 const ContactUs = () => {
     useEffect(() => {
@@ -14,15 +19,38 @@ const ContactUs = () => {
 
     return (
         <>
-         <div className="contactus-container">
-            <img src={ContactUsBg} alt="Contact Us Background"></img>
-            <div className="contactus-card">
-                <div className="contactus-card-heading">
-                    Get in touch with <span className="us">us</span>
+            <div className="contactus-container">
+                <img src={ContactUsBg} alt="Contact Us Background"></img>
+                <div className="contactus-card">
+                    <div className="contactus-card-heading">
+                        Get in touch with <span className="us">us</span>
+                    </div>
+                    <div className="contact-options">
+                        <img src={PhoneImage} className="icon-img" alt="Phone Icon" />
+                        <span className="icon-text">+91 98765 43210</span>
+                    </div>
+                    <div className="contact-options">
+                        <img src={gmailImage} className="icon-img" alt="Phone Icon" />
+                        <span className="icon-text">wateragro@gmail.com</span>
+                    </div>
+                    <div className="contact-options">
+                        <img src={wpImage} className="icon-img" alt="Phone Icon" />
+                        <span className="icon-text">+91 98900 43210</span>
+                    </div>
+                    <div className="contact-options">
+                        <img src={locationImage} className="icon-img" alt="Phone Icon" />
+                        <span className="icon-text">
+                            <a href="https://g.co/kgs/oKmiEVJ" target="_blank" rel="noopener noreferrer">
+                                WaterAgro
+                            </a>
+                        </span>
+                    </div>
+                    <div className="cow-image-container">
+                        <img src={cowCall} className="cow-image" alt="Cow Calling" />
+                    </div>
                 </div>
             </div>
-         </div>
-         
+
         </>
     );
 }
