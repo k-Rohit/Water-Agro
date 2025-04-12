@@ -1,0 +1,53 @@
+.card-wrapper{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.product-card {
+    width: 260px;
+    min-height: 350px; /* You can increase/decrease this safely */
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-image {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    flex-shrink: 0; /* Don't let it shrink when the card is small */
+  }
+
+  .product-image img {
+    height: 130px;
+    object-fit: contain;
+  }
+
+  .product-info {
+    background-color: #2C1D16;
+    color: white;
+    padding: 16px;
+    flex-grow: 1; /* This lets it fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+  .product-description {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+  }
+  
+  .product-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+  }
+    
