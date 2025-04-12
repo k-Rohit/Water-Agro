@@ -1,0 +1,13 @@
+.landingpage-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #DEDBD3;
+}
+
+.logo{
+    height: 60px;
+}
+
+.landingpage-mid{
+    display: flex;
+}
