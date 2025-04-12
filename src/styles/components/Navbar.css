@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #DEDBD3; /* Background color to match your image */
+    padding: 10px 20px;        /* Adjust padding as needed */
+    width: 100%;
+    box-sizing: border-box;   /* Include padding in width */
+  }
+  
+  .navbar-container {
+    display: flex;             /* Use flexbox for layout */
+    align-items: center;      /* Vertically align items */
+    justify-content: space-between; /* Distribute items evenly */
+    max-width: 1200px;        /* Optional: Set a max width for the container */
+    margin: 0 auto;           /* Center the container */
+  }
+  
+  .navbar-logo {
+    height: 50px;             /* Adjust logo height as needed */
+  }
+  
+  .navbar-links {
+    display: flex;             /* Use flexbox for links */
+    list-style: none;          /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 60px;          /* Adjust spacing between links */
+  }
+  
+  .navbar-links a {
+    text-decoration: none;      /* Remove underlines */
+    color: #333;              /* Link color */
+    font-weight: medium;         /* Font weight */
+    font-family: "Poppins";       /* Style the text*/
+  }
