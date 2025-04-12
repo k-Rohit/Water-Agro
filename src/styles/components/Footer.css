@@ -1,7 +1,9 @@
 .footer-container {
     width: 100vw;
     max-width: 100vw;
-    position: relative; /* Set position relative to enable absolute positioning */
+    position: relative; 
+    overflow: hidden;
+    font-family: 'Poppins';/* Set position relative to enable absolute positioning */
 }
 .footer-image {
     width: 100vw; /* Use viewport width for full width */
@@ -28,7 +30,7 @@
 
 .footer-copyright {
     position: absolute;
-    bottom: 5px;
+    bottom: 15px;
     left: 50px;
     color: white; /* Set text color to white */
     font-size: 0.8em;
@@ -37,7 +39,7 @@
 
 .footer-terms {
     position: absolute;
-    bottom: 20px;
+    bottom: 27px;
     right: 50px;
     color: white; /* Set text color to white */
     font-size: 0.8em;
