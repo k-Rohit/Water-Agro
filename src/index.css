@@ -65,5 +65,6 @@ button:focus-visible {
 body {
   margin: 0;
   display: flex;
+  padding-bottom: 0;
 }
 

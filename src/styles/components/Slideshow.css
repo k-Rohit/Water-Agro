@@ -1,18 +1,17 @@
 .slideshow-wrapper {
-    width: 100vw;
-    height: 100vh;
+    width: 50%;                     /* Take up 50% of the container */
+    height: auto;                   /* Adjust height automatically */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .slideshow-container {
-    width: 50%;
-    max-width: 1200px;
-    aspect-ratio: 16 / 9;
+    width: 100%;                   /* Slideshow container takes up full width of wrapper */
+    aspect-ratio: 16 / 9;          /* Maintain aspect ratio */
     overflow: hidden;
-    /* border-radius: 12px; */
-    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
+    border-radius: 12px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
     position: relative;
 }
 
@@ -41,9 +40,10 @@
     left: 50%;  /* Horizontally center the caption */
     transform: translate(-50%, -50%); /* Correctly center the caption */
     color: white;
-    font-size: 3em; /* Adjust as needed */
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 4em; /* Adjust as needed */
+    font-family: 'Poppins';
+    font-weight: regular;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
     z-index: 10;
     text-align: center; /* Center text within the caption box */
     width: 80%;       /* Adjust width as needed to prevent text overflow */
