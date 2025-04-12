@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../styles/components/Footer.css' // Import the CSS
 import FooterImage from '../assets/waves.svg'; // Import the image
