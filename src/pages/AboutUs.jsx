@@ -20,7 +20,9 @@ export const AboutUs = () => {
                 <Slideshow />
 
                 {/* Add the Footer Component */}
+                <div className='footer-container '>
                 <Footer />
+                </div>
             </div>
         </>
     );
