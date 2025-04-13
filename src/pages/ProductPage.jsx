@@ -8,6 +8,7 @@ import FertilizerIcon from '../assets/fertilizer.svg';
 import '../styles/pages/ProductPage.css';
 import productsData from '../product.json';
 import ProductCard from '../components/ProductCard';
+import Footer from '../components/Footer';
 
 export const ProductPage = () => {
     const [category, setCategory] = useState("Insecticides");
@@ -70,6 +71,9 @@ export const ProductPage = () => {
                         ))
                     )}
                 </div>
+            </div>
+            <div className='footer-container'>
+            <Footer/>
             </div>
         </>
     );
