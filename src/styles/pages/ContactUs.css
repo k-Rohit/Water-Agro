@@ -54,7 +54,7 @@
   }
 
   .cow-image-container {
-    position: absolute;
+    position: relative;
     padding-top: 98px;
     padding-left: 190px;
     left: 50%;
