@@ -2,6 +2,7 @@ import React from 'react'
 import Sapling from '../assets/sapling.png';
 import Logo from '../assets/logo.png';
 import Arrow from '../assets/right-arrow.png';
+import cowImage from '../assets/Welcomecow.png'
 import '../styles/pages/LandingPage.css'
 
 const LandingPage = () => {
@@ -31,12 +32,17 @@ const LandingPage = () => {
             <div className="sapling-image-div">
                 <img src={Sapling} className="sapling-image" alt="Sapling" />
             </div>
+            <div className='div-right'>
             <div className="tabs">
                 <button className='tabs-home'>Home</button>
                 <button className='tabs-products'>Products</button>
                 <button className='tabs-aboutus'>About Us</button>
                 <button className='tabs-ri'>R&I</button>
                 <button className='tabs-contactus'>Contact Us</button>
+            </div>
+            <div className='cow-image'>
+                <img src={cowImage}></img>
+            </div>
             </div>
         </div>
     </div>
