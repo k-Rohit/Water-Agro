@@ -6,6 +6,7 @@ import '../styles/pages/LandingPage.css'
 
 const LandingPage = () => {
   return (
+    <>
     <div className="landingpage-container">
         <div className="landingpage-header">
             <img src={Logo} className="logo" alt="Water Agro Logo" />
@@ -28,17 +29,18 @@ const LandingPage = () => {
                 
             </div>
             <div className="sapling-image-div">
-                <img src={Sapling} alt="Sapling" />
+                <img src={Sapling} className="sapling-image" alt="Sapling" />
             </div>
             <div className="tabs">
-                <button>Home</button>
-                <button>Products</button>
-                <button>About Us</button>
-                <button>R&I</button>
-                <button>Contact Us</button>
+                <button className='tabs-home'>Home</button>
+                <button className='tabs-products'>Products</button>
+                <button className='tabs-aboutus'>About Us</button>
+                <button className='tabs-ri'>R&I</button>
+                <button className='tabs-contactus'>Contact Us</button>
             </div>
         </div>
     </div>
+    </>
   )
 }
 

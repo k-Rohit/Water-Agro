@@ -2,14 +2,16 @@
     height: 100vh;
     width: 100vw;
     background-color: #E9E8E4;
-    /* background-color: blueviolet; */
-    z-index: -10
+    display: flex;
+    flex-direction: column;
+    z-index: -10;
+    overflow: hidden;
 }
 
 .water, .agro-life{
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 90px;
+    font-size: 95px;
 }
 
 .water {
@@ -18,36 +20,46 @@
 
 .content-description{
     font-family: 'Poppins';
-    font-size: 15px;
+    font-size: 17px;
+    margin-top: -40px;
+    text-align: justify;
 }
 
 
 .logo{
-    height: 60px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 30px;
 }
 
 .landingpage-header{
-    /* background-color: fuchsia; */
+    height: 12%;
+
 }
 
 .landingpage-mid{
+    height: 88%;
     width: 100vw;
     display: flex;
-    /* background-color: firebrick; */
+    justify-content: space-between;
 }
 
 .content{
-    width: 40vw;
+    flex:3;
     padding-left: 80px;
     padding-right: 20px;
-    /* background-color: aqua; */
 }
 
 .sapling-image-div{
-    width: 40vw;
-    /* background-color: aquamarine; */
+    flex:4;
     z-index: 1;
-    margin-left: -140px;
+    margin-left: -100px;
+}
+
+.sapling-image{
+    height: 630px;
+    width: auto;
+    margin-top: 20px;
 }
 
 .content-buttons{
@@ -60,7 +72,8 @@
 .view-button{
     background-color: black;
     color: rgb(212, 212, 212);
-    height: 50px;
+    font-size: 20px;
+    height: 40px;
     width: 150px;
     border: none;
     border-radius: 50px;
@@ -68,19 +81,38 @@
 
 .arrow{
     background-color: #FEB631;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border: none;
     border-radius: 100px;
 }
 
 .arrow-img{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+    margin-top: 4px;
+    margin-left: 1px;
 }
 
 .tabs{
-    width: 20vw;
     display: flex;
+    flex:3;
+    gap: 20px;
+    padding-top: 60px;
     flex-direction: column;
+    align-items: start;
+}
+
+.tabs > button {
+    background: linear-gradient(to right, #DEDBD3, #E9E8E4);
+    border: none;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    color: #494949;
+    padding-left: 30px;
+    font-size: 20px; 
+    font-weight: 500;
 }
