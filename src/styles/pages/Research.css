@@ -1,0 +1,146 @@
+/* Research Page Styles */
+.research-container {
+    display: flex;
+    background-color: #E9E8E4;
+    min-height: calc(100vh - 120px);
+  }
+  
+  /* Side Label */
+  .side-label {
+    width: 60px;
+    padding-top: 40px;
+  }
+  
+  .side-label span {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: block;
+    font-size: 36px;
+    font-weight: 300;
+    color: #cccccc;
+    letter-spacing: 3px;
+  }
+  
+  /* Research Content Grid Layout */
+  .research-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 40px 40px 60px 20px;
+  }
+  
+  /* Image Boxes */
+  .image-box {
+    max-width: 400px;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+  }
+  
+  /* Text Boxes */
+  .text-box {
+    max-width: 500px;
+    padding: 20px 0;
+  }
+  
+  .text-box h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333333;
+  }
+  
+  .text-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666666;
+  }
+  
+  /* Positioning Classes */
+  .image-top {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 300px;
+    justify-self: start;
+  }
+  
+  .text-right {
+    grid-column: 2;
+    grid-row: 1;
+    
+    justify-self: start;
+  }
+  
+  .text-left {
+    grid-column: 1;
+    grid-row: auto;
+    margin-left: 300px;
+    justify-self: start;
+  }
+  
+  .image-right {
+    grid-column: 2;
+    grid-row: auto;
+    margin-right: 500px;
+    justify-self: end;
+  }
+  
+  /* Specific positioning for the sections */
+  .research-content > div:nth-child(3) {
+    grid-row: 2;
+  }
+  
+  .research-content > div:nth-child(4) {
+    grid-row: 2;
+  }
+  
+  .research-content > div:nth-child(5) {
+    grid-row: 3;
+  }
+  
+  .research-content > div:nth-child(6) {
+    grid-row: 3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .research-container {
+      flex-direction: column;
+    }
+    
+    .side-label {
+      width: 100%;
+      height: 40px;
+      padding-top: 20px;
+      text-align: center;
+    }
+    
+    .side-label span {
+      writing-mode: horizontal-tb;
+      transform: none;
+    }
+    
+    .research-content {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+    
+    .image-box, .text-box {
+      grid-column: 1;
+      max-width: 100%;
+      justify-self: center;
+    }
+    
+    .text-right, .text-left {
+      justify-self: center;
+    }
+    
+    .image-right {
+      justify-self: center;
+    }
+  }
