@@ -131,42 +131,7 @@
     {
       "name": "Herbicides",
       "products": [
-        {
-          "name": "CLEANFIELD",
-          "image": "../assets/Product/Cleanfield.jpg",
-          "description": "Pre- and post-emergence weed controller for cereals.",
-          "price": "1599"
-        },
-        {
-          "name": "HERBI-STRIKE",
-          "image": "../assets/Product/Herbi-Strike.jpg",
-          "description": "Selective weed killer for broadleaf weeds.",
-          "price": "1499"
-        },
-        {
-          "name": "GRASS-OFF",
-          "image": "../assets/Product/Grass-Off.jpg",
-          "description": "Effective grass weed controller for row crops.",
-          "price": "1399"
-        },
-        {
-          "name": "ROOTWASH",
-          "image": "../assets/Product/Rootwash.jpg",
-          "description": "Non-selective herbicide for pre-plant field clearing.",
-          "price": "1599"
-        },
-        {
-          "name": "ZERO-WEED",
-          "image": "../assets/Product/Zero-Weed.jpg",
-          "description": "Herbicide for rice and sugarcane fields.",
-          "price": "1499"
-        },
-        {
-          "name": "FAST-KILL",
-          "image": "../assets/Product/Fast-Kill.jpg",
-          "description": "Quick-action formulation for rapid weed knockdown.",
-          "price": "1799"
-        }
+       
       ]
     }
   ]

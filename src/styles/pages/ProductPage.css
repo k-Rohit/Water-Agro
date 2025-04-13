@@ -17,11 +17,28 @@
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    gap: 5px;
+    grid-template-columns: repeat(4, 0.2fr); /* 4 equal columns */
     justify-content: center;
     margin-top: 10px;
-    padding-right: 100px;
+    width: 80vw;
+    padding-left: 200px;
   }
   
+  .no-products-message {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    font-size: 2rem;         /* Adjust the size */
+    color: #888;
+    width: 100%;             /* Full width */
+    height: 150px;           /* Height to make it vertically aligned */
+    text-align: center;      /* Centers the text */
+    margin-top: 30px;        /* Optional: you can adjust this to your design */
+}
+
+/* Optional: you can add a style to the p tag itself */
+.no-products-message p {
+    margin: 0;               /* Removes default margin */
+    text-align: center;      /* Ensures text is centered */
+}
   
