@@ -5,7 +5,7 @@
 
 .product-card {
     width: 260px;
-    min-height: 350px; /* You can increase/decrease this safely */
+    min-height: 350px;
     border-radius: 20px;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
-    flex-shrink: 0; /* Don't let it shrink when the card is small */
+    flex-shrink: 0;
   }
 
   .product-image img {
@@ -34,7 +34,7 @@
     background-color: #2C1D16;
     color: white;
     padding: 16px;
-    flex-grow: 1; /* This lets it fill remaining space */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
