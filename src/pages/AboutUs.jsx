@@ -2,10 +2,12 @@ import React from 'react';
 import '../styles/pages/AboutUs.css';
 import Slideshow from '../components/Slideshow'; // Adjust path if needed
 import Footer from '../components/Footer'; // Import the Footer component
+import Navbar from '../components/Navbar'; // Import the Navbar component
 
 export const AboutUs = () => {
     return (
         <>
+            <Navbar /> {/* Add the Navbar component */}
             <div className="aboutus-page">
                 <div className='aboutus-container'>
                     <div className='aboutus-heading'>
