@@ -13,6 +13,7 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
   }
 
   .product-image {

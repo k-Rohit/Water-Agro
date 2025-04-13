@@ -1,4 +1,27 @@
+.product-page-container {
+    background-color: #E9E8E4;
+    min-height: 100vh;
+    width: 100vw;
+    padding-bottom: 40px;
+}
+
 .category-icons{
     display: flex;
-    
+    gap: 160px;
+    width: 100vw;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 30px; */
 }
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-right: 100px;
+  }
+  
+  
