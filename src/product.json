@@ -1,74 +1,173 @@
 {
-    "categories": [
-      {
-        "name": "Fertilizers",
-        "products": [
-          {
-            "name": "SATLUJ",
-            "image": "../assets/Product/Satluj (fertilizer).jpg",
-            "description": "Composition: Ferrous Sulphate(Fe) - 19%\nSpeciality of Satluj (Ferrous Sulphate 19%):\nHigh Purity: Satluj is 100% pure and free from impurities, ensuring consistent and effective performance.\nHigh Concentration: Contains 19% Ferrous (Fe), making it a powerful source of iron for crops.\nMaximum Dryness: With 98% dry formulation, Satluj offers superior shelf stability and free-flowing texture.\nMoisture Resistant: When stored in a dry place, it retains its dryness and quality without caking or lumping.\nAssured Quality: Manufactured under stringent quality controls to deliver premium-grade micronutrient fertilizer.\nEfficient Iron Supplement: Quickly addresses iron deficiencies in crops, promoting healthy chlorophyll formation and greener, more vigorous plants.\nBest Used In: Wheat, Paddy, Maize, Barley, Gram, Lentil, Moong, Urd, Mustard, Groundnut, Soybean, Sunflower, Potato, Tomato, Brinjal, Okra, Cabbage, Cauliflower, Onion, Garlic, Peas, Citrus, Pomegranate, Banana, Grapes, Apple, Guava, Papaya, Cotton, Sugarcane, Tea, Coffee, Flowers, Medicinal Plants, Aromatic Plants, Turf, Lawns.\nSupports: Ferrous sulphate 19% (FeSO4) provides vital support to crops by correcting iron deficiencies, boosting photosynthesis, and promoting overall plant health. It acts as a micronutrient fertilizer, ensuring efficient chlorophyll production and enhancing nutrient uptake, ultimately leading to increased crop yield and resilience to environmental stresses.\nDose/Acre: 10-20 kg / acre\nPackaging Options: 10 kg"
-          },
-          {
-            "name": "BLACK HORSE",
-            "image": "../assets/Product/Black-horse ( fertilizer).jpg",
-            "description": "Composition: Organic Fertilizer & Minerals.\nSpecialities of Black Horse:\nDual Power of Organics & Minerals – Combines the richness of organic matter with essential mineral nutrients for complete crop nourishment.\nBoosts Soil Fertility – Enhances soil texture, microbial activity, and nutrient-holding capacity for long-lasting fertility.\nImproves Plant Immunity – Builds stronger resistance against abiotic stress like drought, salinity, and temperature fluctuations.\nEnhances Root & Shoot Growth – Promotes vigorous development from roots to canopy, ensuring healthy vegetative growth.\nSafe & Sustainable – 100% eco-friendly and safe for crops, soil, farmers, and the environment.\nBetter Yield & Quality – Helps in producing higher yields with improved quality of fruits, grains, and vegetables.\nSuitable for All Crops – Wheat, Paddy, Maize, Barley, Gram, Lentil, Soybean, Mustard, Groundnut, Cotton, Sugarcane, Potato, Tomato, Brinjal, Chili, Okra, Onion, Garlic, Cabbage, Cauliflower, Peas, Apple, Grapes, Pomegranate, Mango, Guava, Papaya, Citrus, Strawberry, Tea, Coffee, Flowers, Medicinal Plants, etc\nSupports: Black Horse enhances soil fertility, boosts root development, and promotes overall plant vigor for healthier growth and higher yield.\nDose/Acre: 200 gm- 1kg / acre\nPackaging Options: 500 gm, 1 kg"
-          },
-          {
-            "name": "ROOT RAJA",
-            "image": "../assets/Product/Root-Raja ( Fertilizer).jpg",
-            "description": "Composition: Mycorrhiza \nSpecialities of Root Raja :\n100% Water-Soluble: Ensures quick and complete absorption by plants for immediate effectiveness.\nGranular Formulation: Easy to apply and highly effective in soil application; ideal for uniform distribution.\nEnhances Nutrient Mobilization: Facilitates efficient mobilization and transfer of vital nutrients like Phosphorous, Nitrogen, Sulphur, Potassium, and essential micro-nutrients such as Zinc, Copper, Manganese, and Iron.\nImproves Drought Resistance: Boosts the plant's natural ability to withstand water stress, ensuring healthier growth in challenging conditions.\nBroad Crop Compatibility: Suitable for use in all types of crops including cereals, pulses, vegetables, fruits, and horticultural plants.\nCompatible with Bio-Fertilizers: Can be safely used in combination with other biological soil enhancers for better results.\nSoil Health Promoter: Encourages microbial activity in the soil, enriching soil fertility and sustainability.\nBest Used In: Grapes, Wheat, Okra, Cotton, Guava, Tea, Tomato, Medicinal Plants, Onion, Paddy, Apple, Banana, Barley, Brinjal, Flowers, Sugarcane, Strawberry, Ginger, Papaya, Sugarbeet, Cabbage, Cauliflower, Sorghum, Capsicum, Coffee, Citrus, Oil Seeds, Maize, Lentil, Gram, Peas, Mung, Pomegranate, Beans, etc.\nSupports: Mycorrhizae, a symbiotic relationship between fungi and plant roots, helps plants by enhancing nutrient and water uptake, improving soil structure, and increasing resistance to diseases and environmental stresses.\nDose/Acre: 4-8 kg / acre\nPackaging Options: 4 kg"
-          }
-        ]
-      },
-      {
-        "name": "Fungicides",
-        "products": [
-          {
-            "name": "DUMBELL",
-            "image": "../assets/Product/Dumbell ( fungicides).jpg",
-            "description": "Technical Name: Azoxystrobin 18.2% + Difenoconazole 11.4% SC \nBest Used In: Paddy, Tomato, Chilli, Wheat, Mango, Pea. \nDefends Against: Leaf spots, Blights, Powdery mildew, Rusts, Downy mildew, Anthracnose, Early and late blight \nDose/Acre: 200 ml / acre\nPackaging Options: 250 ml, 500 ml, 1 ltr"
-          },
-          {
-            "name": "SPEXS",
-            "image": "../assets/Product/Spexs (fungicides).jpg",
-            "description": "Technical Name: Azoxystrobin 11% + Tebuconazole 18.3% w/w SC\nBest Used In: Onion, Rice, Wheat , Potato, Chilli, Tomato\nDefends Against: Yellow Rust, Sheath Blight, Early Blight, Late Blight, Anthracnose, Alternaria Leaf Spot, Scab (in apples), Downy Mildew, Powdery Mildew, Fruit Rot, Die Back\nDose/Acre: 300 ml / acre\nPackaging Options: 250 ml, 500 ml, 1 ltr"
-          }
-        ]
-      },
-      {
-        "name": "Insecticides",
-        "products": [
-          {
-            "name": "FOX",
-            "image": "../assets/Product/FOX (insecticides).jpg",
-            "description": "Technical Name: FIPRONIL 0.6% GR\nBest Used In: Paddy, Sugarcane, Wheat\nDefends Against: Stem Borer, Leaf folder, Twemite, Early Shoot Borer\nDose/Acre: 4 kg / acre\nPackaging Options: 4 kg"
-          },
-          {
-            "name": "SOMA",
-            "image": "../assets/Product/Soma ( insecticides).jpg",
-            "description": "Technical Name: Cartap Hydrochloride 4% GR\nBest Used In: Paddy\nDefends Against: Leaf folder, Stem borer, Whorl maggot\nDose/Acre: 7.5 - 10 kg per acre\nPackaging Options: 5 kg"
-          },
-          {
-            "name": "EXAM-PRO",
-            "image": "../assets/Product/Exam-pro (insecticides).jpg",
-            "description": "Technical Name: Thiamethoxam 30% FS\nBest Used In: Paddy, Wheat, Cotton, Vegetables, Maize, Sunflower\nDefends Against: Aphids, Whiteflies, Jassids, Shoot Fly, Termites, Thrips, Stem Fly\nDose/Acre: This product is ideal for seed treatment at a dosage of 1.5 ml to 4 ml per kg of seed, depending on the crop. It can also be used as a foliar spray at 100 ml per acre for effective protection and enhanced crop performance.\nPackaging Options: 100 ml, 250 ml, 500 ml, 1 ltr."
-          },
-          {
-            "name": "BLENDER",
-            "image": "../assets/Product/Blender ( insecticides).jpg",
-            "description": "Technical Name: Bifenthrin 10%EC\nBest Used In: Paddy, Cotton, Sugarcane, Corn, Some Vegetables\nDefends Against: Different types of insects like ants, termites, aphids, beetles, cockroaches, and spiders.\nDose/Acre: Recommended dosage ranges from 200 ml to 400 ml per acre, depending on the crop type and disease severity.\nPackaging Options: 250 ml, 500 ml, 1 ltr."
-          }
-        ]
-      },
-      {
-        "name": "Plant Growth Regulators",
-        "products": [
-          {
-            "name": "KIWI",
-            "image": "../assets/Product/KIWI ( plant growth).jpg",
-            "description": "Contains: Organic Component Derived From Ascophyllum Nodosum Saeweed Extract From Auastralia, Potassium Humate, Amino Acid And Other Micronutrients.\nDescription: KIWI is a scientifically formulated plant growth enhancer designed to support vigorous vegetative development and improve the overall health of crops. It effectively minimizes flower drop, encourages uniform flowering and fruiting, and helps deliver consistent, high-quality yields. With its balanced action, KIWI contributes to better crop performance and enhanced productivity across a variety of crops.\nFeatures & Advantages of KIWI:\n100% Water-Soluble Formulation\nCrafted with a fully water-soluble composition, KIWI is enriched with natural bio-boosters including seaweed extract, humic acid, and a balanced blend of essential macro and micronutrients for optimal plant nourishment.\nBalanced Nutrient Supply\nProvides well-rounded nutrition across all stages of plant growth, with a special focus on the early vegetative and branching phases to establish a strong crop foundation.\nStress Resistance & Recovery\nEncourages healthy white root formation and strengthens plant resilience. Helps crops bounce back quickly from biotic and abiotic stress, while enhancing natural immunity.\nYield Enhancement & Quality Boost\nPromotes freshness, improves stomatal function, and supports strong petiole development—leading to better blossom retention, fruit set, and ultimately, higher yield and superior crop quality.\nSuitable For:\nAll types of crops including vegetables, fruits, cereals, pulses, and plantation crops.\nRecommended Application Dosage\nPer Hectare Usage:\nApply 650-800 ml per / acre, depending on the crop stage and crop type.\nStage-Wise Foliar Dosage:\nVegetative Stage: Use 1-1.5 ml per litre of water\nFlowering Stage: Use 2-3 ml per litre of water\nFruiting Stage: Use 3-4 ml per litre of water\nPackaging Options: 250 ml, 500 ml, 1 ltr"
-          }
-        ]
-      }
-    ]
-  }
+  "categories": [
+    {
+      "name": "Fertilizers",
+      "products": [
+        {
+          "name": "SATLUJ",
+          "image": "../assets/Product/Satluj (fertilizer).jpg",
+          "description": "Composition: Ferrous Sulphate(Fe) - 19%. High purity, moisture-resistant, and ideal for micronutrient delivery.",
+          "price": "1699"
+        },
+        {
+          "name": "BLACK HORSE",
+          "image": "../assets/Product/Black-horse ( fertilizer).jpg",
+          "description": "Organic fertilizer blended with minerals to enhance soil fertility and plant health.",
+          "price": "1699"
+        },
+        {
+          "name": "ROOT RAJA",
+          "image": "../assets/Product/Root-Raja ( Fertilizer).jpg",
+          "description": "Mycorrhiza-based formula that promotes nutrient uptake and drought resistance.",
+          "price": "1699"
+        },
+        {
+          "name": "GREEN FORCE",
+          "image": "../assets/Product/Green-Force.jpg",
+          "description": "High NPK content fertilizer for overall crop vigor and resilience.",
+          "price": "1899"
+        },
+        {
+          "name": "BIO-GRO",
+          "image": "../assets/Product/Bio-Gro.jpg",
+          "description": "Bio-enriched granular fertilizer promoting microbial activity.",
+          "price": "1499"
+        }
+      ]
+    },
+    {
+      "name": "Fungicides",
+      "products": [
+        {
+          "name": "DUMBELL",
+          "image": "../assets/Product/Dumbell ( fungicides).jpg",
+          "description": "Azoxystrobin & Difenoconazole blend for comprehensive fungal control.",
+          "price": "1699"
+        },
+        {
+          "name": "SPEXS",
+          "image": "../assets/Product/Spexs (fungicides).jpg",
+          "description": "Controls wide spectrum of foliar and root fungal diseases.",
+          "price": "1699"
+        },
+        {
+          "name": "GUARD-X",
+          "image": "../assets/Product/Guard-X.jpg",
+          "description": "Prevents powdery mildew and rust in vegetables and fruits.",
+          "price": "1399"
+        },
+        {
+          "name": "FUNGIKILL",
+          "image": "../assets/Product/Fungikill.jpg",
+          "description": "Broad-spectrum systemic fungicide for cereals and pulses.",
+          "price": "1599"
+        }
+      ]
+    },
+    {
+      "name": "Insecticides",
+      "products": [
+        {
+          "name": "FOX",
+          "image": "../assets/Product/FOX (insecticides).jpg",
+          "description": "Fipronil 0.6% GR for soil pest control in major crops.",
+          "price": "1699"
+        },
+        {
+          "name": "SOMA",
+          "image": "../assets/Product/Soma ( insecticides).jpg",
+          "description": "Effective against stem borer and leaf folder in rice.",
+          "price": "1699"
+        },
+        {
+          "name": "EXAM-PRO",
+          "image": "../assets/Product/Exam-pro (insecticides).jpg",
+          "description": "Systemic seed treatment and foliar insecticide.",
+          "price": "1699"
+        },
+        {
+          "name": "BLENDER",
+          "image": "../assets/Product/Blender ( insecticides).jpg",
+          "description": "Bifenthrin-based contact insecticide for various pests.",
+          "price": "1699"
+        },
+        {
+          "name": "RAIDER",
+          "image": "../assets/Product/Raider.jpg",
+          "description": "Kills chewing and sucking pests in cotton and vegetables.",
+          "price": "1799"
+        },
+        {
+          "name": "STORM-X",
+          "image": "../assets/Product/Storm-X.jpg",
+          "description": "Fast knockdown formula for sugarcane and maize insects.",
+          "price": "1599"
+        }
+      ]
+    },
+    {
+      "name": "Plant Growth Regulators",
+      "products": [
+        {
+          "name": "KIWI",
+          "image": "../assets/Product/KIWI ( plant growth).jpg",
+          "description": "Seaweed-based growth enhancer for flowering and fruit set.",
+          "price": "1699"
+        },
+        {
+          "name": "BOOSTER",
+          "image": "../assets/Product/Booster.jpg",
+          "description": "Improves crop metabolism and resistance to stress.",
+          "price": "1499"
+        },
+        {
+          "name": "ZESTO",
+          "image": "../assets/Product/Zesto.jpg",
+          "description": "Activates enzymes and improves photosynthesis.",
+          "price": "1399"
+        }
+      ]
+    },
+    {
+      "name": "Herbicides",
+      "products": [
+        {
+          "name": "CLEANFIELD",
+          "image": "../assets/Product/Cleanfield.jpg",
+          "description": "Pre- and post-emergence weed controller for cereals.",
+          "price": "1599"
+        },
+        {
+          "name": "HERBI-STRIKE",
+          "image": "../assets/Product/Herbi-Strike.jpg",
+          "description": "Selective weed killer for broadleaf weeds.",
+          "price": "1499"
+        },
+        {
+          "name": "GRASS-OFF",
+          "image": "../assets/Product/Grass-Off.jpg",
+          "description": "Effective grass weed controller for row crops.",
+          "price": "1399"
+        },
+        {
+          "name": "ROOTWASH",
+          "image": "../assets/Product/Rootwash.jpg",
+          "description": "Non-selective herbicide for pre-plant field clearing.",
+          "price": "1599"
+        },
+        {
+          "name": "ZERO-WEED",
+          "image": "../assets/Product/Zero-Weed.jpg",
+          "description": "Herbicide for rice and sugarcane fields.",
+          "price": "1499"
+        },
+        {
+          "name": "FAST-KILL",
+          "image": "../assets/Product/Fast-Kill.jpg",
+          "description": "Quick-action formulation for rapid weed knockdown.",
+          "price": "1799"
+        }
+      ]
+    }
+  ]
+}
