@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'; // Import the Navbar component
 export const AboutUs = () => {
     return (
         <>
-            <Navbar /> {/* Add the Navbar component */}
+            {/* <Navbar /> Add the Navbar component */}
             <div className="aboutus-page">
                 <div className='aboutus-container'>
                     <div className='aboutus-heading'>

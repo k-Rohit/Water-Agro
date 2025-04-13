@@ -73,7 +73,7 @@ import ResearchImage3 from '../assets/R&I-3.svg';
 const Research = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       
       <div className="research-container">
         {/* Side Label */}
