@@ -5,6 +5,8 @@
     overflow: hidden;
     font-family: 'Poppins';/* Set position relative to enable absolute positioning */
     background-color: #E9E8E4;
+    will-change: transform;
+    transform: translateZ(0);
 }
 .footer-image {
     width: 100vw; /* Use viewport width for full width */

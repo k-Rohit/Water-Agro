@@ -47,9 +47,9 @@ export const ProductPage = () => {
 
     return (
         <>
-            <div className='navbar'>
+            {/* <div className='navbar'>
                 <Navbar />
-            </div>
+            </div> */}
 
             <div className='product-page-container'>
                 <div className='category-icons'>
