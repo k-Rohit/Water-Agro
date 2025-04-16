@@ -1,7 +1,16 @@
-.card-wrapper{
+/* .card-wrapper{
     padding-left: 100px;
     padding-top: 20px;
+} */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  gap: 10px; /* Add spacing between cards */
+  padding-left: 10px;
+  padding-top: 20px;
+  justify-content: center; /* Center the cards */
 }
+
 
 .product-card {
     width: 260px;
@@ -51,4 +60,40 @@
     font-weight: 600;
     margin: 0;
   }
-    
+
+  @media (max-width:1024px) {
+    .card-wrapper{
+      padding-left: 100px;
+      padding-top: 20px;
+  }
+  }
+  @media (max-width:768px) {
+    .card-wrapper{
+      padding-left: 50px;
+      padding-top: 20px;
+  }
+  }
+  @media (max-width:480px) {
+    .card-wrapper {
+        padding-left: 0; /* Remove unnecessary padding */
+        padding-top: 20px;
+        justify-content: center; /* Center the cards */
+        gap: 12px; /* Add spacing between cards */
+    }
+
+    .product-card {
+        width: 100%; /* Reduce width to fit two cards with spacing */
+        margin: 0; /* Remove extra margin */
+        margin-bottom: 10px; /* Add spacing between rows */
+    }
+  }
+  @media (max-width:320px) {
+    .card-wrapper{
+      padding-left: 10px;
+      padding-top: 20px;
+  }
+    .product-card {
+        width: 100%; /* For very small screens, make cards full width */
+        margin-bottom: 10px; /* Add spacing between rows */
+    }
+  }

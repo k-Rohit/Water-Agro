@@ -1,232 +1,121 @@
-/* .landingpage-container{
+/* Base styles */
+.landingpage-container {
     height: 100vh;
-    width: 100vw;
-    background-color: #E9E8E4;
-    display: flex;
-    flex-direction: column;
-    z-index: -10;
-    overflow: hidden;
-}
-
-.water, .agro-life{
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 95px;
-}
-
-.water {
-    margin-bottom: -110px;
-}
-
-.content-description{
-    font-family: 'Poppins';
-    font-size: 17px;
-    margin-top: -40px;
-    text-align: justify;
-}
-
-
-.logo{
-    height: 80px;
-    margin-left: 70px;
-    margin-top: 30px;
-}
-
-.landingpage-header{
-    height: 12%;
-
-}
-
-.landingpage-mid{
-    height: 88%;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.content{
-    flex:3;
-    padding-left: 80px;
-    padding-right: 20px;
-}
-
-.sapling-image-div{
-    flex:4;
-    z-index: 1;
-    margin-left: -100px;
-}
-
-.sapling-image{
-    height: 630px;
-    width: auto;
-    margin-top: 20px;
-}
-
-.content-buttons{
-    display: flex;
-    gap: 10px;
-    height: 50px;
-    width: 250px;
-}
-
-.view-button{
-    background-color: black;
-    color: rgb(212, 212, 212);
-    font-size: 20px;
-    height: 40px;
-    width: 150px;
-    border: none;
-    border-radius: 50px;
-}
-
-.arrow{
-    background-color: #FEB631;
-    height: 40px;
-    width: 40px;
-    border: none;
-    border-radius: 100px;
-}
-
-.arrow-img{
-    height: 25px;
-    width: 25px;
-    margin-top: 4px;
-    margin-left: 1px;
-}
-
-.tabs{
-    display: flex;
-    flex:3;
-    gap: 30px;
-    padding-top: 50px;
-    flex-direction: column;
-    align-items: start;
-}
-
-.tabs > button {
-    background: linear-gradient(to right, #DEDBD3, #E9E8E4);
-    border: none;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-    height: 60px;
     width: 100%;
-    text-align: left;
-    color: #494949;
-    padding-left: 30px;
-    font-size: 20px; 
-    font-weight: 500;
-}
-
-.div-right {
-    display: flex;
-    flex-direction: column;
-}
-
-.cow-image {
-    margin-top: -30px;
-    z-index: 10;
-} */
-.landingpage-container{
-    height: 100vh;
-    width: 100vw;
     background-color: #E9E8E4;
     display: flex;
     flex-direction: column;
-    z-index: -10;
-    overflow: hidden;
+    z-index: 2; /* Place above the footer */
+    overflow-x: hidden;
+    position: relative; /* Ensure proper stacking context */
 }
 
-.water, .agro-life{
-    font-family: 'Poppins';
+.water, .agro-life {
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 95px;
+    font-size: clamp(2.5rem, 7vw, 6rem); /* Responsive font size */
+    line-height: 1.1;
+    
 }
 
 .water {
-    margin-bottom: -110px;
+    margin-bottom: clamp(-1.5rem, -5vw, -7rem);
+
+    
 }
 
-.content-description{
-    font-family: 'Poppins';
-    font-size: 17px;
-    margin-top: -40px;
+.content-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.875rem, 2vw, 1.1rem);
+    margin-top: clamp(-2.5rem, -3vw, -1rem);
     text-align: justify;
+    max-width: 90%;
 }
 
-
-.logo{
-    height: 80px;
-    margin-left: 70px;
-    margin-top: 30px;
+.logo {
+    height: clamp(40px, 5vh, 80px);
+    margin-left: clamp(20px, 5vw, 70px);
+    margin-top: clamp(15px, 2vh, 30px);
 }
 
-.landingpage-header{
+.landingpage-header {
     height: 12%;
-
 }
 
-.landingpage-mid{
+.landingpage-mid {
     height: 88%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.content{
-    flex:3;
-    padding-left: 80px;
-    padding-right: 20px;
+.content {
+    flex: 3;
+    padding-left: clamp(20px, 5vw, 80px);
+    padding-right: clamp(10px, 2vw, 20px);
 }
 
-.sapling-image-div{
-    flex:4;
-    z-index: 1;
-    margin-left: -100px;
+.sapling-image-div {
+    flex: 4;
+    z-index: 2;
+    margin-left: clamp(-50px, -5vw, -100px);
 }
 
-.sapling-image{
-    height: 630px;
+.sapling-image {
+    height: clamp(250px, 60vh, 630px);
     width: auto;
-    margin-top: 20px;
+    max-width: 100%;
+    margin-top: clamp(10px, 2vh, 20px);
+    object-fit: contain;
 }
 
-.content-buttons{
+.content-buttons {
     display: flex;
     gap: 10px;
-    height: 50px;
-    width: 250px;
+    height: auto;
+    width: clamp(200px, 100%, 250px);
+    margin-top: 1rem;
 }
 
-.view-button{
+.view-button {
     background-color: black;
     color: rgb(212, 212, 212);
-    font-size: 20px;
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
     height: 40px;
     width: 150px;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
+    text-emphasis: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.arrow{
+.arrow {
     background-color: #FEB631;
     height: 40px;
     width: 40px;
     border: none;
-    border-radius: 100px;
-}
-
-.arrow-img{
-    height: 25px;
-    width: 25px;
-    margin-top: 4px;
-    margin-left: 1px;
-}
-
-.tabs{
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
-    flex:3;
-    gap: 30px;
-    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-img {
+    height: 20px;
+    width: 20px;
+}
+
+.tabs {
+    display: flex;
+    flex: 3;
+    gap: clamp(15px, 3vh, 30px);
+    padding-top: clamp(25px, 5vh, 50px);
     flex-direction: column;
     align-items: start;
 }
@@ -237,50 +126,31 @@
     border: none;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
-    height: 60px;
+    height: clamp(40px, 6vh, 60px);
     width: 100%;
     text-align: left;
     color: #494949;
-    padding-left: 30px;
-    padding-top: 14px;
-    font-size: 20px;
+    padding-left: clamp(15px, 3vw, 30px);
+    padding-top: clamp(7px, 1.5vh, 14px);
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
     font-weight: 500;
-    text-decoration: none; /* Remove underline from links */
-    display: block; /* Make the link a block element to fill the width */
-    justify-content: center;
+    text-decoration: none;
+    display: block;
 }
 
-/* Hover effect - same as your button */
+/* Hover effect */
 .tabs a.tab-button:hover {
-    /* Add any hover styles you want here */
-    cursor: pointer; /* Change cursor to a pointer on hover */
+    cursor: pointer;
+    background: linear-gradient(to right, #D6D3C9, #E9E8E4);
 }
 
-/* Specific styles for individual tabs (if needed) */
-.tabs .tabs-home {
-    font-family: "Poppins";
-    
-    /* Add any specific style for Home */
-}
-
-.tabs .tabs-products {
-    /* Add any specific style for Products */
-    font-family: "Poppins";
-}
-.tabs .tabs-aboutus {
-    /* Add any specific style for Products */
-    font-family: "Poppins";
-}
-.tabs .tabs-ri {
-    /* Add any specific style for Products */
-    font-family: "Poppins";
-}
+.tabs .tabs-home, 
+.tabs .tabs-products,
+.tabs .tabs-aboutus,
+.tabs .tabs-ri,
 .tabs .tabs-contactus {
-    /* Add any specific style for Products */
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
-
-/* and so on for the rest of the tabs */
 
 .div-right {
     display: flex;
@@ -288,6 +158,260 @@
 }
 
 .cow-image {
-    margin-top: -30px;
-    z-index: 10;
+    margin-top: clamp(-30px, -3vh, -10px);
+    z-index: 3;
+}
+
+.cow-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile Navigation Styles */
+/* .mobile-navigation {
+    display: none; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1000; 
+    padding: 12px 10px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;  
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(10px, 0.75rem, 12px);
+    flex: 1;
+    padding: 8px 4px;
+    transition: color 0.3s;
+}
+
+.mobile-nav-item.active {
+    color: #4B88E6;
+}
+
+.mobile-nav-item:hover {
+    color: #FEB631;
+}
+
+.mobile-nav-icon {
+    width: clamp(18px, 5vw, 24px);
+    height: clamp(18px, 5vw, 24px);
+    margin-bottom: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.home-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234B88E6'%3E%3Cpath d='M12 2L2 12h3v8h14v-8h3L12 2z'/%3E%3C/svg%3E");
+}
+
+.products-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237F7F7F'%3E%3Cpath d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 5h-3v3h3v3h-3v3h-2v-3H9v-3h3V8H9V6h3V3h2v3h3v2z'/%3E%3C/svg%3E");
+}
+
+.about-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237F7F7F'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z'/%3E%3C/svg%3E");
+}
+
+.research-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237F7F7F'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E");
+}
+
+.contact-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237F7F7F'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E");
+} */
+
+/* Tablet and small laptop styles */
+@media (max-width: 1024px) {
+    .landingpage-mid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 70px; /* Space for mobile navigation */
+    }
+
+    .water, .agro-life {
+        text-align: justify;   
+        font-size: 40px;
+        margin-left: -80%;
+         
+    }
+    
+    .water {
+        margin-bottom: clamp(-20px, -3vw, -30px);
+       
+    }
+
+    .content {
+        padding: 0 clamp(15px, 5vw, 20px);
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-description {
+        text-align: justify;
+        margin-top: clamp(10px, 3vh, 20px);
+        max-width: 100%;
+    }
+
+    .sapling-image-div {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    /* Show mobile navigation */
+    .mobile-navigation {
+        display: flex;
+    }
+
+    /* Hide desktop navigation */
+    .div-right {
+        display: none;
+    }
+}
+
+/* Small phones and portrait-oriented devices */
+@media (max-width: 480px) {
+    .landingpage-container {
+        padding-bottom: 60px; /* Space for mobile navigation */
+    }
+    .water, .agro-life {
+        margin: auto;
+        font-size: 40px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+
+    .content-buttons {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .view-button, .arrow {
+        transform: scale(0.9);
+    }
+
+    .sapling-image {
+        height: clamp(180px, 45vh, 250px);
+    }
+
+    .mobile-nav-item {
+        padding: 5px 2px;
+    }
+    .sapling-image-div {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        /* margin-top: 20%; */
+
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+    .water, .agro-life {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        margin: auto;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    
+    .content-description {
+        font-size: clamp(0.75rem, 3.5vw, 0.875rem);
+    }
+    
+    .content-buttons {
+        transform: scale(0.85);
+        transform-origin: center;
+    }
+    
+    .mobile-nav-item {
+        font-size: 9px;
+    }
+    
+    .mobile-nav-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* For devices with notches and safe areas */
+@supports (padding: max(0px)) {
+    .landingpage-container {
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+        padding-top: max(0px, env(safe-area-inset-top));
+    }
+    
+    .mobile-navigation {
+        padding-bottom: max(12px, env(safe-area-inset-bottom));
+    }
+}
+
+/* For tall/narrow devices (iPhone 12/13/14 Pro Max, etc.) */
+@media (max-height: 900px) and (max-width: 480px) {
+    .water, .agro-life {
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        margin: auto;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    
+    .sapling-image {
+        height: clamp(150px, 35vh, 220px);
+    }
+}
+
+/* For landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .landingpage-mid {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+    
+    .sapling-image {
+        height: clamp(150px, 80vh, 300px);
+    }
+    
+    .content {
+        padding: 0 15px;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .water, .agro-life {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        margin: auto;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    
+    .content-description {
+        text-align: left;
+        font-size: clamp(0.75rem, 2vw, 0.875rem);
+    }
+}
+
+.footer-container {
+    z-index: 1; /* Ensure footer stays below the landing page */
 }
