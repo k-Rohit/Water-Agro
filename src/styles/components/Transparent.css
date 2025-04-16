@@ -1,0 +1,42 @@
+.navbar-container {
+    position: relative; /* Important: must be absolute/fixed to stack correctly */
+    top: 0;
+    left: 10;
+    width: 100%;
+    z-index: 100; /* Super high to stay on top */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color:transparent; 
+    
+}
+
+.navbar-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap:0px; /* Space between links */
+    align-items: center;
+   
+
+}
+    
+span{
+    color: white;
+}
+
+
+
