@@ -6,31 +6,31 @@
         {
           "name": "SATLUJ",
           "image": "../assets/Product/Satluj (fertilizer).jpg",
-          "description": "Composition: Ferrous Sulphate(Fe) - 19%. High purity, moisture-resistant, and ideal for micronutrient delivery.",
+          "description": "Composition: Ferrous Sulphate(Fe)...",
           "price": "1699"
         },
         {
           "name": "BLACK HORSE",
           "image": "../assets/Product/Black-horse ( fertilizer).jpg",
-          "description": "Organic fertilizer blended with minerals to enhance soil fertility and plant health.",
+          "description": "Organic fertilizer blended ...",
           "price": "1699"
         },
         {
           "name": "ROOT RAJA",
           "image": "../assets/Product/Root-Raja ( Fertilizer).jpg",
-          "description": "Mycorrhiza-based formula that promotes nutrient uptake and drought resistance.",
+          "description": "Mycorrhiza-based formula that ...",
           "price": "1699"
         },
         {
           "name": "GREEN FORCE",
           "image": "../assets/Product/Green-Force.jpg",
-          "description": "High NPK content fertilizer for overall crop vigor and resilience.",
+          "description": "High NPK content fertilizer ...",
           "price": "1899"
         },
         {
           "name": "BIO-GRO",
           "image": "../assets/Product/Bio-Gro.jpg",
-          "description": "Bio-enriched granular fertilizer promoting microbial activity.",
+          "description": "Bio-enriched granular fertilizer...",
           "price": "1499"
         }
       ]
@@ -41,25 +41,25 @@
         {
           "name": "DUMBELL",
           "image": "../assets/Product/Dumbell ( fungicides).jpg",
-          "description": "Azoxystrobin & Difenoconazole blend for comprehensive fungal control.",
+          "description": "Azoxystrobin & Difenoconazole blend ...",
           "price": "1699"
         },
         {
           "name": "SPEXS",
           "image": "../assets/Product/Spexs (fungicides).jpg",
-          "description": "Controls wide spectrum of foliar and root fungal diseases.",
+          "description": "Controls wide spectrum ...",
           "price": "1699"
         },
         {
           "name": "GUARD-X",
           "image": "../assets/Product/Guard-X.jpg",
-          "description": "Prevents powdery mildew and rust in vegetables and fruits.",
+          "description": "Prevents powdery mildew ...",
           "price": "1399"
         },
         {
           "name": "FUNGIKILL",
           "image": "../assets/Product/Fungikill.jpg",
-          "description": "Broad-spectrum systemic fungicide for cereals and pulses.",
+          "description": "Broad-spectrum systemic ...",
           "price": "1599"
         }
       ]
@@ -70,37 +70,37 @@
         {
           "name": "FOX",
           "image": "../assets/Product/FOX (insecticides).jpg",
-          "description": "Fipronil 0.6% GR for soil pest control in major crops.",
+          "description": "Fipronil 0.6% GR for soil ...",
           "price": "1699"
         },
         {
           "name": "SOMA",
           "image": "../assets/Product/Soma ( insecticides).jpg",
-          "description": "Effective against stem borer and leaf folder in rice.",
+          "description": "Effective against stem ...",
           "price": "1699"
         },
         {
           "name": "EXAM-PRO",
           "image": "../assets/Product/Exam-pro (insecticides).jpg",
-          "description": "Systemic seed treatment and foliar insecticide.",
+          "description": "Systemic seed treatment ...",
           "price": "1699"
         },
         {
           "name": "BLENDER",
           "image": "../assets/Product/Blender ( insecticides).jpg",
-          "description": "Bifenthrin-based contact insecticide for various pests.",
+          "description": "Bifenthrin-based contact insecticide ...",
           "price": "1699"
         },
         {
           "name": "RAIDER",
           "image": "../assets/Product/Raider.jpg",
-          "description": "Kills chewing and sucking pests in cotton and vegetables.",
+          "description": "Kills chewing and sucking pests ...",
           "price": "1799"
         },
         {
           "name": "STORM-X",
           "image": "../assets/Product/Storm-X.jpg",
-          "description": "Fast knockdown formula for sugarcane and maize insects.",
+          "description": "Fast knockdown formula for ...",
           "price": "1599"
         }
       ]
@@ -111,19 +111,19 @@
         {
           "name": "KIWI",
           "image": "../assets/Product/KIWI ( plant growth).jpg",
-          "description": "Seaweed-based growth enhancer for flowering and fruit set.",
+          "description": "Seaweed-based growth enhancer for ...",
           "price": "1699"
         },
         {
           "name": "BOOSTER",
           "image": "../assets/Product/Booster.jpg",
-          "description": "Improves crop metabolism and resistance to stress.",
+          "description": "Improves crop metabolism ...",
           "price": "1499"
         },
         {
           "name": "ZESTO",
           "image": "../assets/Product/Zesto.jpg",
-          "description": "Activates enzymes and improves photosynthesis.",
+          "description": "Activates enzymes and improves photosynthesis ...",
           "price": "1399"
         }
       ]
