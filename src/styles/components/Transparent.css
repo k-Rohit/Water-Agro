@@ -3,7 +3,7 @@
     top: 0;
     left: 10;
     width: 100%;
-    z-index: 100; /* Super high to stay on top */
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,10 +33,15 @@
    
 
 }
-    
-span{
-    color: white;
+.text{
+    color: white
 }
 
+
+.navbar-links a.active {
+    color: #39803A; /* Yellow color */
+    font-weight: 600;
+    font-size: large;
+  }
 
 
