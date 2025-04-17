@@ -12,6 +12,7 @@ const LandingPage = () => {
   return (
     <>
       <div className="landingpage-container">
+        {/* Fixed header containing logo */}
         <div className="landingpage-header">
           <img src={Logo} className="logo" alt="Water Agro Logo" />
         </div>
@@ -19,10 +20,14 @@ const LandingPage = () => {
         {/* Using the dynamic MobileNavigation component */}
         <MobileNavigation />
 
+        {/* Scrollable content area */}
         <div className="landingpage-mid">
           <div className="content">
+            <div className='comp-name'>
             <h1 className="water">Water</h1>
             <h1 className="agro-life">AgroLife</h1>
+            </div>
+            
             <div className="content-description">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ex modi minus earum nam, eius recusandae iste numquam voluptatem, alias rem illo nihil id hic, expedita et corrupti tempore odit!
@@ -40,7 +45,6 @@ const LandingPage = () => {
             <img src={Sapling} className="sapling-image" alt="Sapling" />
           </div>
 
-          {/* Desktop navigation */}
           <div className="div-right">
             <div className="tabs">
               <Link to="/" className="tabs-home tab-button">Home</Link>
