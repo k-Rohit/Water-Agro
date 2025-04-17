@@ -40,7 +40,6 @@ const LandingPage = () => {
             <img src={Sapling} className="sapling-image" alt="Sapling" />
           </div>
 
-          {/* Desktop navigation */}
           <div className="div-right">
             <div className="tabs">
               <Link to="/" className="tabs-home tab-button">Home</Link>
