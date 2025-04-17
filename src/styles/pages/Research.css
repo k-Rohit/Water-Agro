@@ -1,242 +1,39 @@
-/* Research Page Styles */
 .research-container {
+  padding-left: 10%;
+  padding-top: 3%;
   display: flex;
+  flex-direction: row;
   background-color: #E9E8E4;
-  min-height: calc(100vh - 120px);
 }
 
-/* Side Label */
-.side-label {
-  width: 60px;
-  padding-top: 40px;
-}
-
-.side-label span {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  display: block;
-  font-size: 36px;
-  font-weight: 300;
-  color: #cccccc;
-  letter-spacing: 3px;
-}
-
-/* Research Content Grid Layout */
-.research-content {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  padding: 40px 40px 60px 20px;
-}
-
-/* Image Boxes */
-.image-box {
+.img-text-container {
+  display: flex;
+  flex-direction: column;
   max-width: 400px;
+  padding-bottom: 10%;
+  margin: 0px;
+  
 }
 
-.image-box img {
-  width: 100%;
+.text-container {
+  width: 80%; /* Ensures text container doesn't overflow */
+}
+
+.text-container p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: 'Poppins';
+}
+
+.image-container img {
+  max-width: 90%;
   height: auto;
-  display: block;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
-/* Text Boxes */
-.text-box {
-  max-width: 500px;
-  padding: 20px 0;
-}
-
-.text-box h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: #333333;
-}
-
-.text-box p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #666666;
-}
-
-/* Positioning Classes */
-.image-top {
-  grid-column: 1;
-  grid-row: 1;
-  margin-left: 300px;
-  justify-self: start;
-}
-
-.text-right {
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: start;
-}
-
-.text-left {
-  grid-column: 1;
-  grid-row: auto;
-  margin-left: 300px;
-  justify-self: start;
-}
-
-.image-right {
-  grid-column: 2;
-  grid-row: auto;
-  margin-right: 500px;
-  justify-self: end;
-}
-
-/* Specific positioning for the sections */
-.research-content > div:nth-child(3) {
-  grid-row: 2;
-}
-
-.research-content > div:nth-child(4) {
-  grid-row: 2;
-}
-
-.research-content > div:nth-child(5) {
-  grid-row: 3;
-}
-
-.research-content > div:nth-child(6) {
-  grid-row: 3;
-}
-
-/* Desktop navbar should be visible only on larger screens */
-.desktop-navbar {
-  display: block;
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .image-top {
-    margin-left: 150px;
-  }
+.text-container > span{
+  font-weight: 500;
+  color: #23160E;
   
-  .text-left {
-    margin-left: 150px;
-  }
-  
-  .image-right {
-    margin-right: 250px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .image-top {
-    margin-left: 100px;
-  }
-  
-  .text-left {
-    margin-left: 100px;
-  }
-  
-  .image-right {
-    margin-right: 150px;
-  }
-}
-
-@media (max-width: 768px) {
-  .research-container {
-    flex-direction: column;
-    padding-bottom: 60px; /* Space for mobile navigation */
-  }
-  
-  .side-label {
-    width: 100%;
-    height: 40px;
-    padding-top: 20px;
-    text-align: center;
-  }
-  
-  .side-label span {
-    writing-mode: horizontal-tb;
-    transform: none;
-  }
-  
-  .research-content {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-  
-  .image-box, .text-box {
-    grid-column: 1;
-    max-width: 100%;
-    justify-self: center;
-  }
-  
-  .image-top, .text-left {
-    margin-left: 0;
-  }
-  
-  .image-right {
-    margin-right: 0;
-  }
-  
-  .text-right, .text-left {
-    justify-self: center;
-  }
-  
-  /* Reset specific positioning */
-  .research-content > div:nth-child(n) {
-    grid-row: auto;
-  }
-  
-  /* Re-order content for mobile */
-  .image-top {
-    grid-row: 1;
-  }
-  
-  .text-right {
-    grid-row: 2;
-  }
-  
-  .text-left:nth-of-type(1) {
-    grid-row: 3;
-  }
-  
-  .image-right:nth-of-type(1) {
-    grid-row: 4;
-  }
-  
-  .text-left:nth-of-type(2) {
-    grid-row: 5;
-  }
-  
-  .image-right:nth-of-type(2) {
-    grid-row: 6;
-  }
-}
-
-@media (max-width: 480px) {
-  .side-label span {
-    font-size: 28px;
-  }
-  
-  .research-content {
-    padding: 15px;
-    grid-gap: 20px;
-  }
-  
-  .text-box h2 {
-    font-size: 20px;
-  }
-  
-  .text-box p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 320px) {
-  .side-label span {
-    font-size: 24px;
-  }
-  
-  .text-box h2 {
-    font-size: 18px;
-  }
 }

@@ -24,9 +24,11 @@
     font-family: 'Poppins';
     margin-top: 10%;
     font-weight: 400;
-    text-align: justify;
-    font-size: clamp(2.5rem, 7vw, 6rem);
-    line-height: 1.1;
+
+    font-size: clamp(2.5rem, 7vw, 6rem); /* Responsive font size */
+    line-height: 0.9;
+    padding-bottom: 20px;
+    
 }
 
 .water {
@@ -94,13 +96,19 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    text-emphasis: none;
     padding: 10px 15px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+.view-button:hover {
+    transform: scale(1.05);
+}
+
 
 .arrow {
     background-color: #FEB631;
@@ -112,7 +120,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
 
 .arrow-img {
     height: 20px;
@@ -127,6 +142,7 @@
     flex-direction: column;
     align-items: start;
 }
+
 
 .tabs a.tab-button {
     background: linear-gradient(to right, #DEDBD3, #E9E8E4);
@@ -143,12 +159,17 @@
     font-weight: 500;
     text-decoration: none;
     display: block;
+
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
 .tabs a.tab-button:hover {
     cursor: pointer;
     background: linear-gradient(to right, #D6D3C9, #E9E8E4);
+    transform: scale(1.05);
 }
+
+
 
 .tabs .tabs-home, 
 .tabs .tabs-products,

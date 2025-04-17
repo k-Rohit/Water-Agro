@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
@@ -43,8 +43,7 @@
   font-size: 70px;
   font-family: 'Poppins';
   color: #333;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   width: 100%;
   max-width: 100%;
 }
@@ -59,7 +58,7 @@
   font-family: 'Poppins';
   font-size: 15px;
   color: #444;
-  margin-top: 20px;
+  margin-top: 3px;
   text-align: justify;
 }
 

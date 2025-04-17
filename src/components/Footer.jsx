@@ -1,69 +1,11 @@
-
-// import React from 'react';
-// import '../styles/components/Footer.css' // Import the CSS
-// import FooterImage from '../assets/waves.svg'; // Import the image
-
-// const Footer = () => {
-//     return (
-//         <div className="footer-container">
-//             <div className='footer-image-container'>
-//             <img src={FooterImage} alt="Footer" className="footer-image" />
-//             </div>
-//             <div className="footer-links">
-//                 <a href="#">About</a>
-//                 <a href="#">Product</a>
-//                 <a href="#">Social Links</a>
-//                 <a href="#">Contact Info</a>
-//                 <a href="#">Address</a>
-//             </div>
-//             <div className="footer-copyright">
-//                 <p>2025@Water-Agro. All Rights reserved</p>
-//             </div>
-//             <div className="footer-terms">
-//                 <a href="#">Privacy Policy</a>
-//                 <a href="#">Terms of Services</a>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Footer;
-
-// import React from 'react';
-// import '../styles/components/Footer.css'
-// import FooterImage from '../assets/waves.svg';
-// import { Link } from 'react-router-dom';  // Import Link
-
-// const Footer = () => {
-//     return (
-//         <div className="footer-container">
-//             <div className='footer-image-container'>
-//                 <img src={FooterImage} alt="Footer" className="footer-image" />
-//             </div>
-//             <div className="footer-links">
-//                 <Link to="/about-us">About</Link>
-//                 <Link to="/products">Product</Link>
-//                 <a >Social Links</a> {/* Keep as <a> if it's an external link */}
-//                 <a>Contact Info</a> {/* Keep as <a> if it's an external link */}
-//                 <a>Address</a> {/* Keep as <a> if it's an external link */}
-//             </div>
-//             <div className="footer-copyright">
-//                 <p>2025@Water-Agro. All Rights reserved</p>
-//             </div>
-//             <div className="footer-terms">
-//                 <a >Privacy Policy</a> {/* Keep as <a> if it's an external link */}
-//                 <a >Terms of Services</a> {/* Keep as <a> if it's an external link */}
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Footer;
-
 import React from 'react';
 import '../styles/components/Footer.css';
 import FooterImage from '../assets/waves-1.svg';
 import { Link } from 'react-router-dom';
+import InstaImage from '../assets/insta.svg'
+import LinkedInImage from '../assets/linkedIn.svg'
+import WhatsAppImage from '../assets/whatsapp.svg'
+
 
 const Footer = () => {
     return (
@@ -71,10 +13,28 @@ const Footer = () => {
             <div className="wave-container">
                 <img src={FooterImage} className="footer-image" alt="Footer background" />
                 <div className="footer-links">
-                    <Link to="/about-us">About</Link>
-                    <a href="#">Address</a> 
-                    <a href="#">Social Links</a> 
-                    <a href="#">Contact Info</a> 
+                    <div className='address-container'>
+                        <a href="#">Address</a>
+                        <div className='address'>
+                            245/6, Model Town Extension, Hisar, Haryana – 125001
+                        </div>
+                    </div>
+                    <div className='social-links-container'>
+                        <a href="#">Social Links</a>
+                        <div className='image-container'>
+                            <img src={InstaImage} className='social-link-image' />
+                            <img src={LinkedInImage} className='social-link-image' />
+                            <img src={WhatsAppImage} className='social-link-image' />
+                        </div>
+                    </div>
+                    <div className='contact-info-container'>
+                        <a href="#">Contact Info</a>
+                        <div className='phone-number-container'>
+                            <span className='phone'>+91 8765432109</span>
+                            <span className='phone'>+91 9123456780</span>
+                            <span className='phone'>+91 9876543210</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="footer-bottom">
@@ -91,3 +51,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

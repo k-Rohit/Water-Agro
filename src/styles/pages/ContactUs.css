@@ -72,10 +72,10 @@
 
 .cow-image-container {
   position: relative;
-  padding-top: 89px;
+  padding-top: 100px;
   padding-left: 190px;
-  margin-top: -42px;
-  left: 60%;
+  /* margin-top: -5px; */
+  left: 53%;
  
   transform: translateX(-50%);
   z-index: 11;
@@ -84,7 +84,6 @@
 .cow-image {
   width: 280px;
   height: auto;
- 
   position: relative;
   
 }
