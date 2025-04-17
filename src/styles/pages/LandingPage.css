@@ -87,13 +87,19 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    text-emphasis: none;
     padding: 10px 15px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+.view-button:hover {
+    transform: scale(1.05);
+}
+
 
 .arrow {
     background-color: #FEB631;
@@ -105,7 +111,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
 
 .arrow-img {
     height: 20px;
