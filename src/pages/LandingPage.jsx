@@ -250,7 +250,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <Footer /> {/* Footer component added here */}
+      <Footer />
     </>
   );
 };

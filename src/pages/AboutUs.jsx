@@ -57,13 +57,11 @@ export const AboutUs = () => {
                 <Slideshow />
 
                 {/* Add the Footer Component */}
-                <div className='footer-container'>
-                    <Footer />
-                </div>
                 
                 {/* Mobile Navigation - will be shown only on mobile devices via CSS */}
                 <MobileNavigation />
             </div>
+            <Footer />
         </>
     );
 };

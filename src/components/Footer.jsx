@@ -62,7 +62,7 @@
 
 import React from 'react';
 import '../styles/components/Footer.css';
-import FooterImage from '../assets/waves.svg';
+import FooterImage from '../assets/waves-1.svg';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -72,10 +72,9 @@ const Footer = () => {
                 <img src={FooterImage} className="footer-image" alt="Footer background" />
                 <div className="footer-links">
                     <Link to="/about-us">About</Link>
-                    <a>Address</a> 
-                    <a >Social Links</a> 
-                    <a>Contact Info</a> 
-                    
+                    <a href="#">Address</a> 
+                    <a href="#">Social Links</a> 
+                    <a href="#">Contact Info</a> 
                 </div>
             </div>
             <div className="footer-bottom">
@@ -83,8 +82,8 @@ const Footer = () => {
                     <p>2025@Water-Agro. All Rights reserved</p>
                 </div>
                 <div className="footer-terms">
-                    <a >Privacy Policy</a>
-                    <a >Terms of Services</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Services</a>
                 </div>
             </div>
         </div>
