@@ -121,7 +121,11 @@
     align-items: start;
 }
 
-/* Styles for the Link components that mimic button appearance */
+.tabs-button {
+    align-items: center; 
+    justify-content: center;
+}
+
 .tabs a.tab-button {
     background: linear-gradient(to right, #DEDBD3, #E9E8E4);
     border: none;
@@ -137,13 +141,18 @@
     font-weight: 500;
     text-decoration: none;
     display: block;
+
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
-/* Hover effect */
+
 .tabs a.tab-button:hover {
     cursor: pointer;
     background: linear-gradient(to right, #D6D3C9, #E9E8E4);
+    transform: scale(1.05);
 }
+
+
 
 .tabs .tabs-home, 
 .tabs .tabs-products,

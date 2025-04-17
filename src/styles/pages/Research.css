@@ -32,7 +32,7 @@
   border-radius: 5px;
 }
 
-span {
+.text-container > span{
   font-weight: 500;
   color: #23160E;
   
