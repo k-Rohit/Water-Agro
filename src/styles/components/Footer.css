@@ -13,6 +13,7 @@
 .wave-container {
     position: relative;
     width: 100%;
+
     background-color: #E9E8E4;
 }
 
@@ -25,12 +26,12 @@
 
 .footer-links {
     position: absolute;
-    top: 55%;
-    left: 10%;
+    top: 70%;
+    left: 8%;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 3%;
+    gap: 5%;
     flex-wrap: wrap;
     transform: translateY(-50%);
     padding: 0 14%; /* Adjusted to center content properly */
@@ -48,9 +49,11 @@
 
 .footer-bottom {
     width: 100%;
+    /* position: absolute;
+    transform: translateY(740%);  */
     display: flex;
     justify-content: space-between;
-    padding: 15px 50px;
+    padding: 0px 50px;
     box-sizing: border-box;
     background-color: #23160E;
 }
@@ -74,162 +77,11 @@
 
 /* Media queries for responsive design */
 
-/* Tablets and smaller desktops */
-@media (max-width: 1024px) {
-    .footer-links a {
-        margin: 8px 15px;
-        font-size: 0.85em;
-    }
-    
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 3px;
-        justify-items: center;
-        align-items: center;
-        padding: 0 10%;
-        width: 80%;
-        margin: 12% 19%;
-        top: 50%;
-    }
-    
-    .footer-bottom {
-        padding: 12px 25px;
-    }
-    
-    .footer-terms a {
-        margin-left: 25px;
-    }
-}
-
-/* Medium-sized devices */
+/* Show footer only on screens larger than 768px (typical tablet breakpoint) */
 @media (max-width: 768px) {
-    .footer-links a {
-        margin: 5px 10px;
-        font-size: 0.70em;
+    .footer-container {
+        display: none; /* Hide the entire footer on mobile devices */
     }
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 2px;
-        justify-items: center;
-        align-items: center;
-        padding: 0 10%;
-        width: 80%;
-        margin: 11% 18%;
-        top: 40%;
-    }
-    
-    
-    .footer-bottom {
-        flex-direction: row;
-        gap: 20px;
-        align-items: center;
-        padding:6px 7px;
-    }
-    
-    .footer-copyright p {
-        /* margin-bottom: 10px; */
-        text-align: left;
-        font-size: 0.70em;
-    }
-    
-    .footer-terms {
-        text-align: left;
-    
-    .footer-terms a {
-        margin-left: 15px;
-        font-size: 0.7em;
-        text-align: left;
-    }
-}
-
-/* Small Phones - Modified for 2x2 grid layout */
-@media (max-width: 480px) {
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 2px;
-        justify-items: center;
-        align-items: center;
-        padding: 0 10%;
-        width: 80%;
-        margin: 10% 17%;
-        top: 35%;
-    }
-    
-    .footer-links a {
-        margin: 3px 5px;
-        font-size: 0.60em;
-        text-align: center;
-        width: 100%;
-    }
-    
-    /* The fifth link (Address) will be centered across both columns */
-    
-    
-    .footer-bottom {
-        flex-direction: row;
-        gap: 20px;
-        align-items: center;
-        padding: 5px 8px;
-    }
-    
-    .footer-copyright p {
-        /* margin-bottom: 10px; */
-        text-align: left;
-        font-size: 0.60em;
-    }
-    
-    .footer-terms {
-        text-align: left;
-    }
-    
-    .footer-terms a {
-        margin: 0 10px;
-        font-size: 0.05em;
-    }
-}
-
-/* Extra Small Devices */
-@media (max-width: 320px) {
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 1px;
-        justify-items: center;
-        align-items: center;
-        padding: 0 10%;
-        width: 80%;
-        margin: 10% 16%;
-        top: 50%;
-    }
-    
-    .footer-links a {
-        font-size: 0.6em;
-        margin: 2px;
-    }
-    
-    .footer-bottom {
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-        padding: 5px 8px;
-    }
-    
-    .footer-copyright {
-        font-size: 0.55em;
-    }
-    
-    .footer-terms a {
-        margin: 0 5px;
-        font-size: 0.55em;
-    }
-
 }
 
 /* Fix for white space below footer */
@@ -264,5 +116,4 @@ main {
         padding-right: max(0px, env(safe-area-inset-right));
         padding-bottom: max(0px, env(safe-area-inset-bottom));
     }
-}
 }
