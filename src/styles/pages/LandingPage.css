@@ -129,6 +129,10 @@
 }
 
 
+.arrow:hover {
+    transform: scale(1.05); /* Grows slightly on hover */
+
+}
 .arrow-img {
     height: 20px;
     width: 20px;
@@ -185,7 +189,7 @@
 }
 
 .cow-image {
-    margin-top: clamp(-30px, -3vh, -10px);
+    margin-bottom: -50px;
     z-index: 3;
 }
 
