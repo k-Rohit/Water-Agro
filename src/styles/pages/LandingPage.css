@@ -94,8 +94,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 }
-
+.view-button:hover {
+    transform: scale(1.05); /* Grows slightly on hover */
+  }
 .arrow {
     background-color: #FEB631;
     height: 40px;
@@ -106,8 +109,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+
 }
 
+.arrow:hover {
+    transform: scale(1.05); /* Grows slightly on hover */
+
+}
 .arrow-img {
     height: 20px;
     width: 20px;
@@ -169,7 +178,7 @@
 }
 
 .cow-image {
-    margin-top: clamp(-30px, -3vh, -10px);
+    margin-bottom: -50px;
     z-index: 3;
 }
 
