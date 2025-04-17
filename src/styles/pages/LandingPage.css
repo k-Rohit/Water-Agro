@@ -10,18 +10,27 @@
     position: relative;
 }
 
+/* Desktop header styles - make header relative by default */
+.landingpage-header {
+    height: 12%;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #E9E8E4;
+    z-index: 0;
+}
+
 .water, .agro-life {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+    margin-top: 10%;
     font-weight: 400;
-    font-size: clamp(2.5rem, 7vw, 6rem); /* Responsive font size */
+    text-align: justify;
+    font-size: clamp(2.5rem, 7vw, 6rem);
     line-height: 1.1;
-    
 }
 
 .water {
     margin-bottom: clamp(-1.5rem, -5vw, -7rem);
-
-    
 }
 
 .content-description {
@@ -38,15 +47,13 @@
     margin-top: clamp(15px, 2vh, 30px);
 }
 
-.landingpage-header {
-    height: 12%;
-}
-
 .landingpage-mid {
     height: 88%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
+    overflow-y: auto;
 }
 
 .content {
@@ -121,7 +128,6 @@
     align-items: start;
 }
 
-/* Styles for the Link components that mimic button appearance */
 .tabs a.tab-button {
     background: linear-gradient(to right, #DEDBD3, #E9E8E4);
     border: none;
@@ -139,7 +145,6 @@
     display: block;
 }
 
-/* Hover effect */
 .tabs a.tab-button:hover {
     cursor: pointer;
     background: linear-gradient(to right, #D6D3C9, #E9E8E4);
@@ -167,25 +172,33 @@
     max-width: 100%;
     height: auto;
 }
+
 /* Tablet and small laptop styles */
 @media (max-width: 1024px) {
+    /* Make header fixed for tablet and mobile */
+    .landingpage-header {
+        position: fixed;
+        height: 60px;
+        z-index: 1000;
+    }
+    
     .landingpage-mid {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 70px; /* Space for mobile navigation */
+        padding-bottom: 70px;
+        margin-top: 60px;
     }
 
     .water, .agro-life {
         text-align: justify;   
         font-size: 40px;
+        margin-top: 4%;
         margin-left: -80%;
-         
     }
     
     .water {
         margin-bottom: clamp(-20px, -3vw, -30px);
-       
     }
 
     .content {
@@ -206,16 +219,12 @@
         margin-left: 0;
         display: flex;
         justify-content: center;
-        
-
     }
 
-    /* Show mobile navigation */
     .mobile-navigation {
         display: flex;
     }
 
-    /* Hide desktop navigation */
     .div-right {
         display: none;
     }
@@ -224,12 +233,24 @@
 /* Small phones and portrait-oriented devices */
 @media (max-width: 480px) {
     .landingpage-container {
-        padding-bottom: 60px; /* Space for mobile navigation */
+        padding-bottom: 60px;
     }
+    
+    .landingpage-header {
+        height: 50px;
+    }
+    
+    .landingpage-mid {
+        margin-top: 50px;
+    }
+
+    .comp-name{
+        margin-left: -190px;
+        margin-top: 20px;
+    }
+    
     .water, .agro-life {
-        margin: auto;
         font-size: 40px;
-        margin-left: 10px;
         text-align: justify;
     }
 
@@ -254,8 +275,6 @@
         margin-left: 0;
         display: flex;
         justify-content: center;
-        /* margin-top: 20%; */
-
     }
 }
 
@@ -320,6 +339,7 @@
         flex-direction: row;
         align-items: center;
         height: auto;
+        margin-top: 50px;
     }
     
     .sapling-image {
