@@ -3,7 +3,7 @@ import '../styles/components/Footer.css';
 import FooterImage from '../assets/waves-1.svg';
 import { Link } from 'react-router-dom';
 import InstaImage from '../assets/insta.svg'
-import LinkedInImage from '../assets/linkedIn.svg'
+import LinkedInImage from '../assets/linkedin.svg'
 import WhatsAppImage from '../assets/whatsapp.svg'
 
 

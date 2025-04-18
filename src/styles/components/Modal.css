@@ -1,55 +1,62 @@
-/* Backdrop container to center everything */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;                   /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* this just centers the inner box */
 .modal-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
+  width: 90%;
+  max-width: 900px;
 }
 
-/* Modal box itself */
+/* put flex here, because its children are .modal-text + .modal-image */
 .modal-content {
-    background-color: #f4f4f4;
-    border-radius: 12px;
-    max-width: 900px;
-    width: 100%;
-    padding: 40px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 32px;
-    flex-wrap: wrap;
-    font-family: 'Poppins';
+  display: flex;
+  flex-direction: row;        /* side by side */
+  justify-content: space-between; /* push to ends */
+  align-items: flex-start;    /* top‑align if text is taller */
+  gap: 24px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;           /* no wrap or scrollbars */
+  flex-wrap: nowrap;          /* absolutely no wrapping */
 }
 
-/* Text content */
+/* text grows to fill remaining space */
 .modal-text {
-    flex: 1;
-    min-width: 300px;
+  flex: 1 1 auto;
+  min-width: 0;               /* allow text to shrink cleanly */
 }
 
+/* heading & paragraphs styling */
 .modal-text h2 {
-    font-size: 32px;
-    margin-bottom: 16px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
-
 .modal-text p {
-    font-size: 16px;
-    margin-bottom: 12px;
-    line-height: 1.5;
+  margin-bottom: 12px;
+  line-height: 1.4;
 }
 
-.modal-text strong {
-    font-weight: 600;
+/* image is fixed‑size and won’t stretch */
+.modal-image {
+  flex: 0 0 auto;
+  width: 180px;
+  height: auto;
 }
-
-/* Image styling */
 .modal-image img {
-    padding-top: 30px;
-    max-width: 180px;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }

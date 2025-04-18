@@ -72,11 +72,9 @@
 
 .cow-image-container {
   position: relative;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 190px;
-  /* margin-top: -5px; */
   left: 53%;
- 
   transform: translateX(-50%);
   z-index: 11;
 }
@@ -84,16 +82,13 @@
 .cow-image {
   width: 280px;
   height: auto;
-  position: relative;
-  
+  position: relative;  
 }
 
-/* Desktop navbar should be visible only on larger screens */
 .navbar {
   display: block;
 }
 
-/* Responsive styles */
 @media (max-width: 1024px) {
   .contactus-card {
     left: 50vw;
