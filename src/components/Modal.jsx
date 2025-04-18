@@ -1,22 +1,29 @@
-import React from 'react'
-import '../styles/components/Modal.css'
-import productImg from '../assets/bottle-photo.png'
+import React from 'react';
+import '../styles/components/Modal.css';
 
-export const Modal = () => {
-    return (
-        <div className="modal-container">
-            <div className="modal-content">
-                <div className="modal-text">
-                    <h2>Bifenthrin 10%EC</h2>
-                    <p><strong>Best Used In:</strong> Paddy, Cotton, Sugarcane, Corn, Some Vegetables</p>
-                    <p><strong>Defends Against:</strong> Different types of insects like ants, termites, aphids, beetles, cockroaches, and spiders.</p>
-                    <p><strong>Dose/Acre:</strong> Recommended dosage ranges from 200 ml to 400 ml per acre, depending on the crop type and disease severity.</p>
-                    <p><strong>Packaging Options:</strong> 250 ml, 500 ml, 1 ltr.</p>
-                </div>
-                <div className="modal-image">
-                    <img src={productImg} alt="Bifenthrin Product" />
-                </div>
-            </div>
+const Modal = ({ product, onClose }) => {
+  const { name, image, description, price } = product;
+
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div 
+        className="modal-container"
+        onClick={e => e.stopPropagation()}  // prevent backdrop click
+      >
+        <div className="modal-content">
+          <div className="modal-text">
+            <h2>{name}</h2>
+            {/* You now get the full description here */}
+            <p><strong>Description:</strong> {description}</p>
+            <p><strong>Price:</strong> {price}</p>
+          </div>
+          <div className="modal-image">
+            {image && <img src={image} alt={name} />}
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
+
+export default Modal;

@@ -6,31 +6,31 @@
         {
           "name": "SATLUJ",
           "image": "../assets/Product/Satluj (fertilizer).jpg",
-          "description": "Composition: Ferrous Sulphate(Fe)...",
+          "description": "Composition: Ferrous Sulphate (Fe). SATLUJ is a highly effective fertilizer for treating iron deficiencies in plants, particularly those with chlorosis. It helps improve photosynthesis and promotes healthy leaf growth, making it ideal for crops like paddy and vegetables. Regular use enhances soil fertility and crop yield, ensuring healthier and more robust plants.",
           "price": "₹ 1699"
         },
         {
           "name": "BLACK HORSE",
           "image": "../assets/Product/Black-horse ( fertilizer).jpg",
-          "description": "Organic fertilizer blended ...",
+          "description": "Organic fertilizer blended with essential macro and micronutrients. BLACK HORSE provides long-term soil enrichment through natural minerals, improving the texture and water retention of the soil. It is ideal for organic farming, offering a sustainable way to boost soil health, ensuring improved crop growth, and preventing soil erosion.",
           "price": "₹ 1699"
         },
         {
           "name": "ROOT RAJA",
           "image": "../assets/Product/Root-Raja ( Fertilizer).jpg",
-          "description": "Mycorrhiza-based formula that ...",
+          "description": "Mycorrhiza-based formula that enhances root development. ROOT RAJA strengthens the plant’s root system by promoting better nutrient absorption. It reduces the need for chemical fertilizers by fostering a natural symbiosis between roots and beneficial fungi, ultimately improving plant health and productivity. It's ideal for high-demand crops like fruits and vegetables.",
           "price": "₹ 1699"
         },
         {
           "name": "GREEN FORCE",
           "image": "../assets/Product/Green-Force.jpg",
-          "description": "High NPK content fertilizer ...",
+          "description": "High NPK content fertilizer with a balanced mix of nitrogen (N), phosphorus (P), and potassium (K). GREEN FORCE is a fast-acting solution for boosting overall plant growth, improving flower and fruit production, and promoting strong root systems. It is best suited for agricultural crops and gardens that need rapid growth enhancement.",
           "price": "₹ 1899"
         },
         {
           "name": "BIO-GRO",
           "image": "../assets/Product/Bio-Gro.jpg",
-          "description": "Bio-enriched granular fertilizer...",
+          "description": "Bio-enriched granular fertilizer formulated to support soil microorganisms. BIO-GRO improves soil structure, enhances microbial activity, and promotes the natural fertility of the soil. Ideal for crops that require sustained nutrition over a long period, it encourages plant health, resistance to pests, and an increase in organic matter in the soil.",
           "price": "₹ 1499"
         }
       ]
@@ -41,25 +41,25 @@
         {
           "name": "DUMBELL",
           "image": "../assets/Product/Dumbell ( fungicides).jpg",
-          "description": "Azoxystrobin & Difenoconazole blend ...",
+          "description": "Azoxystrobin & Difenoconazole blend fungicide. DUMBELL provides broad-spectrum protection against various fungal diseases, including rust, powdery mildew, and blight. It works by inhibiting fungal cell respiration and growth, preventing disease spread. Ideal for high-value crops like fruits and vegetables, it ensures better crop quality and higher yields.",
           "price": "₹ 1699"
         },
         {
           "name": "SPEXS",
           "image": "../assets/Product/Spexs (fungicides).jpg",
-          "description": "Controls wide spectrum ...",
+          "description": "SPEXS is a systemic fungicide that controls a wide spectrum of fungal infections. It is effective against diseases like downy mildew, anthracnose, and various blights. By absorbing into the plant’s vascular system, it offers long-lasting protection and is suitable for use in both field and greenhouse settings.",
           "price": "₹ 1699"
         },
         {
           "name": "GUARD-X",
           "image": "../assets/Product/Guard-X.jpg",
-          "description": "Prevents powdery mildew ...",
+          "description": "GUARD-X is designed to prevent powdery mildew and other fungal diseases in crops. It acts as a protective barrier, preventing fungal spores from infecting plants and ensuring healthier, disease-free growth. It's ideal for crops that are particularly susceptible to fungal infections like grapes and cucumbers.",
           "price": "₹ 1399"
         },
         {
           "name": "FUNGIKILL",
           "image": "../assets/Product/Fungikill.jpg",
-          "description": "Broad-spectrum systemic ...",
+          "description": "Broad-spectrum systemic fungicide effective against various plant diseases. FUNGIKILL prevents and controls rust, leaf spot, and other major fungal infections, ensuring robust plant growth and optimal crop yield. This fungicide is especially useful in preventing fungal outbreaks during high humidity seasons.",
           "price": "₹ 1599"
         }
       ]
@@ -70,37 +70,37 @@
         {
           "name": "FOX",
           "image": "../assets/Product/FOX (insecticides).jpg",
-          "description": "Fipronil 0.6% GR for soil ...",
+          "description": "Fipronil 0.6% GR for soil treatment. FOX is highly effective in controlling a range of soil-borne insect pests like termites, ants, and grubs. It helps protect plants from root damage and ensures a healthy root system. The slow-release formula ensures long-term protection, preventing pest infestation during the growing season.",
           "price": "₹ 1699"
         },
         {
           "name": "SOMA",
           "image": "../assets/Product/Soma ( insecticides).jpg",
-          "description": "Effective against stem ...",
+          "description": "SOMA is an insecticide that works effectively against stem borers and other pest species. It has systemic properties, meaning it enters the plant’s vascular system to protect it from pests over a prolonged period. Ideal for cereal crops like rice, wheat, and corn, it provides reliable protection.",
           "price": "₹ 1699"
         },
         {
           "name": "EXAM-PRO",
           "image": "../assets/Product/Exam-pro (insecticides).jpg",
-          "description": "Systemic seed treatment ...",
+          "description": "Systemic seed treatment for controlling pests at the early stages. EXAM-PRO offers protection to seeds from pest attacks, reducing the risk of seedling loss. It helps in managing pests like aphids, termites, and whiteflies, promoting healthier plant growth right from germination.",
           "price": "₹ 1699"
         },
         {
           "name": "BLENDER",
           "image": "../assets/Product/Blender ( insecticides).jpg",
-          "description": "Bifenthrin-based contact insecticide ...",
+          "description": "Bifenthrin-based contact insecticide that targets a wide range of insect pests, including beetles, cockroaches, and ants. BLENDER is effective in both preventive and curative treatments, ensuring quick knockdown and long-lasting protection for crops. It's a go-to solution for pests that thrive in humid environments.",
           "price": "₹ 1699"
         },
         {
           "name": "RAIDER",
           "image": "../assets/Product/Raider.jpg",
-          "description": "Kills chewing and sucking pests ...",
+          "description": "Kills chewing and sucking pests on crops, providing fast-acting results. RAIDER is designed to protect plants from pest damage by targeting insects like aphids, whiteflies, and caterpillars. It is ideal for use in high-infestation areas, offering effective pest management for both field and greenhouse environments.",
           "price": "₹ 1799"
         },
         {
           "name": "STORM-X",
           "image": "../assets/Product/Storm-X.jpg",
-          "description": "Fast knockdown formula for ...",
+          "description": "Storm-X is a contact insecticide with a fast knockdown formula. It is designed to tackle pests like thrips, whiteflies, and mites, ensuring rapid pest control. Ideal for crops that are highly sensitive to pest damage, it ensures a quick response and prevents further infestations.",
           "price": "₹ 1599"
         }
       ]
@@ -111,28 +111,26 @@
         {
           "name": "KIWI",
           "image": "../assets/Product/KIWI ( plant growth).jpg",
-          "description": "Seaweed-based growth enhancer for ...",
+          "description": "Seaweed-based growth enhancer that stimulates the natural growth processes of plants. KIWI promotes cell division and elongation, helping plants to grow faster and stronger. It also improves resistance to environmental stressors like drought and frost, making it suitable for a wide range of crops.",
           "price": "₹ 1699"
         },
         {
           "name": "BOOSTER",
           "image": "../assets/Product/Booster.jpg",
-          "description": "Improves crop metabolism ...",
+          "description": "BOOSTER enhances crop metabolism and supports overall plant health. It helps plants adapt to stress conditions by improving their photosynthetic capacity. Ideal for crops in the flowering and fruiting stage, BOOSTER increases both the yield and quality of the produce.",
           "price": "₹ 1499"
         },
         {
           "name": "ZESTO",
           "image": "../assets/Product/Zesto.jpg",
-          "description": "Activates enzymes and improves photosynthesis ...",
+          "description": "ZESTO activates enzymes and enhances photosynthesis, making it an essential product for improving crop growth and development. It also increases plant resistance to diseases and pests by boosting their natural defense mechanisms, leading to healthier crops.",
           "price": "₹ 1399"
         }
       ]
     },
     {
       "name": "Herbicides",
-      "products": [
-       
-      ]
+      "products": []
     }
   ]
 }
