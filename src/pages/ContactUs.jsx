@@ -39,15 +39,15 @@ const ContactUs = () => {
             Get in touch with <span className="us">us</span>
           </div>
           <div className="contact-options">
-            <img src={PhoneImage} className="icon-img" alt="Phone Icon" />
+            <img src={PhoneImage} className="icon-img-c" alt="Phone Icon" />
             <span className="icon-text">+91 98765 43210</span>
           </div>
           <div className="contact-options">
-            <img src={gmailImage} className="icon-img" alt="Email Icon" />
+            <img src={gmailImage} className="icon-img-c" alt="Email Icon" />
             <span className="icon-text">wateragro@gmail.com</span>
           </div>
           <div className="contact-options">
-            <img src={wpImage} className="icon-img" alt="WhatsApp Icon" />
+            <img src={wpImage} className="icon-img-c" alt="WhatsApp Icon" />
             <span className="icon-text">+91 98900 43210</span>
           </div>
           <div className="cow-image-container">
