@@ -11,6 +11,7 @@ import FungicideIcon from '../assets/Fungicide-tab.svg';
 import HerbicideIcon from '../assets/Herbicide-tab.svg';
 import PlantGrowthIcon from '../assets/Plant-growth-promoter.svg';
 import FertilizerIcon from '../assets/Fertilizer-tab.svg';
+import SlideNotification from '../components/SlideNotification';
 
 // Import product data
 import productsData from '../product.json';
@@ -97,7 +98,10 @@ export const ProductPage = () => {
     <>
       {/* Mobile navigation */}
       <MobileNavigation />
-      
+      <SlideNotification 
+        message="Click the products to view more details." 
+        duration={3000}
+      />
       <div className="product-page-container">
         {/* Search Bar */}
         <SearchBar onSearch={handleSearch} />
