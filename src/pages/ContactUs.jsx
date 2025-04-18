@@ -4,7 +4,6 @@ import "../styles/pages/ContactUs.css";
 import PhoneImage from "../assets/phone.png";
 import gmailImage from "../assets/gmail-icon.png";
 import wpImage from "../assets/wp-icon.png";
-import locationImage from "../assets/location.png";
 import cowCall from "../assets/cow-calling.png";
 import TransparentNavbar from "../components/Transparent";
 import MobileNavigation from "../components/MobileNavigation";
