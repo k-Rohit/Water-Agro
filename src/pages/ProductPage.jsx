@@ -22,6 +22,7 @@ export const ProductPage = () => {
   const [enrichedProducts, setEnrichedProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   
+
   const productImages = import.meta.glob('../assets/Product/*.{png,jpg,jpeg,gif,svg}', { eager: true });
   
   // Helper function to get image URL
