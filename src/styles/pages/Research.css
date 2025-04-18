@@ -1,130 +1,239 @@
 .research-container {
-    width: 100vw;
-    background-color: #E9E8E4;
-    font-family: 'Poppins', sans-serif;
-    padding-bottom: 60px;
-    position: relative;
-  }
-  
-  .image-container-research {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .bg-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block; /* prevents small gaps due to inline spacing */
-  }
-  .headline {
-    padding-top: 20px;
-    padding-left: 180px;
-    line-height: 0.9;
+  width: 100vw;
+  background-color: #E9E8E4;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 60px;
+  position: relative;
+}
 
-  }
-  
-  .headline h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  
-  .green {
-    color: #7BAA5D;
-  }
-  
-  .info-boxes {
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    gap: 110px;
+.image-container-research {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-  }
+.bg-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block; /* prevents small gaps due to inline spacing */
+}
+.headline {
+  padding-top: 20px;
+  padding-left: 180px;
+  line-height: 0.9;
+}
 
-  .headline-info-box-container {
-    width: 100%;
-    background-color: #E0DFDB;
-    margin-bottom:  50px;
-  }
-  
-  .info-box {
-    padding: 20px;
-    width: 300px;
-    text-align: justify;
-    word-spacing: 0.9;
-  }
-  
-  .icon-img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-bottom: 10px;
-  }
-  
+.headline h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.green {
+  color: #7BAA5D;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 110px;
+}
+
+.headline-info-box-container {
+  width: 100%;
+  background-color: #E0DFDB;
+  margin-bottom: 50px;
+}
+
+.info-box {
+  padding: 20px;
+  width: 300px;
+  text-align: justify;
+  word-spacing: 0.9;
+}
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.researcher-cards {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 180px;
+  padding-right: 120px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #e2e2e2;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-direction: row;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  min-width: 160px;
+}
+
+.card-text-div {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.card-text {
+  text-align: justify;
+  margin: 0;
+}
+
+.name-spec {
+  line-height: 1.2;
+  padding-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.name-spec h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.name-spec p {
+  margin: 0;
+}
+
+.researcher-cards .icon-img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.vertical-ri-image {
+  position: absolute;
+  left: 0;
+  top: 650px;
+  height: 300px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+@media(max-width: 1200px) {
   .researcher-cards {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    padding-left: 180px;
-    padding-right: 120px;
-    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
   }
-  
-  .card {
-    background-color: #e2e2e2;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    gap: 1px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
+}
 
-  .card-header{
-    margin-right: 50px;
-    display: flex;
+@media(max-width: 1024px) {
+  .headline {
+    padding-left: 20px;
+  }
+  .info-boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .researcher-cards {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
+  .card {
+    width: 90%;
+  }
+  .vertical-ri-image {
+    top: 500px;
+    height: 200px;
+  }
+}
+
+@media(max-width: 768px) {
+  .headline {
+    padding-left: 10px;
+  }
+  .researcher-cards .icon-img {
+    width: 120px;
+    height: 120px;
+  }
+  .vertical-ri-image {
+    top: 400px;
+    height: 150px;
+  }
+  .card-header {
+    min-width: 120px;
+  }
+}
+
+@media(max-width: 600px) {
+  .card {
     flex-direction: column;
     align-items: center;
   }
-  
-
-  .card > p {
-    padding-left: 50px;
-    overflow-wrap: break-word;
-    word-break: break-word; /* optional: breaks long words */
+  .card-header {
+    width: 100%;
+    margin-bottom: 15px;
   }
-
-  .researcher-cards  .icon-img{
-    width: 160px;
-    height: 160px;
+  .card-text-div {
+    width: 100%;
   }
+  .name-spec {
+    padding-bottom: 10px;
+  }
+}
 
-  .card-text{
+@media(max-width: 480px) {
+  .headline h1 {
+    padding-left: 10px;
+    font-size: 30px;
     text-align: justify;
   }
-
-  .card-text-div{
-    margin-left: -20px;
-  }
-
-  .name-spec {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 0.7;
-    padding-bottom: 30px;
-  }
-
   .vertical-ri-image {
-    position: absolute;
-    left: 0;
-    top: 650px; /* Adjust this to vertically place it between headline and cards */
-    height: 300px; /* or whatever height suits your design */
-    z-index: 1;
-    opacity: 0.5; /* Optional: make it light like a watermark */
+    top: 1580px;
+    height: 100px;
   }
-  
+  .researcher-cards .icon-img {
+    width: 100px;
+    height: 100px;
+  }
+  .name-spec h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 320px) {
+  .headline {
+    padding-left: 5px;
+  }
+  .vertical-ri-image {
+    top: 200px;
+    height: 80px;
+  }
+  .card {
+    padding: 15px;
+  }
+  .researcher-cards .icon-img {
+    width: 80px;
+    height: 80px;
+  }
+}
