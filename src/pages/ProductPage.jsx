@@ -6,11 +6,11 @@ import MobileNavigation from '../components/MobileNavigation';
 import SearchBar from '../components/SearchBar';
 
 // Import category icons
-import InsecticideIcon from '../assets/Insecticides.svg';
-import FungicideIcon from '../assets/Fungicides.svg';
-import HerbicideIcon from '../assets/Herbicides.svg';
-import PlantGrowthIcon from '../assets/PlantGrowth.svg';
-import FertilizerIcon from '../assets/Fertilizer.svg';
+import InsecticideIcon from '../assets/Insecticide-tab.svg';
+import FungicideIcon from '../assets/Fungicide-tab.svg';
+import HerbicideIcon from '../assets/Herbicide-tab.svg';
+import PlantGrowthIcon from '../assets/Plant-growth-promoter.svg';
+import FertilizerIcon from '../assets/Fertilizer-tab.svg';
 
 // Import product data
 import productsData from '../product.json';
@@ -24,7 +24,6 @@ export const ProductPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [searchResults, setSearchResults] = useState(null);
   
-  // Product images dynamic import
   const productImages = import.meta.glob('../assets/Product/*.{png,jpg,jpeg,gif,svg}', { eager: true });
   
   // Helper function to get image URL
@@ -50,7 +49,7 @@ export const ProductPage = () => {
     { icon: InsecticideIcon, name: "Insecticides", alt: "Insecticides" },
     { icon: FungicideIcon, name: "Fungicides", alt: "Fungicides" },
     { icon: HerbicideIcon, name: "Herbicides", alt: "Herbicides" },
-    { icon: PlantGrowthIcon, name: "Plant Growth Regulators", alt: "Plant Growth Regulators", shortName: "Plant Growth" },
+    { icon: PlantGrowthIcon, name: "Plant Growth Regulators", alt: "Plant Growth Regulators" },
     { icon: FertilizerIcon, name: "Fertilizers", alt: "Fertilizers" }
   ];
   
@@ -75,7 +74,7 @@ export const ProductPage = () => {
     
     setIsLoading(false);
   }, [category]);
-
+  
   // Handle search results
   const handleSearch = (results) => {
     if (results) {
@@ -103,7 +102,7 @@ export const ProductPage = () => {
         {/* Search Bar */}
         <SearchBar onSearch={handleSearch} />
         
-        {/* Only show category icons when not searching */}
+        {/* Category icons with labels */}
         {!isSearchActive && (
           <div className="category-icons">
             {categoryIcons.map((cat, index) => (
@@ -112,12 +111,8 @@ export const ProductPage = () => {
                 className={`category-item ${category === cat.name ? 'active' : ''}`}
                 onClick={() => setCategory(cat.name)}
               >
-                <div className="category-icon-wrapper">
-                  <img src={cat.icon} alt={cat.alt} />
-                </div>
-                <span className="category-label">
-                  {cat.shortName || cat.name}
-                </span>
+                {/* Icon only, preserved from original code */}
+                <img src={cat.icon} alt={cat.alt} className="category-icon" />
               </div>
             ))}
           </div>
