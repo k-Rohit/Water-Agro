@@ -84,9 +84,58 @@ img {
   margin-bottom: -22px;
 }
 
+.card-div {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-bottom: 40px;
+  font-family: 'Poppins';
+}
+
+.card-right-div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.icon-image{
+  width: 300px;
+  height: auto;
+}
+
+.card-left-div{
+  padding-right: 100px;
+}
+
+.card-right-heading{
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+
+.card-right-text{
+  text-align: justify;
+}
+
+.card-div-2 {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 240px;
+  padding-right: 240px;
+  font-family: 'Poppins';
+  background-color: #E0DFDB;
+  padding-bottom: 40px;
+}
+
 /* Responsive styles for tablet and mobile */
 @media (max-width: 1024px) {
-  /* Hide the desktop navbar on smaller screens */
+  Hide the desktop navbar on smaller screens
   nav, .desktop-navbar {
     display: none ;
   }
