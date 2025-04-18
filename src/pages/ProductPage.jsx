@@ -3,29 +3,31 @@ import ProductCard from '../components/ProductCard';
 import Modal from '../components/Modal'; // Import Modal
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
-import productsData from '../product.json';
 
-import InsecticideIcon from '../assets/Insecticides.svg';
-import FungicideIcon     from '../assets/Fungicides.svg';
-import HerbicideIcon     from '../assets/Herbicides.svg';
-import PlantGrowthIcon   from '../assets/PlantGrowth.svg';
-import FertilizerIcon    from '../assets/Fertilizer.svg';
+import SearchBar from '../components/SearchBar';
+
+// Import category icons
+import InsecticideIcon from '../assets/Insecticide-tab.svg';
+import FungicideIcon from '../assets/Fungicide-tab.svg';
+import HerbicideIcon from '../assets/Herbicide-tab.svg';
+import PlantGrowthIcon from '../assets/Plant-growth-promoter.svg';
+import FertilizerIcon from '../assets/Fertilizer-tab.svg';
+
 
 import '../styles/pages/ProductPage.css';
 
 export const ProductPage = () => {
-  const [category, setCategory]        = useState("Insecticides");
-  const [enrichedProducts, setEnriched] = useState([]);
-  const [isLoading, setIsLoading]      = useState(true);
-  const [selectedProduct, setSelected] = useState(null); // For Modal
 
-  // Glob import for images
-  const productImages = import.meta.glob(
-    '../assets/Product/*.{png,jpg,jpeg,gif,svg}', 
-    { eager: true }
-  );
+  const [category, setCategory] = useState("Insecticides");
+  const [enrichedProducts, setEnrichedProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [searchResults, setSearchResults] = useState(null);
+  
+  const productImages = import.meta.glob('../assets/Product/*.{png,jpg,jpeg,gif,svg}', { eager: true });
+  
+  // Helper function to get image URL
 
-  // Helper to find actual image URL
+
   const getImageUrl = (filename) => {
     if (!filename) return null;
     const name = filename.split('/').pop();
@@ -40,7 +42,7 @@ export const ProductPage = () => {
     { icon: InsecticideIcon, name: "Insecticides", alt: "Insecticides" },
     { icon: FungicideIcon, name: "Fungicides", alt: "Fungicides" },
     { icon: HerbicideIcon, name: "Herbicides", alt: "Herbicides" },
-    { icon: PlantGrowthIcon, name: "Plant Growth Regulators", alt: "Plant Growth Regulators", shortName: "Plant Growth" },
+    { icon: PlantGrowthIcon, name: "Plant Growth Regulators", alt: "Plant Growth Regulators" },
     { icon: FertilizerIcon, name: "Fertilizers", alt: "Fertilizers" }
   ];
 
@@ -62,38 +64,57 @@ export const ProductPage = () => {
     setIsLoading(false);
   }, [category]);
 
-  const handleProductClick = (prodName) => {
-    for (let cat of productsData.categories) {
-      const found = cat.products.find(p => p.name === prodName);
-      if (found) {
-        setSelected({ ...found, image: getImageUrl(found.image) });
-        return;
-      }
+  
+  // Handle search results
+  const handleSearch = (results) => {
+    if (results) {
+      // Add image URLs to search results
+      const enrichedResults = results.map((prod) => {
+        const imageUrl = getImageUrl(prod.image);
+        return { ...prod, image: imageUrl };
+      });
+      setSearchResults(enrichedResults);
+    } else {
+      setSearchResults(null);
     }
   };
+
+  // Determine which products to display (search results or category products)
+  const displayProducts = searchResults || enrichedProducts;
+  const isSearchActive = searchResults !== null;
 
   return (
     <>
       <MobileNavigation />
 
       <div className="product-page-container">
+        {/* Search Bar */}
+        <SearchBar onSearch={handleSearch} />
+        
         {/* Category icons with labels */}
-        <div className="category-icons">
-          {categoryIcons.map((cat, index) => (
-            <div 
-              key={index} 
-              className={`category-item ${category === cat.name ? 'active' : ''}`}
-              onClick={() => setCategory(cat.name)}
-            >
-              <div className="category-icon-wrapper">
-                <img src={cat.icon} alt={cat.alt} />
+        {!isSearchActive && (
+          <div className="category-icons">
+            {categoryIcons.map((cat, index) => (
+              <div 
+                key={index} 
+                className={`category-item ${category === cat.name ? 'active' : ''}`}
+                onClick={() => setCategory(cat.name)}
+              >
+                {/* Icon only, preserved from original code */}
+                <img src={cat.icon} alt={cat.alt} className="category-icon" />
               </div>
-              <span className="category-label">
-                {cat.shortName || cat.name}
-              </span>
-            </div>
-          ))}
-        </div>
+
+            ))}
+          </div>
+        )}
+        
+        {/* Search results indicator with styled heading */}
+        {isSearchActive && (
+          <div className="search-results-header">
+            <h3>Search Results ({displayProducts.length} {displayProducts.length === 1 ? 'product' : 'products'} found)</h3>
+          </div>
+        )}
+        
 
         {/* Products grid */}
         {isLoading ? (
@@ -104,13 +125,21 @@ export const ProductPage = () => {
           </div>
         ) : (
           <div className="products-grid">
-            {enrichedProducts.map((prod, idx) => (
-              <ProductCard
-                key={idx}
-                product={prod}
-                onClick={() => handleProductClick(prod.name)}  // Pass product click handler
-              />
-            ))}
+
+            {displayProducts.length === 0 ? (
+              <div className="no-products-message">
+                <p>{isSearchActive ? "No products match your search" : "No products available in this category"}</p>
+              </div>
+            ) : (
+              displayProducts.map((product, index) => (
+                <ProductCard 
+                  key={index} 
+                  product={product} 
+                  showCategory={isSearchActive}
+                />
+              ))
+            )}
+
           </div>
         )}
       </div>
