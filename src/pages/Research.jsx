@@ -24,7 +24,6 @@ const Research = () => {
           <h1>Where <span className="green">Agriculture</span></h1>
           <h1>Meets Innovation</h1>
         </div>
-        
 
         <div className="info-boxes">
           <div className="info-box">
