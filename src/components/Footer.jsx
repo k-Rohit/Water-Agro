@@ -4,6 +4,7 @@ import FooterImage from '../assets/waves-1.svg';
 import InstaImage from '../assets/insta.svg'
 import LinkedInImage from '../assets/linkedin.svg'
 import WhatsAppImage from '../assets/whatsapp.svg'
+import FacebookImage from '../assets/facebook.svg'
 
 
 const Footer = () => {
@@ -41,6 +42,12 @@ const Footer = () => {
                                 className="social-link-image"
                                 alt="WhatsApp"
                                 onClick={() => handleClick("https://wa.me/918222900711")}
+                            />
+                            <img
+                                src={FacebookImage}
+                                className="social-link-image"
+                                alt="Facebook"
+                                onClick={() => handleClick("https://www.facebook.com/share/15xFzMrTpd/?mibextid=wwXIfr")}
                             />
                         </div>
                     </div>
