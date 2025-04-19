@@ -1,4 +1,90 @@
-/* Base styles */
+/* 🌾 Slogan drop box */
+.slogan-box {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    background-color: #FEB631;
+    color: #2D2D2D;
+    padding: 1rem 2rem;
+    border-radius: 0 0 18px 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    z-index: 2000;
+    text-align: center;
+    max-width: 90%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* When shown */
+  .slogan-box.show {
+    animation: slideDown 0.6s ease forwards, stayUp 3.4s ease forwards 0.6s, slideUp 0.6s ease forwards 4s;
+    pointer-events: auto;
+  }
+  
+  /* 🔽 Drop down */
+  @keyframes slideDown {
+    from {
+      transform: translateX(-50%) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-50%) translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  /* ⏸ Stay in place */
+  @keyframes stayUp {
+    from {
+      transform: translateX(-50%) translateY(0%);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-50%) translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  /* 🔼 Slide back up */
+  @keyframes slideUp {
+    from {
+      transform: translateX(-50%) translateY(0%);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-50%) translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+  /* 🐄 Cow bounce */
+  .cow-image img {
+    transition: transform 0.3s ease;
+  }
+  
+  .clicked-cow {
+    animation: cowBounce 0.4s ease;
+  }
+  
+  /* 🐮 Cow bounce keyframes */
+  @keyframes cowBounce {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(0.95) translateY(-5px);
+    }
+    60% {
+      transform: scale(1.05) translateY(3px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+
+
 .landingpage-container {
     height: 100vh;
     width: 100%;
@@ -32,13 +118,13 @@
 }
 
 .water {
-    margin-bottom: clamp(-1.5rem, -5vw, -7rem);
+    margin-bottom: clamp(-4rem, -6vw, -8rem);
 }
 
 .content-description {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(0.875rem, 2vw, 1.1rem);
-    margin-top: clamp(-2.5rem, -3vw, -1rem);
+    font-size: clamp(0.6rem, 1.8vw, 1rem);
+    margin-top: clamp(-3rem, -3vw, -1rem);
     text-align: justify;
     max-width: 90%;
 }

@@ -1,4 +1,3 @@
-
 .modal-backdrop {
   position: fixed;
   inset: 0;                   /* top:0; right:0; bottom:0; left:0 */
@@ -13,6 +12,8 @@
 .modal-container {
   width: 90%;
   max-width: 900px;
+  max-height: 90vh;  /* prevent modal from going off-screen */
+  overflow-y: auto;  /* allow scrolling if content is too tall */
 }
 
 /* put flex here, because its children are .modal-text + .modal-image */
@@ -48,7 +49,7 @@
   line-height: 1.4;
 }
 
-/* image is fixed‑size and won’t stretch */
+/* image is fixed‑size and won't stretch */
 .modal-image {
   flex: 0 0 auto;
   width: 180px;
@@ -59,4 +60,83 @@
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+  .modal-content {
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .modal-text h2 {
+    font-size: 22px;
+  }
+  
+  .modal-image {
+    width: 150px;
+  }
+}
+
+/* Responsive styles for mobile phones */
+@media (max-width: 480px) {
+  .modal-container {
+    width: 95%;
+    max-height: 85vh;
+  }
+  
+  .modal-content {
+    flex-direction: column-reverse; /* Image on top, text below */
+    padding: 16px;
+    gap: 12px;
+  }
+  
+  .modal-text h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .modal-text p {
+    margin-bottom: 8px;
+  }
+  .price{
+    font-size: 22px;
+    font-weight: regular;
+  }
+  .description{
+    font-size: 14px;
+  
+  }
+  
+  .modal-image {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .modal-image img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+  .modal-container {
+    width: 98%;
+  }
+  
+  .modal-content {
+    padding: 12px;
+  }
+  
+  .modal-text h2 {
+    font-size: 18px;
+  }
+  
+  .modal-text p {
+    font-size: 13px;
+  }
 }
