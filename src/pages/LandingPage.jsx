@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sapling from '../assets/sapling.png';
 import Logo from '../assets/logo.png';
 import Arrow from '../assets/right-arrow.png';
@@ -7,32 +7,60 @@ import '../styles/pages/LandingPage.css';
 import { Link } from 'react-router-dom';
 import MobileNavigation from '../components/MobileNavigation';
 import Footer from '../components/Footer';
+import SlideNotification from '../components/SlideNotification';
+
+const slogans = [
+  "Innovation at the Heart of Every Field",
+  "We stand by the farmers, season after season.",
+  "We don’t just follow change — we lead it.",
+  "We grow with those who grow for the world."
+];
 
 const LandingPage = () => {
+  const [sloganIndex, setSloganIndex] = useState(0);
+  const [showSlogan, setShowSlogan] = useState(false);
+  const [isCowClicked, setIsCowClicked] = useState(false);
+
+  const handleCowClick = () => {
+    setIsCowClicked(true);
+    setShowSlogan(true);
+
+    setTimeout(() => setIsCowClicked(false), 300);
+    setTimeout(() => setShowSlogan(false), 8000);
+
+    setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
+  };
+
   return (
     <>
+    
       <div className="landingpage-container">
+        
         {/* Fixed header containing logo */}
         <div className="landingpage-header">
           <img src={Logo} className="logo" alt="Water Agro Logo" />
         </div>
 
-        {/* Using the dynamic MobileNavigation component */}
         <MobileNavigation />
+        {/* Slogan box that drops down */}
+        <div className={`slogan-box ${showSlogan ? 'show' : ''}`}>
+          {slogans[sloganIndex]}
+        </div>
 
-        {/* Scrollable content area */}
+
         <div className="landingpage-mid">
           <div className="content">
             <div className='comp-name'>
-            <h1 className="water">Water</h1>
-            <h1 className="agro-life">AgroLife</h1>
+              <h1 className="water">Water</h1>
+              <h1 className="agro-life">AgroLife</h1>
             </div>
-            
+
             <div className="content-description">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ex modi minus earum nam, eius recusandae iste numquam voluptatem, alias rem illo nihil id hic, expedita et corrupti tempore odit!
               </p>
             </div>
+
             <div className="content-buttons">
               <Link to='/products' className="view-button">View Products</Link>
               <Link to='/products' className="arrow">
@@ -53,13 +81,21 @@ const LandingPage = () => {
               <Link to="/research" className="tabs-ri tab-button">R&I</Link>
               <Link to="/contact-us" className="tabs-contactus tab-button">Contact Us</Link>
             </div>
-            <div className="cow-image">
-              <img src={cowImage} alt="Cow" />
+            <div className="cow-image" onClick={handleCowClick}>
+              <img
+                src={cowImage}
+                alt="Cow"
+                className={isCowClicked ? 'clicked-cow' : ''}
+              />
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <SlideNotification 
+          message="Click the cow to know more!" 
+          duration={4000}
+        />
+      <Footer />
     </>
   );
 };
