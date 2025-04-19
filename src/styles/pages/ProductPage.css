@@ -88,6 +88,12 @@
     opacity: 0.7;
     margin-top: 30px;
     margin-bottom: 20px;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .category-item:hover .category-icon {
@@ -386,6 +392,9 @@
         height: 40px;
         margin-top: 10px;
         margin-bottom: 5px;
+        /* Maintain crisp edges on small screens */
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
     }
     
     /* .category-icon-wrapper {
