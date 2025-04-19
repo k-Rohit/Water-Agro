@@ -283,7 +283,9 @@
     max-width: 100%;
     height: auto;
 }
-
+.cow-image-mobile {
+    display: none;
+  }
 /* Tablet and small laptop styles */
 @media (max-width: 1024px) {
     /* Make header fixed for tablet and mobile */
@@ -339,6 +341,64 @@
     .div-right {
         display: none;
     }
+    .cow-image-mobile {
+        display: none;
+      }
+    
+}
+/* @media (max-width: 768px) {
+    .cow-image-mobile {
+        background-color: #E9E8E4;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        margin-top: -200px;
+      }
+    
+      .cow-image-mobile img {
+        width: 400px;
+        height: auto;
+        margin-top: -300px;
+        max-width: 300px;
+        margin-left: 230px;
+        height: auto;
+        z-index: 1;
+      }
+  } */
+
+  @media (max-width: 768px) {
+  .sapling-cow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .sapling-cow-wrapper .sapling-image {
+    width: 100px;
+    height: auto;
+  }
+
+  .sapling-cow-wrapper .cow-image-mobile img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Hide the desktop version of cow image */
+  .div-right .cow-image {
+    display: none;
+  }
+
+  /* Ensure cow image on mobile is only shown here */
+  /* .cow-image-mobile {
+    display: flex;
+    align-items: flex-end;
+  } */
 }
 
 /* Small phones and portrait-oriented devices */
@@ -346,9 +406,18 @@
     .landingpage-container {
         padding-bottom: 60px;
     }
+    .logo {
+        max-width: 80px;
+        margin-left: 50px;
+        margin-top: 10px;
+        z-index: 999;
+
+    }
+    
     
     .landingpage-header {
         height: 50px;
+
     }
     
     .landingpage-mid {
