@@ -184,7 +184,7 @@
   right: -45px; /* Adjust similarly */
 }
 .mobile-header-research{
-  display: flex;
+  display: none;
 }
 
 
