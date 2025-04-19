@@ -176,6 +176,9 @@ text-decoration: none;
     transform: translateX(-50%);
     z-index: 11;
   }
+  .mobile-header-contact {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
