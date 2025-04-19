@@ -1,0 +1,138 @@
+{
+  "categories": [
+    {
+      "name": "Fertilizers",
+      "products": [
+        {
+          "name": "SATLUJ",
+          "image": "../assets/Product/Satluj (fertilizer).jpg",
+          "description": "Satluj is a high-purity micronutrient fertilizer with 19% Ferrous Sulphate (Fe), specially formulated to address iron deficiencies in crops. Its dry and moisture-resistant nature ensures long shelf life and effective absorption.",
+          "Technical Name": "Ferrous Sulphate (Fe) – 19%",
+          "Best Used In": "Wheat, Paddy, Maize, Barley, Gram, Lentil, Moong, Urd, Mustard, Groundnut, Soybean, Sunflower, Potato, Tomato, Brinjal, Okra, Cabbage, Cauliflower, Onion, Garlic, Peas, Citrus, Pomegranate, Banana, Grapes, Apple, Guava, Papaya, Cotton, Sugarcane, Tea, Coffee, Flowers, Medicinal Plants, Aromatic Plants, Turf, Lawns",
+          "Defends Against": "Iron deficiency in plants; enhances chlorophyll formation and plant vigor",
+          "Dose/Acre": "10–20 kg/acre",
+          "Packaging Options:": "10 kg",
+          "price": "₹ 1699"
+        },
+        {
+          "name": "BLACK HORSE",
+          "image": "../assets/Product/Black-horse ( fertilizer).jpg",
+          "description": "Black Horse combines organic fertilizers with essential minerals to enrich soil fertility, improve plant immunity, and support vigorous root and shoot growth. It is 100% eco-friendly and enhances both yield and quality.",
+          "Technical Name": "Organic Fertilizer & Minerals",
+          "Best Used In": "Wheat, Paddy, Maize, Barley, Gram, Lentil, Soybean, Mustard, Groundnut, Cotton, Sugarcane, Potato, Tomato, Brinjal, Chili, Okra, Onion, Garlic, Cabbage, Cauliflower, Peas, Apple, Grapes, Pomegranate, Mango, Guava, Papaya, Citrus, Strawberry, Tea, Coffee, Flowers, Medicinal Plants",
+          "Defends Against": "Abiotic stress like drought, salinity, and temperature fluctuations; strengthens immunity and soil health",
+          "Dose/Acre": "200 gm – 1 kg/acre",
+          "Packaging Options:": "500 gm, 1 kg",
+          "price": "₹ 1699"
+        },
+        {
+          "name": "ROOT RAJA",
+          "image": "../assets/Product/Root-Raja ( Fertilizer).jpg",
+          "description": "Root Raja is a granular fertilizer based on mycorrhiza that enhances nutrient absorption, promotes drought resistance, and supports sustainable plant growth by improving soil microbial activity.",
+          "Technical Name": "Mycorrhiza",
+          "Best Used In": "Grapes, Wheat, Okra, Cotton, Guava, Tea, Tomato, Medicinal Plants, Onion, Paddy, Apple, Banana, Barley, Brinjal, Flowers, Sugarcane, Strawberry, Ginger, Papaya, Sugarbeet, Cabbage, Cauliflower, Sorghum, Capsicum, Coffee, Citrus, Oil Seeds, Maize, Lentil, Gram, Peas, Mung, Pomegranate, Beans",
+          "Defends Against": "Nutrient deficiency, poor soil health, and drought stress",
+          "Dose/Acre": "4–8 kg/acre",
+          "Packaging Options:": "4 kg",
+          "price": "₹ 599"
+        }
+      ]
+    },
+    {
+      "name": "Fungicides",
+      "products": [
+        {
+          "name": "DUMBELL",
+          "image": "../assets/Product/Dumbell ( fungicides).jpg",
+          "description": "A broad-spectrum fungicide combining Azoxystrobin and Difenoconazole, Dumbell is effective in controlling various fungal diseases. It works systemically to provide preventive and curative action, ensuring crop protection during critical growth stages.",
+          "Technical Name": "Azoxystrobin 18.2% + Difenoconazole 11.4% SC",
+          "Best Used In": "Paddy, Tomato, Chilli, Wheat, Mango, Pea",
+          "Defends Against": "Leaf spots, Blights, Powdery mildew, Rusts, Downy mildew, Anthracnose, Early and late blight",
+          "Dose/Acre": "200 ml/acre",
+          "Packaging Options:": "250 ml, 500 ml, 1 ltr",
+          "price": "₹ 1399"
+        },
+        {
+          "name": "SPEXS",
+          "image": "../assets/Product/Spexs (fungicides).jpg",
+          "description": "Spexs is a potent fungicide blend of Azoxystrobin and Tebuconazole offering strong systemic and translaminar action. It protects crops against a wide range of fungal infections, improving plant health and yield quality.",
+          "Technical Name": "Azoxystrobin 11% + Tebuconazole 18.3% w/w SC",
+          "Best Used In": "Onion, Rice, Wheat, Potato, Chilli, Tomato",
+          "Defends Against": "Yellow Rust, Sheath Blight, Early Blight, Late Blight, Anthracnose, Alternaria Leaf Spot, Scab (in apples), Downy Mildew, Powdery Mildew, Fruit Rot, Die Back",
+          "Dose/Acre": "300 ml/acre",
+          "Packaging Options:": "250 ml, 500 ml, 1 ltr",
+          "price": "₹ 1499"
+        }
+      ]
+    },
+    {
+      "name": "Insecticides",
+      "products": [
+        {
+          "name": "FOX",
+          "image": "../assets/Product/FOX (insecticides).jpg",
+          "description": "FOX is a granular insecticide containing Fipronil, designed to effectively manage major pests in paddy, wheat, and sugarcane crops. It provides long-lasting protection against damaging insects by acting through contact and ingestion.",
+          "Technical Name": "FIPRONIL 0.6% GR",
+          "Best Used In": "Paddy, Sugarcane, Wheat",
+          "Defends Against": "Stem Borer, Leaf folder, Twemite, Early Shoot Borer",
+          "Dose/Acre": "4 kg/acre",
+          "Packaging Options:": "4 kg",
+          "price": "₹ 1149"
+        },
+        {
+          "name": "SOMA",
+          "image": "../assets/Product/Soma ( insecticides).jpg",
+          "description": "SOMA is a granular formulation of Cartap Hydrochloride that acts systemically and through ingestion, providing targeted control of leaf folders, stem borers, and whorl maggots in paddy. It is effective during early crop stages.",
+          "Technical Name": "Cartap Hydrochloride 4% GR",
+          "Best Used In": "Paddy",
+          "Defends Against": "Leaf folder, Stem borer, Whorl maggot",
+          "Dose/Acre": "7.5 – 10 kg/acre",
+          "Packaging Options:": "5 kg",
+          "price": "₹ 899"
+        },
+        {
+          "name": "EXAM-PRO",
+          "image": "../assets/Product/Exam-pro (insecticides).jpg",
+          "description": "EXAM-PRO is a seed treatment and foliar insecticide formulated with Thiamethoxam. It offers systemic protection against a wide spectrum of sucking and soil-borne pests. Ideal for early-stage protection across multiple crops.",
+          "Technical Name": "Thiamethoxam 30% FS",
+          "Best Used In": "Paddy, Wheat, Cotton, Vegetables, Maize, Sunflower",
+          "Defends Against": "Aphids, Whiteflies, Jassids, Shoot Fly, Termites, Thrips, Stem Fly",
+          "Dose/Acre": "Seed Treatment: 1.5 – 4 ml/kg seed; Foliar Spray: 100 ml/acre",
+          "Packaging Options:": "100 ml, 250 ml, 500 ml, 1 ltr",
+          "price": "₹ 649"
+        },
+        {
+          "name": "BLENDER",
+          "image": "../assets/Product/Blender ( insecticides).jpg",
+          "description": "BLENDER is a contact insecticide formulated with Bifenthrin, providing fast and effective control of a wide range of pests including termites, beetles, aphids, and more. It is versatile across cereals and vegetable crops.",
+          "Technical Name": "Bifenthrin 10% EC",
+          "Best Used In": "Paddy, Cotton, Sugarcane, Corn, Some Vegetables",
+          "Defends Against": "Ants, Termites, Aphids, Beetles, Cockroaches, Spiders",
+          "Dose/Acre": "200 – 400 ml/acre",
+          "Packaging Options:": "250 ml, 500 ml, 1 ltr",
+          "price": "₹ 799"
+        }
+      ]
+    },
+    {
+      "name": "Plant Growth Regulators",
+      "products": [
+        {
+          "name": "KIWI",
+          "image": "../assets/Product/KIWI ( plant growth).jpg",
+          "description": "KIWI is a scientifically crafted organic plant growth enhancer made from Australian seaweed extract (Ascophyllum Nodosum), potassium humate, amino acids, and vital micronutrients. It supports robust vegetative growth, enhances immunity, improves flower and fruit retention, and ultimately boosts both yield and quality across all crop types.",
+          "Technical Name": "Organic Component Derived From Ascophyllum Nodosum Seaweed Extract, Potassium Humate, Amino Acids & Micronutrients",
+          "Best Used In": "Vegetables, Fruits, Cereals, Pulses, and Plantation Crops",
+          "Defends Against": "Biotic and abiotic stress (like drought, disease, and poor soil conditions); helps reduce flower drop and improves overall plant vigor",
+          "Dose/Acre": "650–800 ml/acre; Foliar Spray – Vegetative Stage: 1–1.5 ml/litre, Flowering Stage: 2–3 ml/litre, Fruiting Stage: 3–4 ml/litre",
+          "Packaging Options:": "250 ml, 500 ml, 1 ltr",
+          "price": "₹ 1699"
+        }
+      ]
+    },
+    {
+      "name": "Herbicides",
+      "products": []
+    }
+  ]
+}

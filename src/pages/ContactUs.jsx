@@ -9,8 +9,22 @@ import TransparentNavbar from "../components/Transparent";
 import MobileNavigation from "../components/MobileNavigation";
 
 const ContactUs = () => {
+
+  const sendMessage = () => {
+    const name = prompt("Tell us your name");
+    const message = prompt("What do you want to tell us?");
+  
+    if (name && message) {
+      const fullMessage = `⁠Hi, ${name}. ${message}`;
+      const encodedMessage = encodeURIComponent(fullMessage);
+      const whatsappURL = `⁠https://wa.me/9340316706?text=${encodedMessage}`;
+      window.open(whatsappURL, '_blank');
+    } else {
+      alert("Please provide both name and message.");
+    }
+  };
+
   useEffect(() => {
-    // Disable scrolling
     document.body.style.overflow = "hidden";
 
     return () => {
@@ -40,16 +54,22 @@ const ContactUs = () => {
           </div>
           <div className="contact-options">
             <img src={PhoneImage} className="icon-img-c" alt="Phone Icon" />
-            <span className="icon-text">+91 98765 43210</span>
+            <span className="icon-text">+91 82229-00711</span>
           </div>
           <div className="contact-options">
-            <img src={gmailImage} className="icon-img-c" alt="Email Icon" />
-            <span className="icon-text">wateragro@gmail.com</span>
+          <img src={gmailImage} className="icon-img-c" alt="Email Icon" />
+          <a href="mailto:wateragrolife@gmail.com" className="email-text">  <span className="icon-text">wateragrolife@gmail.com</span></a>
           </div>
           <div className="contact-options">
             <img src={wpImage} className="icon-img-c" alt="WhatsApp Icon" />
-            <span className="icon-text">+91 98900 43210</span>
+            <a href="https://wa.me/918222900711"><span className="icon-text">+91 82229-00711</span></a>
           </div>
+          <div className="button-div">
+          <button className="message" onClick={sendMessage}>
+              Send us a message
+          </button>
+          </div>
+          
           <div className="cow-image-container">
             <img src={cowCall} className="cow-image" alt="Cow Calling" />
           </div>

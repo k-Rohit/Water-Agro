@@ -1,38 +1,53 @@
 import React from 'react';
 import '../styles/components/Footer.css';
 import FooterImage from '../assets/waves-1.svg';
-import { Link } from 'react-router-dom';
 import InstaImage from '../assets/insta.svg'
 import LinkedInImage from '../assets/linkedin.svg'
 import WhatsAppImage from '../assets/whatsapp.svg'
 
 
 const Footer = () => {
+
+    const handleClick = (url) => {
+        window.open(url, "_blank"); // Opens the link in a new tab
+    };
     return (
         <div className="footer-container">
             <div className="wave-container">
                 <img src={FooterImage} className="footer-image" alt="Footer background" />
                 <div className="footer-links">
                     <div className='address-container'>
-                        <a href="#">Address</a>
+                        <a>Address</a>
                         <div className='address'>
-                            245/6, Model Town Extension, Hisar, Haryana – 125001
+                            D-136, First Floor, Ganga Vihar, Gokul Puri, North East, Delhi, 110094
                         </div>
                     </div>
                     <div className='social-links-container'>
-                        <a href="#">Social Links</a>
+                        <a>Social Links</a>
                         <div className='image-container'>
-                            <img src={InstaImage} className='social-link-image' />
-                            <img src={LinkedInImage} className='social-link-image' />
-                            <img src={WhatsAppImage} className='social-link-image' />
+                            <img
+                                src={InstaImage}
+                                className="social-link-image"
+                                alt="Instagram"
+                                onClick={() => handleClick("https://www.instagram.com/water_agro_life?igsh=MWxyYWllbXUyeHN3aQ%3D%3D&utm_source=qr")}
+                            />
+                            <img
+                                src={LinkedInImage}
+                                className="social-link-image"
+                                alt="LinkedIn"
+                                onClick={() => handleClick("https://www.linkedin.com/company/water-agro-life-llp/")} />
+                            <img
+                                src={WhatsAppImage}
+                                className="social-link-image"
+                                alt="WhatsApp"
+                                onClick={() => handleClick("https://wa.me/918222900711")}
+                            />
                         </div>
                     </div>
                     <div className='contact-info-container'>
-                        <a href="#">Contact Info</a>
+                        <a>Contact Info</a>
                         <div className='phone-number-container'>
-                            <span className='phone'>+91 8765432109</span>
-                            <span className='phone'>+91 9123456780</span>
-                            <span className='phone'>+91 9876543210</span>
+                            <span className='phone'>+91 82229-00711</span>
                         </div>
                     </div>
                 </div>

@@ -79,16 +79,13 @@ import '../styles/pages/AboutUs.css';
 import Slideshow from '../components/Slideshow';
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation'; // Import MobileNavigation
-import MineralIcon from '../assets/mineral.png';
 import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png'
 
 export const AboutUs = () => {
     return (
-        <>
-            {/* <Navbar />  */}
-            
+        <>  
             <div className="aboutus-page">
                 <div className='aboutus-container'>
                     <div className='aboutus-heading'>
@@ -143,7 +140,6 @@ export const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-
                 <MobileNavigation />
             </div>
             <Footer />

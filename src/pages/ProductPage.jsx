@@ -4,9 +4,8 @@ import Modal from '../components/Modal';
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
 import SearchBar from '../components/SearchBar';
-import productsData from '../product.json';
-
-// Import category icons - using the path structure from your commented code
+// import productsData  from '../product.json';
+import productsData  from '../test.json'
 import InsecticideIcon from '../assets/Insecticide-tab.svg';
 import FungicideIcon from '../assets/Fungicide-tab.svg';
 import HerbicideIcon from '../assets/Herbicide-tab.svg';
@@ -51,7 +50,7 @@ export const ProductPage = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    const selectedCategory = productsData.categories.find(cat => cat.name === category);
+    const selectedCategory = productsData .categories.find(cat => cat.name === category);
 
     if (selectedCategory) {
       const enriched = selectedCategory.products.map((prod) => ({
@@ -67,7 +66,7 @@ export const ProductPage = () => {
 
   // Handle product click for modal
   const handleProductClick = (prodName) => {
-    for (let cat of productsData.categories) {
+    for (let cat of productsData .categories) {
       const found = cat.products.find(p => p.name === prodName);
       if (found) {
         setSelectedProduct({ ...found, image: getImageUrl(found.image) });
