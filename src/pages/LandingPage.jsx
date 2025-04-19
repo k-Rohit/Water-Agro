@@ -40,10 +40,15 @@ const LandingPage = () => {
               </Link>
             </div>
           </div>
+          
 
           <div className="sapling-image-div">
             <img src={Sapling} className="sapling-image" alt="Sapling" />
           </div>
+          {/* Cow image for mobile */}
+          
+          
+
 
           <div className="div-right">
             <div className="tabs">
@@ -59,6 +64,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      {/* Mobile-only cow image */}
+      
       <Footer/>
     </>
   );

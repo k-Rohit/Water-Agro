@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import ContactUsBg from "../assets/ContactUsBg.png";
 import "../styles/pages/ContactUs.css";
 import PhoneImage from "../assets/phone.png";
@@ -7,6 +8,7 @@ import wpImage from "../assets/wp-icon.png";
 import cowCall from "../assets/cow-calling.png";
 import TransparentNavbar from "../components/Transparent";
 import MobileNavigation from "../components/MobileNavigation";
+import Logo from '../assets/logo.png';
 
 const ContactUs = () => {
   useEffect(() => {
@@ -28,6 +30,13 @@ const ContactUs = () => {
         
         {/* Mobile navigation component - will be handled by CSS media queries */}
         <MobileNavigation currentPage="contact-us" />
+        
+        {/* Mobile logo - only visible on smaller screens */}
+        <div className="mobile-header-contact">
+          <Link to="/">
+            <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
+          </Link>
+        </div>
         
         <img
           src={ContactUsBg}
