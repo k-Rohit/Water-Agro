@@ -15,10 +15,12 @@ const ContactUs = () => {
     const message = prompt("What do you want to tell us?");
   
     if (name && message) {
-      const fullMessage = `⁠Hi, ${name}. ${message}`;
+      const fullMessage = `⁠Hi, ${name}. ${message}⁠`;
       const encodedMessage = encodeURIComponent(fullMessage);
-      const whatsappURL = `⁠https://wa.me/9340316706?text=${encodedMessage}`;
-      window.open(whatsappURL, '_blank');
+      const whatsappURL = `⁠https://api.whatsapp.com/send?phone=9340316706&text=${encodedMessage}`;
+  
+      // Redirect in same tab - works better on mobile
+      window.location.href = whatsappURL;
     } else {
       alert("Please provide both name and message.");
     }
