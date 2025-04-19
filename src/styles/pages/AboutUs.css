@@ -37,6 +37,7 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
+  padding: 0 20px;
 }
 
 .aboutus-heading {
@@ -60,6 +61,7 @@
   color: #444;
   margin-top: 3px;
   text-align: justify;
+  padding: 0 10px;
 }
 
 /* Make sure all images respect container width */
@@ -75,6 +77,7 @@ img {
   overflow-x: hidden;
   margin-top: 20px;
   margin-bottom: 25px;
+  padding: 0 15px;
 }
 
 .footer-container {
@@ -135,9 +138,9 @@ img {
 
 /* Responsive styles for tablet and mobile */
 @media (max-width: 1024px) {
-  Hide the desktop navbar on smaller screens
+  /* Hide the desktop navbar on smaller screens */
   nav, .desktop-navbar {
-    display: none ;
+    display: none;
   }
   
   .aboutus-page {
@@ -152,24 +155,89 @@ img {
   
   .aboutus-text {
     font-size: 14px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  .card-div, .card-div-2 {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
+  
+  .card-left-div {
+    padding-right: 0;
+    order: 1;
+  }
+  
+  .card-div-2 .card-left-div {
+    order: 2;
+  }
+  
+  .card-right-div {
+    order: 2;
     padding: 0 15px;
+  }
+  
+  .card-div-2 .card-right-div {
+    order: 1;
+    padding: 0 15px;
+  }
+  
+  .icon-image {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .card-right-heading {
+    text-align: center;
+    font-size: 26px;
   }
 }
 
 /* Small phones and portrait-oriented devices */
 @media (max-width: 480px) {
   .aboutus-heading {
-    font-size: 36px;
+    font-size: 38px;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
   }
   
   .aboutus-text {
-    font-size: 13px;
+    font-size: 14px;
+    padding: 0 15px;
+    text-align: left;
   }
   
   .aboutus-page {
     padding-bottom: 60px; /* Space for mobile navigation */
+  }
+  
+  .card-div, .card-div-2 {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+  .card-div-2 {
+    border-radius: 10px;
+
+  }
+  
+  .card-right-heading {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .card-right-text {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .icon-image {
+    width: 150px;
   }
 }
 
@@ -180,7 +248,15 @@ img {
   }
   
   .aboutus-text {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  
+  .icon-image {
+    width: 120px;
+  }
+  
+  .card-right-heading {
+    font-size: 20px;
   }
 }
 
@@ -203,5 +279,18 @@ img {
   
   .aboutus-container {
     padding: 10px;
+  }
+  
+  .card-div, .card-div-2 {
+    flex-direction: row;
+    padding: 15px;
+  }
+  
+  .icon-image {
+    width: 100px;
+  }
+  
+  .card-left-div {
+    padding-right: 15px;
   }
 }

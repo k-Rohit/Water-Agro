@@ -14,8 +14,8 @@ const Modal = ({ product, onClose }) => {
           <div className="modal-text">
             <h2>{name}</h2>
             {/* You now get the full description here */}
-            <p><strong>Description:</strong> {description}</p>
-            <p><strong>Price:</strong> {price}</p>
+            <p className='description'><strong>Description:</strong> {description}</p>
+            <p className="price">Price:{price}</p>
           </div>
           <div className="modal-image">
             {image && <img src={image} alt={name} />}
