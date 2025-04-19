@@ -21,7 +21,7 @@
 }
 .headline {
   padding-top: 20px;
-  padding-left: 180px;
+  padding-left: 50px;
   line-height: 0.9;
 }
 
@@ -38,7 +38,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 110px;
+  gap: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .headline-info-box-container {
@@ -50,13 +52,13 @@
 .info-box {
   padding: 20px;
   width: 300px;
-  text-align: justify;
+  text-align: left;
   word-spacing: 0.9;
 }
 
 .icon-img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -75,9 +77,10 @@
 
 .card {
   background-color: #e2e2e2;
-  padding: 20px;
+  padding: 30px;
   border-radius: 15px;
   display: flex;
+  gap: 60px;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   flex-direction: row;
@@ -130,11 +133,39 @@
 .vertical-ri-image {
   position: absolute;
   left: 0;
-  top: 650px;
+  top: 1250px;
   height: 300px;
   z-index: 1;
   opacity: 0.5;
 }
+.h-rule {
+  width: 89%;
+  height: 2px;
+  background-color: black;
+  position: relative; /* Required for positioning ::before and ::after */
+  margin: 40px auto; /* Optional: to center and space it */
+}
+
+.h-rule::before,
+.h-rule::after {
+  content: '•';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 90px;
+  color: black;
+  line-height: 1;
+}
+
+.h-rule::before {
+  left: -45px; /* Adjust based on font-size to make the dot sit nicely */
+}
+
+.h-rule::after {
+  right: -45px; /* Adjust similarly */
+}
+
+
 
 @media(max-width: 1200px) {
   .researcher-cards {

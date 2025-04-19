@@ -3,16 +3,13 @@ import '../styles/pages/AboutUs.css';
 import Slideshow from '../components/Slideshow';
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation'; // Import MobileNavigation
-import MineralIcon from '../assets/mineral.png';
 import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png'
 
 export const AboutUs = () => {
     return (
-        <>
-            {/* <Navbar />  */}
-            
+        <>  
             <div className="aboutus-page">
                 <div className='aboutus-container'>
                     <div className='aboutus-heading'>
@@ -66,7 +63,6 @@ export const AboutUs = () => {
                     The future of farming is changing — and so are we. At Water Agro Life LLP, we’re not just preparing for what’s next — we’re creating it. From embracing cutting-edge agri-technologies to developing more eco-friendly and efficient products, our eyes are set on long-term growth that benefits both farmers and the planet. As agriculture evolves, we’re committed to staying ahead of the curve, leading with innovation, and expanding our impact across every corner of rural India. The journey has just begun — and the future is fertile.                    </p>
                     </div>
                 </div>
-
                 <MobileNavigation />
             </div>
             <Footer />
