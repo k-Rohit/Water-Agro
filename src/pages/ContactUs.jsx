@@ -24,6 +24,9 @@ const ContactUs = () => {
     } else {
       alert("Please provide both name and message.");
     }
+    console.log('====================================');
+    console.log(encodedMessage);
+    console.log('====================================');
   };
 
   useEffect(() => {
