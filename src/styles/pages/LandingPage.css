@@ -286,6 +286,7 @@
 .cow-image-mobile {
     display: none;
   }
+
 /* Tablet and small laptop styles */
 @media (max-width: 1024px) {
     /* Make header fixed for tablet and mobile */
@@ -393,6 +394,8 @@
   .div-right .cow-image {
     display: none;
   }
+ 
+
 
   /* Ensure cow image on mobile is only shown here */
   /* .cow-image-mobile {
@@ -413,7 +416,7 @@
         z-index: 999;
 
     }
-    
+   
     
     .landingpage-header {
         height: 50px;
