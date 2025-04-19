@@ -47,6 +47,8 @@
   transform: translate(-50%, -50%);
   z-index: 10; 
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contactus-card-heading {
@@ -92,7 +94,7 @@
 
 .cow-image-container {
   position: relative;
-  padding-top: 80px;
+  padding-top: 17px;
   padding-left: 190px;
   left: 53%;
   transform: translateX(-50%);
@@ -108,6 +110,47 @@
 .navbar {
   display: block;
 }
+
+.contact-options > a{
+text-decoration: none;
+}
+
+
+.email-text {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-weight: 180;
+}
+
+.email-text:visited {
+  color: white; /* Prevent purple on click */
+}
+
+.email-text span {
+  padding-left: 20px;
+}
+
+.message{
+  border: none;
+  color: white;
+  background-color: #FEB631;
+  border-radius: 8px;
+  padding: 10px;
+  width:60%;
+  font-family: 'Poppins';
+  font-size: large;
+  cursor: pointer;
+}
+
+.button-div {
+  padding-top: 20px;
+  padding-left: 90px;
+}
+
+
+
 
 @media (max-width: 1024px) {
   .contactus-card {
