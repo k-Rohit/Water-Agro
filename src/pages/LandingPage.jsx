@@ -9,6 +9,7 @@ import MobileNavigation from '../components/MobileNavigation';
 import Footer from '../components/Footer';
 import SlideNotification from '../components/SlideNotification';
 
+const isMobile = window.innerWidth <= 480;
 const slogans = [
   "Innovation at the Heart of Every Field",
   "We stand by the farmers, season after season.",
@@ -33,7 +34,7 @@ const LandingPage = () => {
 
   return (
     <>
-    
+      
       <div className="landingpage-container">
         
         {/* Fixed header containing logo */}
@@ -97,10 +98,20 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <SlideNotification 
+      {/* <SlideNotification className='notification'
           message="Click the cow to know more!" 
           duration={4000}
-        />
+        /> */}
+        
+        {!isMobile && (
+      <SlideNotification 
+        message="Click the cow to know more!" 
+        duration={4000} 
+      />
+)}
+
+
+
       <Footer />
 
     </>
