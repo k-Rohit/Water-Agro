@@ -21,8 +21,11 @@ const Modal = ({ product, onClose }) => {
     <div className="modal-backdrop" onClick={onClose}>
       <div
         className="modal-container"
-        onClick={e => e.stopPropagation()} // prevent backdrop click
+        onClick={e => e.stopPropagation()} 
       >
+        {/* Close button */}
+        <button className="modal-close-button" onClick={onClose}>&times;</button>
+
         <div className="modal-content">
           <div className="modal-text">
             <h2>{name}</h2>
@@ -61,10 +64,6 @@ const Modal = ({ product, onClose }) => {
             {packaging && (
               <p><strong>Packaging Options:</strong> {packaging}</p>
             )}
-
-            {/* {price && (
-              <p><strong>Price:</strong> {price}</p>
-            )} */}
           </div>
 
           <div className="modal-image">
