@@ -160,11 +160,9 @@ export const ProductPage = () => {
     </>
   );
 };
-<<<<<<<<< Temporary merge branch 1
+
 
 
 export default ProductPage;
-=========
+
  
-export default ProductPage;
->>>>>>>>> Temporary merge branch 2

@@ -4,6 +4,7 @@
   font-family: 'Poppins', sans-serif;
   padding-bottom: 60px;
   position: relative;
+  overflow-x: hidden; /* Prevent horizontal scrolling from animations */
 }
 
 .image-container-research {
@@ -41,46 +42,46 @@
   gap: 110px;
 }
 
-  .headline-info-box-container {
-    width: 100%;
-    background-color: #E0DFDB;
-    margin-bottom:  50px;
-  }
+.headline-info-box-container {
+  width: 100%;
+  background-color: #E0DFDB;
+  margin-bottom:  50px;
+}
   
-  .info-box {
-    padding: 20px;
-    width: 300px;
-    text-align: justify;
-    word-spacing: 0.9;
-  }
+.info-box {
+  padding: 20px;
+  width: 300px;
+  text-align: justify;
+  word-spacing: 0.9;
+}
   
-  .icon-img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-bottom: 10px;
-  }
+.icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
   
-  .researcher-cards {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    padding-left: 180px;
-    padding-right: 120px;
-    width: 100%;
-  }
+.researcher-cards {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 180px;
+  padding-right: 120px;
+  width: 100%;
+}
   
-  .card {
-    background-color: #e2e2e2;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    gap: 1px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
+.card {
+  background-color: #e2e2e2;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  gap: 1px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
 .card-header {
   display: flex;
@@ -175,15 +176,25 @@
   .researcher-cards .icon-img {
     width: 120px;
     height: 120px;
-
-  
   }
+  
   .vertical-ri-image {
     top: 400px;
     height: 150px;
   }
+  
   .card-header {
     min-width: 120px;
+  }
+  
+  /* Enhanced mobile parallax styling */
+  .researcher-cards {
+    perspective: 1000px; /* Add perspective for 3D effect */
+  }
+  
+  .card {
+    margin-bottom: 30px; /* Provide more spacing for animation */
+    will-change: transform; /* Optimize for animation performance */
   }
 }
 
