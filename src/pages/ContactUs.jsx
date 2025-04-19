@@ -65,10 +65,6 @@ const ContactUs = () => {
             Get in touch with <span className="us">us</span>
           </div>
           <div className="contact-options">
-            <img src={PhoneImage} className="icon-img-c" alt="Phone Icon" />
-            <span className="icon-text">+91 82229-00711</span>
-          </div>
-          <div className="contact-options">
           <img src={gmailImage} className="icon-img-c" alt="Email Icon" />
           <a href="mailto:wateragrolife@gmail.com" className="email-text">  <span className="icon-text">wateragrolife@gmail.com</span></a>
           </div>
@@ -76,27 +72,19 @@ const ContactUs = () => {
             <img src={wpImage} className="icon-img-c" alt="WhatsApp Icon" />
             <a href="https://wa.me/9340316706?text=SaaleChhakke%F0%9F%A4%AC"><span className="icon-text">+91 82229-00711</span></a>
           </div>
-          <div className="socials">
-            <div className="contactus-facebook">
-            <a href="https://www.facebook.com/share/15xFzMrTpd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-              <img src={FacebookImage} className="icon-img-c" alt="Facebook Icon" />
-            </a>
-            </div>
-
-            <div className="contactus-facebook">
-              <a href="https://www.instagram.com/water_agro_life?igsh=MWxyYWllbXUyeHN3aQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                <img src={InstagramImage} className="icon-img-c" alt="Instagram Icon" />
-              </a>
-            </div>
-
-            <div className="contactus-facebook">
-              <a href="https://www.linkedin.com/company/water-agro-life-llp/" target="_blank" rel="noopener noreferrer">
-                <img src={LinkedInImage} className="icon-img-c" alt="LinkedIn Icon" />
-              </a>
-            </div>
-
-
+          <div className="contact-options">
+          <img src={FacebookImage} className="icon-img-c" alt="Facebook Icon" />
+          <a href="https://www.facebook.com/share/15xFzMrTpd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><span className="icon-text">WATER AGRO LIFE </span></a>
           </div>
+          <div className="contact-options">
+          <img src={InstagramImage} className="icon-img-c" alt="Instagram Icon" />
+          <a href="https://www.instagram.com/water_agro_life?igsh=MWxyYWllbXUyeHN3aQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><span className="icon-text">water_agro_life</span></a>
+          </div>
+          <div className="contact-options">
+          <img src={LinkedInImage} className="icon-img-c" alt="LinkedIn Icon" />
+          <a href="https://www.linkedin.com/company/water-agro-life-llp/" target="_blank" rel="noopener noreferrer"><span className="icon-text">Water Agro Life Llp</span></a>   
+          </div>
+          
           
           <div className="button-div">
           <button className="message" onClick={sendMessage}>
