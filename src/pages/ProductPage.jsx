@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
 import SearchBar from '../components/SearchBar';
 
-import productsData from '../product.json';
+// import productsData from '../product.json';
 
 // import productsData  from '../product.json';
 import productsData  from '../test.json'
