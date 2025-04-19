@@ -7,6 +7,9 @@ import wpImage from "../assets/wp-icon.png";
 import cowCall from "../assets/cow-calling.png";
 import TransparentNavbar from "../components/Transparent";
 import MobileNavigation from "../components/MobileNavigation";
+import FacebookImage from "../assets/facebook-yellow.svg"
+import InstagramImage from "../assets/instagram-yellow.svg"
+import LinkedInImage from "../assets/linkedin-yellow.svg"
 
 const ContactUs = () => {
 
@@ -16,10 +19,7 @@ const ContactUs = () => {
   
     if (name && message) {
       const fullMessage = `⁠Hi, ${name}. ${message}⁠`;
-      // const encodedMessage = encodeURIComponent(fullMessage);
       const whatsappURL = `https://wa.me/918222900711?text=${fullMessage}`;
-  
-      // Redirect in same tab - works better on mobile
       window.location.href = whatsappURL;
     } else {
       alert("Please provide both name and message.");
@@ -66,6 +66,28 @@ const ContactUs = () => {
             <img src={wpImage} className="icon-img-c" alt="WhatsApp Icon" />
             <a href="https://wa.me/9340316706?text=SaaleChhakke%F0%9F%A4%AC"><span className="icon-text">+91 82229-00711</span></a>
           </div>
+          <div className="socials">
+            <div className="contactus-facebook">
+            <a href="https://www.facebook.com/share/15xFzMrTpd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+              <img src={FacebookImage} className="icon-img-c" alt="Facebook Icon" />
+            </a>
+            </div>
+
+            <div className="contactus-facebook">
+              <a href="https://www.instagram.com/water_agro_life?igsh=MWxyYWllbXUyeHN3aQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                <img src={InstagramImage} className="icon-img-c" alt="Instagram Icon" />
+              </a>
+            </div>
+
+            <div className="contactus-facebook">
+              <a href="https://www.linkedin.com/company/water-agro-life-llp/" target="_blank" rel="noopener noreferrer">
+                <img src={LinkedInImage} className="icon-img-c" alt="LinkedIn Icon" />
+              </a>
+            </div>
+
+
+          </div>
+          
           <div className="button-div">
           <button className="message" onClick={sendMessage}>
               Send us a message
