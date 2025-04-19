@@ -16,17 +16,14 @@ const ContactUs = () => {
   
     if (name && message) {
       const fullMessage = `⁠Hi, ${name}. ${message}⁠`;
-      const encodedMessage = encodeURIComponent(fullMessage);
-      const whatsappURL = `⁠https://api.whatsapp.com/send?phone=9340316706&text=${encodedMessage}`;
+      // const encodedMessage = encodeURIComponent(fullMessage);
+      const whatsappURL = `⁠https://api.whatsapp.com/send?phone=9340316706&text=${fullMessage}`;
   
       // Redirect in same tab - works better on mobile
       window.location.href = whatsappURL;
     } else {
       alert("Please provide both name and message.");
     }
-    console.log('====================================');
-    console.log(encodedMessage);
-    console.log('====================================');
   };
 
   useEffect(() => {
