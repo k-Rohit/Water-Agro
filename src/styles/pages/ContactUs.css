@@ -72,6 +72,15 @@
   padding-left: 90px;
 }
 
+.socials {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 50px;
+  /* padding-left: -510px; */
+}
+
 .icon-img-c {
   width: 25px;
   height: 25px;
