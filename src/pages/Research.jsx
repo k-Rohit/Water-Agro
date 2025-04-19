@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-import React from 'react';
+
 
 import ContactUsBg from "../assets/ContactUsBg.png";
 import CollaborationIcon from "../assets/collaboration.png";
