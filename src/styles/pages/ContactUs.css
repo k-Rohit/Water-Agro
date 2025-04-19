@@ -158,7 +158,9 @@ text-decoration: none;
   padding-left: 90px;
 }
 
-
+.mobile-header-contact {
+  display: none;
+}
 
 
 @media (max-width: 1024px) {
