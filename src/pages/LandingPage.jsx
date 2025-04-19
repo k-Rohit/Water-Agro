@@ -57,7 +57,7 @@ const LandingPage = () => {
 
             <div className="content-description">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ex modi minus earum nam, eius recusandae iste numquam voluptatem, alias rem illo nihil id hic, expedita et corrupti tempore odit!
+              At Water Agro Life LLP, we are committed to delivering high-quality agricultural solutions that help farmers achieve better yields, healthier crops, and sustainable growth. Our focus is on developing trusted, effective, and farmer-friendly products that support modern farming practices across India.We believe that agriculture is more than a profession — it's a legacy. And we're here to protect and nurture it with science-backed innovation and unmatched service.
               </p>
             </div>
 
