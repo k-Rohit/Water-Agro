@@ -146,6 +146,9 @@ img {
   background-color: #E0DFDB;
   padding-bottom: 40px;
 }
+.mobile-logo-container{
+  display: none;
+}
 
 /* Responsive styles for tablet and mobile */
 @media (max-width: 1024px) {
@@ -153,7 +156,9 @@ img {
   nav, .desktop-navbar {
     display: none;
   }
-  
+  .mobile-logo-container{
+    display: none;
+  }
   .aboutus-page {
     padding-bottom: 70px; /* Space for mobile navigation */
   }
@@ -205,6 +210,9 @@ img {
   .card-right-heading {
     text-align: center;
     font-size: 26px;
+  }
+  .mobile-logo-container{
+    display: flex;
   }
 }
 
