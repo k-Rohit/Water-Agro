@@ -7,6 +7,26 @@
   overflow-x: hidden; /* Prevent horizontal scrolling from animations */
 }
 
+.mobile-header-research {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 40px;
+  margin-right: 10px;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.mobile-header-research img {
+  height: 100%;
+  max-width: 100px;
+  object-fit: contain;
+
+}
+
 .image-container-research {
   width: 100vw;
   margin: 0;
@@ -199,8 +219,15 @@
 }
 
 @media(max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+
   .headline {
     padding-left: 10px;
+    padding-top: 10px;
   }
 
   .researcher-cards .icon-img {
@@ -254,6 +281,12 @@
   .vertical-ri-image {
     top: 1580px;
     height: 100px;
+  }
+  .mobile-header-research img {
+    max-width: 40px;
+    margin-right:300px;
+    margin-left:30px;
+    margin-top: 16px;
   }
   .researcher-cards .icon-img {
     width: 100px;

@@ -15,6 +15,26 @@
   z-index: 1;
 }
 
+.mobile-header-contact {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 40px;
+  margin-right: 10px;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.mobile-logo {
+  height: 100%;
+  max-width: 100px;
+  object-fit: contain;
+  object-fit: contain;
+}
+
 .contactus-card {
   height: 620px;
   width: 500px;
@@ -159,6 +179,10 @@ text-decoration: none;
 }
 
 @media (max-width: 768px) {
+  .mobile-header-contact {
+    display: flex;
+  }
+  
   .contactus-card {
     width: 90%;
     height: auto;
@@ -198,6 +222,14 @@ text-decoration: none;
   .contactus-card {
     min-height: 540px;
     padding-bottom: 70px; /* Space for mobile navigation */
+  }
+  .mobile-header-contact img {
+    max-width: 80px;
+    margin-right: 350px;
+    margin-left: 45px;
+    margin-top: 19px;
+
+    
   }
   .cow-image-container {
     position: relative;

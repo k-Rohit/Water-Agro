@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+
+
 import ContactUsBg from "../assets/ContactUsBg.png";
 import CollaborationIcon from "../assets/collaboration.png";
 import VisionaryIcon from "../assets/visionary.png";
@@ -14,13 +19,21 @@ import EcoImage from '../assets/eco.png'
 import NextGen from '../assets/nextgen.png'
 import MobileNavigation from '../components/MobileNavigation';
 import '../styles/pages/Research.css';
+import Logo from '../assets/logo.png';
 
 const Research = () => {
   return (
     <>
       <MobileNavigation currentPage="research" />
-
+       
       <div className="research-container">
+        <div className="mobile-header-research">
+          {/* Mobile logo - only visible on smaller screens */}
+          <Link to="/">
+            <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
+          </Link>
+        </div>
+
         <div className="image-container-research">
           <img src={ContactUsBg} className="bg-image" alt="background" />
         </div>

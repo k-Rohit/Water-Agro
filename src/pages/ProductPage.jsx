@@ -1,17 +1,27 @@
+
+
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import Modal from '../components/Modal';
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
 import SearchBar from '../components/SearchBar';
+
+// import productsData from '../product.json';
+
 // import productsData  from '../product.json';
 import productsData  from '../test.json'
+
 import InsecticideIcon from '../assets/Insecticide-tab.svg';
 import FungicideIcon from '../assets/Fungicide-tab.svg';
 import HerbicideIcon from '../assets/Herbicide-tab.svg';
 import PlantGrowthIcon from '../assets/Plant-growth-promoter.svg';
 import FertilizerIcon from '../assets/Fertilizer-tab.svg';
 import SlideNotification from '../components/SlideNotification';
+
+// Import Logo for mobile view
+import Logo from '../assets/logo.png'; // Make sure this path is correct for your logo
 
 import '../styles/pages/ProductPage.css';
 
@@ -39,7 +49,7 @@ export const ProductPage = () => {
     return null;
   };
 
-  // Category icons array - using the same structure as your commented code
+  // Category icons array
   const categoryIcons = [
     { icon: InsecticideIcon, name: "Insecticides", alt: "Insecticides" },
     { icon: FungicideIcon, name: "Fungicides", alt: "Fungicides" },
@@ -101,8 +111,21 @@ export const ProductPage = () => {
         duration={3000}
       />
       <div className="product-page-container">
-        {/* Search Bar */}
-        <SearchBar onSearch={handleSearch} />
+        {/* Mobile Logo and Search Bar Container - only shows on mobile */}
+        <div className="mobile-header">
+          <Link to="/">
+            <div className="mobile-logo">
+              <img src={Logo} alt="Company Logo" />
+            </div>
+          </Link>
+         
+          <SearchBar onSearch={handleSearch} />
+        </div>
+
+        {/* Desktop Search Container - only shows on desktop */}
+        <div className="desktop-search-container">
+          <SearchBar onSearch={handleSearch} />
+        </div>
 
         {/* Category icons */}
         {!isSearchActive && (
@@ -160,8 +183,4 @@ export const ProductPage = () => {
   );
 };
 
-
-
 export default ProductPage;
-
- 

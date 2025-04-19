@@ -11,6 +11,17 @@
   margin: 0;
   padding: 0;
 }
+.mobile-logo-container{
+  display: flex;
+    align-items: center;
+    height: 40px;
+    margin-right: 10px;
+}
+.mobile-logo-container img {
+  height: 100%;
+  max-width: 100px;
+  object-fit: contain;
+}
 
 /* About us page specific styling */
 .aboutus-page {
@@ -204,6 +215,12 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+  }
+  .mobile-logo-container  {
+    max-width: 40px;
+    margin-left: -210px;
+    margin-top: 18px;
+
   }
   
   .aboutus-text {
