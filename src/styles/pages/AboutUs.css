@@ -158,6 +158,28 @@ img {
   display: none;
 }
 
+.ourteam-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourteam-heading {
+  font-size: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Poppins';
+}
+
+.ourteam-text {
+  font-size: 15px;
+  padding: 0 20px;
+  width: 70%;
+  font-family: 'Poppins';
+  text-align: justify;
+}
+
 /* Responsive styles for tablet and mobile */
 @media (max-width: 1024px) {
 
@@ -231,27 +253,7 @@ img {
   }
 }
 
-.ourteam-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.ourteam-heading {
-  font-size: 80px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: 'Poppins';
-}
-
-.ourteam-text {
-  font-size: 15px;
-  padding: 0 20px;
-  width: 70%;
-  font-family: 'Poppins';
-  text-align: justify;
-}
 
 /* Small phones and portrait-oriented devices */
 @media (max-width: 480px) {
@@ -267,18 +269,12 @@ img {
     margin-left: -55%;
     margin-top: 5%;
   }
-/*   .mobile-logo-container {
-    max-width: 40px;
-    margin-left: -210px;
-    margin-top: 18px;
-    } */
-
-  
 
   .aboutus-text {
     font-size: 14px;
     padding: 0 15px;
-    text-align: left;
+    text-align: justify;
+    /* width: 100%; */
   }
 
   .aboutus-page {
