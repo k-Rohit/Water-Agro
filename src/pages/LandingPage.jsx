@@ -20,34 +20,26 @@ const slogans = [
 const LandingPage = () => {
   const [sloganIndex, setSloganIndex] = useState(0);
   const [showSlogan, setShowSlogan] = useState(false);
-  const [isCowClicked, setIsCowClicked] = useState(false);
 
-  const handleCowClick = () => {
-    setIsCowClicked(true);
+  const handleSloganClick = () => {
     setShowSlogan(true);
-
-    setTimeout(() => setIsCowClicked(false), 300);
     setTimeout(() => setShowSlogan(false), 8000);
-
     setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
   };
 
   return (
     <>
-      
       <div className="landingpage-container">
-        
-        {/* Fixed header containing logo */}
         <div className="landingpage-header">
           <img src={Logo} className="logo" alt="Water Agro Logo" />
         </div>
 
         <MobileNavigation />
-        {/* Slogan box that drops down */}
+
+        {/* Slogan Box */}
         <div className={`slogan-box ${showSlogan ? 'show' : ''}`}>
           {slogans[sloganIndex]}
         </div>
-
 
         <div className="landingpage-mid">
           <div className="content">
@@ -58,7 +50,7 @@ const LandingPage = () => {
 
             <div className="content-description">
               <p>
-              At Water Agro Life LLP, we are committed to delivering high-quality agricultural solutions that help farmers achieve better yields, healthier crops, and sustainable growth. Our focus is on developing trusted, effective, and farmer-friendly products that support modern farming practices across India.We believe that agriculture is more than a profession — it's a legacy. And we're here to protect and nurture it with science-backed innovation and unmatched service.
+                At Water Agro Life LLP, we are committed to delivering high-quality agricultural solutions that help farmers achieve better yields, healthier crops, and sustainable growth. Our focus is on developing trusted, effective, and farmer-friendly products that support modern farming practices across India. We believe that agriculture is more than a profession — it's a legacy. And we're here to protect and nurture it with science-backed innovation and unmatched service.
               </p>
             </div>
 
@@ -67,17 +59,15 @@ const LandingPage = () => {
               <Link to='/products' className="arrow">
                 <img src={Arrow} className="arrow-img" alt="Arrow" />
               </Link>
+              <button className="slogan-button" onClick={handleSloganClick}>
+                Know More
+              </button>
             </div>
           </div>
-          
 
           <div className="sapling-image-div">
             <img src={Sapling} className="sapling-image" alt="Sapling" />
           </div>
-          {/* Cow image for mobile */}
-          
-          
-
 
           <div className="div-right">
             <div className="tabs">
@@ -87,33 +77,21 @@ const LandingPage = () => {
               <Link to="/research" className="tabs-ri tab-button">R&I</Link>
               <Link to="/contact-us" className="tabs-contactus tab-button">Contact Us</Link>
             </div>
-            <div className="cow-image" onClick={handleCowClick}>
-              <img
-                src={cowImage}
-                alt="Cow"
-                className={isCowClicked ? 'clicked-cow' : ''}
-              />
+            <div className="cow-image">
+              <img src={cowImage} alt="Cow" />
             </div>
           </div>
         </div>
       </div>
 
-      {/* <SlideNotification className='notification'
-          message="Click the cow to know more!" 
-          duration={4000}
-        /> */}
-        
-        {!isMobile && (
-      <SlideNotification 
-        message="Click the cow to know more!" 
-        duration={4000} 
-      />
-)}
-
-
+      {!isMobile && (
+        <SlideNotification 
+          message="Click the 'Show Slogan' button to see our vision!" 
+          duration={4000} 
+        />
+      )}
 
       <Footer />
-
     </>
   );
 };
