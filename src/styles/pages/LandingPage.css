@@ -58,6 +58,31 @@
       opacity: 0;
     }
   }
+
+  .slogan-button {
+    background-color: #FEB631;
+    font-family: 'Poppins';
+    color: #2D2D2D;
+    font-size: clamp(0.875rem, 2vw, 1.1rem);
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .slogan-button:hover {
+    background-color: #f4a600;
+    transform: scale(1.05);
+  }
+  
+  
   
   /* 🐄 Cow bounce */
   .cow-image img {
@@ -168,7 +193,7 @@
     display: flex;
     gap: 10px;
     height: auto;
-    width: clamp(200px, 100%, 250px);
+    width: clamp(75%, 100%, 250px);
     margin-top: 1rem;
 }
 
