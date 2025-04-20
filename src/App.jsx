@@ -6,6 +6,7 @@ import LandingPage from './pages/LandingPage';
 import { ProductPage } from './pages/ProductPage';
 import Research from './pages/Research';
 import Navbar from './components/Navbar';
+import CorpPage from './pages/CorpPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about-us" element={<WithNavbar Component={AboutUs} />} />
           <Route path="/contact-us" element={<ContactWithNoNavbar />} />
           <Route path="/research" element={<WithNavbar Component={Research} />} />
+          <Route path='/ourcorp' element={<WithNavbar Component={CorpPage} />} />
         </Routes>
     </Router>
   );

@@ -1,0 +1,73 @@
+.ourcorp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E8E4;
+}
+
+.ourcorp-heading {
+    font-size: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Poppins';
+}
+
+.ourcorp-text {
+    font-size: 16px;
+    padding: 0 20px;
+    width: 70%;
+    font-family: 'Poppins';
+    text-align: justify;
+}
+
+
+
+.ourcorp-card-div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-bottom: 40px;
+    font-family: 'Poppins';
+}
+
+.ourcorp-card-right-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ourcorp-icon-image {
+    width: 300px;
+    height: auto;
+}
+
+.ourcorp-card-left-div {
+    padding-right: 100px;
+}
+
+.ourcorp-card-right-heading {
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+.ourcorp-card-right-text {
+    text-align: justify;
+}
+
+.ourcorp-card-div-2 {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 240px;
+    padding-right: 240px;
+    font-family: 'Poppins';
+    background-color: #E0DFDB;
+    padding-bottom: 40px;
+}
