@@ -228,11 +228,11 @@ text-decoration: none;
     min-height: 540px;
     padding-bottom: 70px; /* Space for mobile navigation */
   }
-  .mobile-header-contact img {
-    max-width: 80px;
-    margin-right: 350px;
-    margin-left: 45px;
-    margin-top: 19px;
+  .mobile-header-contact {
+    max-width: 30%;
+    margin-right: 30%;
+    margin-left: -25%;
+    margin-top: 2%;
 
     
   }
