@@ -19,7 +19,7 @@ const Navbar = () => {
         </Link>
         <ul className="navbar-links">
           <li><Link to="/" className={getLinkClass('/')}>Home</Link></li>
-          <li><Link to="/products" className={getLinkClass('/products')}>Product</Link></li>
+          <li><Link to="/products" className={getLinkClass('/products')}>Products</Link></li>
           <li><Link to="/about-us" className={getLinkClass('/about-us')}>About Us</Link></li>
           <li><Link to="/contact-us" className={getLinkClass('/contact-us')}>Contact Us</Link></li>
           <li><Link to="/research" className={getLinkClass('/research')}>R & I</Link></li>

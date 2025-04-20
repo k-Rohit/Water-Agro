@@ -7,14 +7,12 @@ import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png';
 import Logo from '../assets/logo.png'; // Import the logo
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import PersonImage from '../assets/person.png'// Import Link for navigation
 
 export const AboutUs = () => {
     return (
-
         <>
-
             <div className="aboutus-page">
                 {/* Mobile-only logo with link to landing page */}
                 <div className="mobile-logo-container">
@@ -96,7 +94,7 @@ export const AboutUs = () => {
                         </div>
                     </div>
                     <div className='card-div-2'>
-                        
+
                         <div className='card-right-div'>
                             <p className='card-right-heading'>
                                 <strong>Mr. DHEER SINGH – Director of Operations, Marketing and Strategy </strong>
