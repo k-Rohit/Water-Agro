@@ -288,9 +288,9 @@
     height: 100px;
   }
   .mobile-header-research img {
-    max-width: 40px;
+    max-width: 35px;
     margin-right:300px;
-    margin-left:30px;
+    margin-left:9%;
     margin-top: 16px;
   }
   .researcher-cards .icon-img {
