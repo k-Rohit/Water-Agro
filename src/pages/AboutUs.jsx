@@ -2,19 +2,18 @@ import React from 'react';
 import '../styles/pages/AboutUs.css';
 import Slideshow from '../components/Slideshow';
 import Footer from '../components/Footer';
-
 import MobileNavigation from '../components/MobileNavigation'; // Import MobileNavigation
-
 import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png';
 import Logo from '../assets/logo.png'; // Import the logo
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
+import PersonImage from '../assets/person.png'// Import Link for navigation
 
 export const AboutUs = () => {
     return (
 
-        <>  
+        <>
 
             <div className="aboutus-page">
                 {/* Mobile-only logo with link to landing page */}
@@ -23,12 +22,12 @@ export const AboutUs = () => {
                         <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
                     </Link>
                 </div>
-                
+
                 <div className='aboutus-container'>
                     <div className='aboutus-heading'>
                         <span className='who'>Who</span> we are
                     </div>
-                    <div className='aboutus-text'>
+                    <div className='ourteam-text'>
                         At Water Agro Life LLP, we believe that the strength of a nation begins in its fields. Our journey is driven by a simple yet powerful goal — to deliver practical, high-quality agricultural solutions that make farming more productive, sustainable, and rewarding. Founded in 2024 by Mr. Rajat Kumar, the company was established a vision to bridge the gap between innovative crop care and the real needs of Indian farmers. We work hand-in-hand with growers, understanding their challenges, and providing products that support them through every stage of the crop cycle.
                     </div>
                 </div>
@@ -77,6 +76,53 @@ export const AboutUs = () => {
                         </p>
                     </div>
                 </div>
+                <div className='ourteam-container'>
+                    <div className='ourteam-heading'>
+                        <span className='who'>Our</span> team
+                    </div>
+                    <div className='ourteam-text'>
+                        Water Agro Life LLP, founded by Mr. Rajat Kumar in 2024, operates under its parent company, Space Crop Protection Limited, and collaborates closely with its sister concern, CTL. United by a shared vision, the group focuses on delivering innovative crop solutions and driving agricultural transformation across India.
+                    </div>
+                    <div className='card-div'>
+                        <div className='card-left-div'>
+                            <img src={PersonImage} className='icon-image' alt="Commitment" />
+                        </div>
+                        <div className='card-right-div'>
+                            <p className='card-right-heading'>
+                                <strong>Mr. Rajat Kumar – Founder & Chairman</strong>
+                            </p>
+                            <p className='card-right-text'>
+                                With years of experience in the agricultural and business sectors, Mr. RAJAT KUMAR founded WATER AGRO LIFE LLP with the vision of creating impactful and sustainable solutions for farmers worldwide. As the guiding force behind the company, he/she provides strategic leadership and ensures that the company remains focused on its mission to improve global food security and promote environmental sustainability.                        </p>
+                        </div>
+                    </div>
+                    <div className='card-div-2'>
+                        
+                        <div className='card-right-div'>
+                            <p className='card-right-heading'>
+                                <strong>Mr. DHEER SINGH – Director of Operations, Marketing and Strategy </strong>
+                            </p>
+                            <p className='card-right-text'>
+                                Mr. DHEER SINGH has extensive experience in agricultural operations and supply chain management. With a proven track record in scaling agricultural businesses and optimizing operational efficiency. With an extensive background in strategic marketing and business development, Mr. DHEER SINGH helps shape the company’s vision and marketing strategies. His role focuses on expanding WATER AGRO LIFE LLP presence in the global market, building relationships with stakeholders, and ensuring that our solutions reach the farmers and markets that need them the most.</p>
+                        </div>
+                        <div className='card-left-div'>
+                            <img src={PersonImage} className='icon-image' alt="Commitment" />
+                        </div>
+                    </div>
+                    <div className='card-div'>
+                        <div className='card-left-div'>
+                            <img src={PersonImage} className='icon-image' alt="Commitment" />
+                        </div>
+                        <div className='card-right-div'>
+                            <p className='card-right-heading'>
+                                <strong>Mr. NISHCHAL SANDHA – Director of Finance </strong>
+                            </p>
+                            <p className='card-right-text'>
+                                Mr. NISHCHAL SANDHA is a seasoned financial expert with experience in managing corporate finance and overseeing investments. He/she is responsible for guiding WATER AGRO LIFE LLP financial strategy, ensuring that the company’s growth and sustainability efforts are supported by strong financial management and sound decision-making.</p>
+                        </div>
+
+                    </div>
+                </div>
+
                 <MobileNavigation />
             </div>
             <Footer />
