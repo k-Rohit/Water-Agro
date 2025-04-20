@@ -2,20 +2,16 @@ import React from 'react';
 import '../styles/pages/AboutUs.css';
 import Slideshow from '../components/Slideshow';
 import Footer from '../components/Footer';
-
 import MobileNavigation from '../components/MobileNavigation'; // Import MobileNavigation
-
 import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png';
 import Logo from '../assets/logo.png'; // Import the logo
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom';// Import Link for navigation
 
 export const AboutUs = () => {
     return (
-
-        <>  
-
+        <>
             <div className="aboutus-page">
                 {/* Mobile-only logo with link to landing page */}
                 <div className="mobile-logo-container">
@@ -23,7 +19,7 @@ export const AboutUs = () => {
                         <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
                     </Link>
                 </div>
-                
+
                 <div className='aboutus-container'>
                     <div className='aboutus-heading'>
                         <span className='who'>Who</span> we are
@@ -77,6 +73,8 @@ export const AboutUs = () => {
                         </p>
                     </div>
                 </div>
+                
+
                 <MobileNavigation />
             </div>
             <Footer />
