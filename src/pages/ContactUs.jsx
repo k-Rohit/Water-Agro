@@ -70,7 +70,7 @@ const ContactUs = () => {
           </div>
           <div className="contact-options">
             <img src={wpImage} className="icon-img-c" alt="WhatsApp Icon" />
-            <a href="https://wa.me/9340316706?text=SaaleChhakke%F0%9F%A4%AC"><span className="icon-text">+91 82229-00711</span></a>
+            <a href="https://wa.me/918222900711"><span className="icon-text">+91 82229-00711</span></a>
           </div>
           <div className="contact-options">
           <img src={FacebookImage} className="icon-img-c" alt="Facebook Icon" />
