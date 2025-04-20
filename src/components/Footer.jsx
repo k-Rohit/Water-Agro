@@ -18,7 +18,9 @@ const Footer = () => {
                 <img src={FooterImage} className="footer-image" alt="Footer background" />
                 <div className="footer-links">
                     <div className='address-container'>
-                        <a>Address</a>
+                    <div className='head-office-div'>
+                        <a>Head Office</a>
+                        </div>
                         <div className='address'>
                             D-136, First Floor, Ganga Vihar, Gokul Puri, North East, Delhi, 110094
                         </div>

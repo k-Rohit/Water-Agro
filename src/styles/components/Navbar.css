@@ -1,6 +1,6 @@
 .navbar {
   background-color: #E9E8E4;
-  padding: 10px 20px;
+  padding: 10px 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -11,6 +11,7 @@
   justify-content: space-between;
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .navbar-logo {
@@ -21,11 +22,14 @@
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 30px auto;
+  gap: 100px; /* spacing between links */
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .navbar-links li {
-  margin: 0 80px;
+  margin: 0;
 }
 
 .navbar-links a {
@@ -39,7 +43,7 @@
 
 /* Highlight current page link */
 .navbar-links a.active {
-  color: #39803A; /* Yellow color */
+  color: #39803A;
   font-weight: 600;
   font-size: large;
 }
