@@ -86,7 +86,7 @@ const LandingPage = () => {
 
       {!isMobile && (
         <SlideNotification 
-          message="Click the 'Show Slogan' button to see our vision!" 
+          message="Click the 'Know More' button to see our vision!" 
           duration={4000} 
         />
       )}
