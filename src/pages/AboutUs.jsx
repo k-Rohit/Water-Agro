@@ -100,7 +100,8 @@ export const AboutUs = () => {
                                 <strong>Mr. DHEER SINGH – Director of Operations, Marketing and Strategy </strong>
                             </p>
                             <p className='card-right-text'>
-                                Mr. DHEER SINGH has extensive experience in agricultural operations and supply chain management. With a proven track record in scaling agricultural businesses and optimizing operational efficiency. With an extensive background in strategic marketing and business development, Mr. DHEER SINGH helps shape the company’s vision and marketing strategies. His role focuses on expanding WATER AGRO LIFE LLP presence in the global market, building relationships with stakeholders, and ensuring that our solutions reach the farmers and markets that need them the most.</p>
+                                Mr. Dheer Singh brings over 30 years of extensive experience in agricultural operations, supply chain management, and strategic marketing. Having worked with leading Indian MNCs as well as renowned international corporations, he has a proven track record in scaling agricultural businesses and optimizing operational efficiency. In his role at WATER AGRO LIFE LLP, Mr. Singh helps shape the company’s vision and marketing strategies, focusing on expanding its global presence, building relationships with stakeholders, and ensuring that their solutions reach the farmers and markets that need them most.
+                            </p>
                         </div>
                         <div className='card-left-div'>
                             <img src={PersonImage} className='icon-image' alt="Commitment" />

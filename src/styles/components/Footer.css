@@ -40,7 +40,7 @@
 .footer-links a {
     color: white;
     text-decoration: none;
-    margin: 8px 20px;
+    margin: 8px;
     font-size: 17px;
     padding: 5px 0;
     cursor: pointer; /* Add cursor pointer for better UX */
@@ -77,6 +77,10 @@
 
 .footer-links a:hover {
     color: #229924;
+}
+
+.head-office-div{
+    margin-top: 14px;
 }
 
 
