@@ -7,8 +7,7 @@ import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png';
 import Logo from '../assets/logo.png'; // Import the logo
-import { Link } from 'react-router-dom';
-import PersonImage from '../assets/person.png'// Import Link for navigation
+import { Link } from 'react-router-dom';// Import Link for navigation
 
 export const AboutUs = () => {
     return (
@@ -74,53 +73,7 @@ export const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className='ourteam-container'>
-                    <div className='ourteam-heading'>
-                        <span className='who'>Our</span> Team
-                    </div>
-                    <div className='ourteam-text'>
-                        Water Agro Life LLP, founded by Mr. Rajat Kumar in 2024, operates under its parent company, Space Crop Protection Limited, and collaborates closely with its sister concern, CTL. United by a shared vision, the group focuses on delivering innovative crop solutions and driving agricultural transformation across India.
-                    </div>
-                    <div className='card-div'>
-                        <div className='card-left-div'>
-                            <img src={PersonImage} className='icon-image' alt="Commitment" />
-                        </div>
-                        <div className='card-right-div'>
-                            <p className='card-right-heading'>
-                                <strong>Mr. Rajat Kumar – Founder & Chairman</strong>
-                            </p>
-                            <p className='card-right-text'>
-                                With years of experience in the agricultural and business sectors, Mr. RAJAT KUMAR founded WATER AGRO LIFE LLP with the vision of creating impactful and sustainable solutions for farmers worldwide. As the guiding force behind the company, he/she provides strategic leadership and ensures that the company remains focused on its mission to improve global food security and promote environmental sustainability.                        </p>
-                        </div>
-                    </div>
-                    <div className='card-div-2'>
-
-                        <div className='card-right-div'>
-                            <p className='card-right-heading'>
-                                <strong>Mr. DHEER SINGH – Director of Operations, Marketing and Strategy </strong>
-                            </p>
-                            <p className='card-right-text'>
-                                Mr. Dheer Singh brings over 30 years of extensive experience in agricultural operations, supply chain management, and strategic marketing. Having worked with leading Indian MNCs as well as renowned international corporations, he has a proven track record in scaling agricultural businesses and optimizing operational efficiency. In his role at WATER AGRO LIFE LLP, Mr. Singh helps shape the company’s vision and marketing strategies, focusing on expanding its global presence, building relationships with stakeholders, and ensuring that their solutions reach the farmers and markets that need them most.
-                            </p>
-                        </div>
-                        <div className='card-left-div'>
-                            <img src={PersonImage} className='icon-image' alt="Commitment" />
-                        </div>
-                    </div>
-                    <div className='card-div'>
-                        <div className='card-left-div'>
-                            <img src={PersonImage} className='icon-image' alt="Commitment" />
-                        </div>
-                        <div className='card-right-div'>
-                            <p className='card-right-heading'>
-                                <strong>Mr. NISHCHAL SANDHA – Director of Finance </strong>
-                            </p>
-                            <p className='card-right-text'>
-                                Mr. NISHCHAL SANDHA is a seasoned financial expert with experience in managing corporate finance and overseeing investments. He/she is responsible for guiding WATER AGRO LIFE LLP financial strategy, ensuring that the company’s growth and sustainability efforts are supported by strong financial management and sound decision-making.</p>
-                        </div>
-
-                    </div>
-                </div>
+                
 
                 <MobileNavigation />
             </div>
