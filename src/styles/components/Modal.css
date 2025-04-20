@@ -1,6 +1,6 @@
 .modal-backdrop {
   position: fixed;
-  inset: 0;                   /* top:0; right:0; bottom:0; left:0 */
+  inset: 0;
   background: rgba(0,0,0,0.4);
   display: flex;
   justify-content: center;
@@ -8,37 +8,34 @@
   z-index: 1000;
 }
 
-/* this just centers the inner box */
 .modal-container {
+  position: relative;
   width: 90%;
   max-width: 900px;
-  max-height: 90vh;  /* prevent modal from going off-screen */
-  overflow-y: auto;  /* allow scrolling if content is too tall */
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
-/* put flex here, because its children are .modal-text + .modal-image */
 .modal-content {
   display: flex;
-  flex-direction: row;        /* side by side */
-  justify-content: space-between; /* push to ends */
-  align-items: flex-start;    /* top‑align if text is taller */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 24px;
   padding: 24px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;           /* no wrap or scrollbars */
-  flex-wrap: nowrap;          /* absolutely no wrapping */
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
 
-/* text grows to fill remaining space */
 .modal-text {
   flex: 1 1 auto;
-  min-width: 0;               /* allow text to shrink cleanly */
+  min-width: 0;
 }
 
-/* heading & paragraphs styling */
 .modal-text h2 {
   font-size: 24px;
   font-weight: 600;
@@ -49,7 +46,6 @@
   line-height: 1.4;
 }
 
-/* image is fixed‑size and won't stretch */
 .modal-image {
   flex: 0 0 auto;
   width: 180px;
@@ -62,58 +58,75 @@
   object-fit: cover;
 }
 
-/* Responsive styles for tablets */
+.modal-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  color: #ff0000;
+}
+
 @media (max-width: 768px) {
   .modal-content {
     gap: 16px;
     padding: 20px;
   }
-  
+
   .modal-text h2 {
     font-size: 22px;
   }
-  
+
   .modal-image {
     width: 150px;
   }
 }
 
-/* Responsive styles for mobile phones */
 @media (max-width: 480px) {
   .modal-container {
     width: 95%;
     max-height: 85vh;
   }
-  
+
   .modal-content {
-    flex-direction: column-reverse; /* Image on top, text below */
+    flex-direction: column-reverse;
     padding: 16px;
     gap: 12px;
   }
-  
+
   .modal-text h2 {
     font-size: 20px;
     margin-bottom: 12px;
   }
-  
+
   .modal-text p {
     margin-bottom: 8px;
   }
-  .price{
+
+  .price {
     font-size: 22px;
     font-weight: regular;
   }
-  .description{
+
+  .description {
     font-size: 14px;
-  
   }
-  
+
   .modal-image {
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
   }
-  
+
   .modal-image img {
     width: 100%;
     height: auto;
@@ -122,20 +135,19 @@
   }
 }
 
-/* Extra small devices */
 @media (max-width: 375px) {
   .modal-container {
     width: 98%;
   }
-  
+
   .modal-content {
     padding: 12px;
   }
-  
+
   .modal-text h2 {
     font-size: 18px;
   }
-  
+
   .modal-text p {
     font-size: 13px;
   }

@@ -46,7 +46,7 @@
   left: 80vw;
   transform: translate(-50%, -50%);
   z-index: 10; 
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -58,7 +58,7 @@
   padding-top: 20px;
   color: white;
   font-size: 35px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .us {
@@ -68,8 +68,9 @@
 .contact-options {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-left: 90px;
+  line-height: 0.5;
 }
 
 .socials {
@@ -92,7 +93,7 @@
   font-family: 'Poppins';
   font-size: 20px;
   padding-left: 20px;
-  font-weight: 180;
+  font-weight: 200;
 }
 
 .icon-text a {
@@ -103,15 +104,15 @@
 
 .cow-image-container {
   position: relative;
-  padding-top: 17px;
-  padding-left: 190px;
+  padding-top: 1px;
+  padding-left: 230px;
   left: 53%;
   transform: translateX(-50%);
   z-index: 11;
 }
 
 .cow-image {
-  width: 280px;
+  width: 250px;
   height: auto;
   position: relative;  
 }
