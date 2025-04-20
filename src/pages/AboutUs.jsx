@@ -78,7 +78,7 @@ export const AboutUs = () => {
                 </div>
                 <div className='ourteam-container'>
                     <div className='ourteam-heading'>
-                        <span className='who'>Our</span> team
+                        <span className='who'>Our</span> Team
                     </div>
                     <div className='ourteam-text'>
                         Water Agro Life LLP, founded by Mr. Rajat Kumar in 2024, operates under its parent company, Space Crop Protection Limited, and collaborates closely with its sister concern, CTL. United by a shared vision, the group focuses on delivering innovative crop solutions and driving agricultural transformation across India.
