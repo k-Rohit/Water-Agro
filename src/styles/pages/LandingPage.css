@@ -465,6 +465,13 @@
     .comp-name{
         margin-left: -190px;
         margin-top: 20px;
+       
+    }
+    .water{
+        padding-bottom: 0px;
+    }
+    .agro-life{
+        padding-bottom: 0px;
     }
     
     .water, .agro-life {
