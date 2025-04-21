@@ -12,13 +12,11 @@ const TransparentNavbar = () => {
         </Link>
         <ul className="navbar-links">
           <li><Link to="/"><span className='text' >Home</span></Link></li>
-          <li><Link to="/products"><span className='text'>Product</span></Link></li>
           <li><Link to="/about-us"><span className='text'>About Us</span></Link></li>
-          
-          <li><Link to="/research"><span className='text'>R & I</span></Link></li>
+          <li><Link to="/products"><span className='text'>Product</span></Link></li>
           <li><Link to="/ourcorp"><span className='text'>Our Corp Family</span></Link></li>
+          <li><Link to="/research"><span className='text'>R & I</span></Link></li>
           <li><Link to="/contact-us"><span className='text'>Contact Us</span></Link></li>
-
         </ul>
       </div>
     </div>
