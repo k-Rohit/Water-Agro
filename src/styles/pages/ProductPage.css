@@ -362,15 +362,17 @@
 }
 
 @media (max-width: 480px) {
-    .mobile-header{
-        position: fixed;
-    }
+    /* .mobile-header{
+        position: absolute;
+    
+    } */
     .mobile-logo img {
-        max-width: 80px;
-        margin-left: 40px;
+        max-width: 40px;
+        margin-left: 30%;
         margin-top: 9px;
+        position: fixed;
+        z-index: 100;
       
-        
     }
     .search-bar{
         margin-left: -10px;
@@ -379,6 +381,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 0 10px;
+        
     }
     
     .category-icons {
