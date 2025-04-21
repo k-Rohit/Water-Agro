@@ -148,6 +148,9 @@
 .water {
     margin-bottom: clamp(-4rem, -6vw, -8rem);
 }
+.view-button{
+    margin-top: 10px;
+}
 
 .content-description {
     font-family: 'Poppins', sans-serif;
@@ -157,10 +160,16 @@
     max-width: 90%;
 }
 
-.logo {
+/* .logo {
     height: clamp(40px, 5vh, 80px);
     margin-left: clamp(40px, 5vw, 70px);
     margin-top: clamp(15px, 2vh, 30px);
+} */
+
+.logo{
+    height: 70px;
+    margin-left: 50px;
+    margin-top: 15px;
 }
 
 .landingpage-mid {
