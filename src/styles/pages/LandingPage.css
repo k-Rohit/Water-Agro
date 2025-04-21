@@ -64,6 +64,8 @@
     font-family: 'Poppins';
     color: #2D2D2D;
     font-size: clamp(0.875rem, 2vw, 1.1rem);
+    margin-top: 3%;
+    width: 40%;
     height: 40px;
     padding: 0 20px;
     border: none;
@@ -223,6 +225,7 @@
 
 .arrow {
     background-color: #FEB631;
+    margin-top: 2.8%;
     height: 40px;
     width: 40px;
     border: none;
@@ -290,8 +293,9 @@
 .tabs .tabs-products,
 .tabs .tabs-aboutus,
 .tabs .tabs-ri,
-.tabs .tabs-contactus {
-    font-family: "Poppins", sans-serif;
+.tabs .tabs-contactus
+.tabs .tabs-corp {
+    font-family: "Poppins";
 }
 
 .div-right {
@@ -441,7 +445,12 @@
         z-index: 999;
 
     }
-   
+    .slogan-button{
+        width: 50%;
+        font-family: 'poppins';
+        margin: 2px;
+
+    }
     
     .landingpage-header {
         height: 50px;
@@ -465,7 +474,17 @@
     .content-buttons {
         width: 100%;
         justify-content: center;
-        margin-top: 15px;
+        align-items: center;
+        gap: 1px;
+       
+    }
+    .arrow{
+       
+        height: 40px;
+        width: 50px;
+        
+        margin: 2px;
+        margin-left: -1px;
     }
 
     .view-button, .arrow {

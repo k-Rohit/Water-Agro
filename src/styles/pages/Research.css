@@ -311,6 +311,11 @@
     margin-right:300px;
     margin-left:9%;
     margin-top: 16px;
+    
+  }
+  .mobile-header-research{
+    position: fixed;
+    z-index: 3;
   }
   .researcher-cards .icon-img {
     width: 100px;

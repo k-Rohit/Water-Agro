@@ -16,6 +16,8 @@ const TransparentNavbar = () => {
           <li><Link to="/about-us"><span className='text'>About Us</span></Link></li>
           <li><Link to="/contact-us"><span className='text'>Contact Us</span></Link></li>
           <li><Link to="/research"><span className='text'>R & I</span></Link></li>
+          <li><Link to="/ourcorp"><span className='text'>Our Corp Family</span></Link></li>
+
         </ul>
       </div>
     </div>

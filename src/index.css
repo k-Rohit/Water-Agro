@@ -23,5 +23,6 @@ body {
 
 /* Ensure body and html can still scroll */
 html, body {
-  overflow-y: auto;
+  overflow-y: auto; /* Allow vertical scrolling */
+  
 }
