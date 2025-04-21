@@ -93,7 +93,10 @@ import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png';
 import Logo from '../assets/logo.png'; // Import the logo
-import { Link } from 'react-router-dom';// Import Link for navigation
+import { Link } from 'react-router-dom';
+import Field from '../assets/field.png'
+import FarmerIconTwo from '../assets/farmer-icon.png'
+import Transparency from '../assets/display.png'
 
 export const AboutUs = () => {
     // Create refs for scrolling to sections
@@ -131,6 +134,37 @@ export const AboutUs = () => {
                     </div>
                     <div className='aboutus-text'>
                         At Water Agro Life LLP, we believe that the strength of a nation begins in its fields. Our journey is driven by a simple yet powerful goal — to deliver practical, high-quality agricultural solutions that make farming more productive, sustainable, and rewarding. Founded in 2024 by Mr. Rajat Kumar, the company was established a vision to bridge the gap between innovative crop care and the real needs of Indian farmers. We work hand-in-hand with growers, understanding their challenges, and providing products that support them through every stage of the crop cycle.
+                    </div>
+                </div>
+
+                <div className="aboutus-container-mid">
+                    <div className="box-first">
+                        <div className="box-one">
+                           <img src="" alt="Field-Focused Formulations icon" />
+                        </div>
+                        <div className="box-two">
+                            <img src={Transparency} className="transparency-img" alt="Transparent Practices - icon" />
+                            <p className="box-heading">Transparent Practices</p>
+                            <p className="box-content">We believe in clear labeling, honest marketing, and maintaining full transparency with our customers and partners.</p>
+                        </div>
+                        <div className="box-three">
+                            <img src="" alt="Farmer-Centric Support icon" />
+                        </div>
+                    </div>
+                    <div className="box-second">
+                        <div className="box-four">
+                            <img src={Field} className="field-img" alt="Field-Focused Formulations icon" />
+                            <p className="box-heading">Field-Focused Formulations</p>
+                            <p className="box-content">Every product is tested and tuned for real farm conditions — because performance matters where it grows.</p>
+                        </div>
+                        <div className="box-five">
+                            <img src="" alt="Field-Focused Formulations" />   
+                        </div>
+                        <div className="box-six">
+                            <img src={FarmerIconTwo} className="farmer-icon-two-img" alt="Farmer-Centric Support icon" />
+                            <p className="box-heading">Farmer-Centric Support</p>
+                            <p className="box-content">From product guidance to on-ground feedback, our team is actively engaged in helping farmers at every stage.</p>
+                        </div>
                     </div>
                 </div>
 

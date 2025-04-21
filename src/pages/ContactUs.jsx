@@ -21,7 +21,7 @@ const ContactUs = () => {
     const message = prompt("What do you want to tell us?");
   
     if (name && message) {
-      const fullMessage = `⁠Hi, ${name}. ${message}⁠`;
+      const fullMessage = "Hi, ${name}. ${message}";
       const whatsappURL = `https://wa.me/918222900711?text=${fullMessage}`;
       window.location.href = whatsappURL;
     } else {
