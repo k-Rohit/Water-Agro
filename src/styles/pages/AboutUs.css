@@ -126,6 +126,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #E0DFDB;
+  padding-top: 20px;
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -142,24 +143,43 @@ img {
   justify-content: center;
 }
 
-.box-one, .box-two, .box-three, .box-four, .box-five, .box-six{
+.box-one, .box-two, .box-three, .box-four, .box-five, .box-six {
   height: 180px;
   width: 300px;
   border-radius: 20px;
-  background-color: #E9E8E4
+  background-color: #E9E8E4;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 .box-two, .box-four, .box-six{
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   padding: 10px;
 }
 
+.box-heading{
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 17px;
+  margin-top: 8px;
+}
+
+.box-content{
+  font-size: 13px;
+  line-height: 18px;
+  font-family: poppins;
+  margin-top: -15px;
+}
+
 .field-img, .farmer-icon-two-img, .transparency-img{
-  height: 40px;
+  height: 38px;
   width: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 /* Add basic styling for box text */
