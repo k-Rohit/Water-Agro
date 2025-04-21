@@ -5,6 +5,7 @@ import "../styles/pages/ContactUs.css";
 import PhoneImage from "../assets/phone.png";
 import gmailImage from "../assets/gmail-icon.png";
 import wpImage from "../assets/wp-icon.png";
+import Brinjal from "../assets/brinjal.svg"
 import cowCall from "../assets/cow-calling.png";
 import TransparentNavbar from "../components/Transparent";
 import MobileNavigation from "../components/MobileNavigation";
@@ -94,7 +95,7 @@ const ContactUs = () => {
           </div>
 
           <div className="cow-image-container">
-            <img src={cowCall} className="cow-image" alt="Cow Calling" />
+            <img src={Brinjal} className="cow-image" alt="Cow Calling" />
           </div>
         </div>
       </div>

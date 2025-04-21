@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import MobileNavigation from '../components/MobileNavigation';
 import Footer from '../components/Footer';
 import SlideNotification from '../components/SlideNotification';
+import Capsicum from '../assets/capsicum.svg'
 
 const isMobile = window.innerWidth <= 480;
 const slogans = [
@@ -81,7 +82,7 @@ const LandingPage = () => {
 
             </div>
             <div className="cow-image">
-              <img src={cowImage} alt="Cow" />
+              <img src={Capsicum} alt="Cow" />
             </div>
           </div>
         </div>
