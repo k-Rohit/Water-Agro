@@ -19,10 +19,11 @@ const ContactUs = () => {
   const sendMessage = () => {
     const name = prompt("Tell us your name");
     const message = prompt("What do you want to tell us?");
-  
+
     if (name && message) {
-      const fullMessage = "Hi, ${name}. ${message}";
-      const whatsappURL = `https://wa.me/918222900711?text=${fullMessage}`;
+      const fullMessage = `Hi, I am ${name}. ${message}`;
+      console.log(fullMessage);
+      const whatsappURL = `https://wa.me/918222900711?text=${encodeURIComponent(fullMessage)}`;
       window.location.href = whatsappURL;
     } else {
       alert("Please provide both name and message.");
@@ -44,17 +45,17 @@ const ContactUs = () => {
         <div className="navbar">
           <TransparentNavbar />
         </div>
-        
+
         {/* Mobile navigation component - will be handled by CSS media queries */}
         <MobileNavigation currentPage="contact-us" />
-        
+
         {/* Mobile logo - only visible on smaller screens */}
         <div className="mobile-header-contact">
           <Link to="/">
             <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
           </Link>
         </div>
-        
+
         <img
           src={ContactUsBg}
           alt="Contact Us Background"
@@ -65,33 +66,33 @@ const ContactUs = () => {
             Get in touch with <span className="us">us</span>
           </div>
           <div className="contact-options">
-          <img src={gmailImage} className="icon-img-c" alt="Email Icon" />
-          <a href="mailto:wateragrolife@gmail.com" className="email-text">  <span className="icon-text">wateragrolife@gmail.com</span></a>
+            <img src={gmailImage} className="icon-img-c" alt="Email Icon" />
+            <a href="mailto:wateragrolife@gmail.com" className="email-text">  <span className="icon-text">wateragrolife@gmail.com</span></a>
           </div>
           <div className="contact-options">
             <img src={wpImage} className="icon-img-c" alt="WhatsApp Icon" />
             <a href="https://wa.me/918222900711"><span className="icon-text">+91 82229-00711</span></a>
           </div>
           <div className="contact-options">
-          <img src={FacebookImage} className="icon-img-c" alt="Facebook Icon" />
-          <a href="https://www.facebook.com/share/15xFzMrTpd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><span className="icon-text">WATER AGRO LIFE </span></a>
+            <img src={FacebookImage} className="icon-img-c" alt="Facebook Icon" />
+            <a href="https://www.facebook.com/share/15xFzMrTpd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><span className="icon-text">WATER AGRO LIFE </span></a>
           </div>
           <div className="contact-options">
-          <img src={InstagramImage} className="icon-img-c" alt="Instagram Icon" />
-          <a href="https://www.instagram.com/water_agro_life?igsh=MWxyYWllbXUyeHN3aQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><span className="icon-text">water_agro_life</span></a>
+            <img src={InstagramImage} className="icon-img-c" alt="Instagram Icon" />
+            <a href="https://www.instagram.com/water_agro_life?igsh=MWxyYWllbXUyeHN3aQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><span className="icon-text">water_agro_life</span></a>
           </div>
           <div className="contact-options">
-          <img src={LinkedInImage} className="icon-img-c" alt="LinkedIn Icon" />
-          <a href="https://www.linkedin.com/company/water-agro-life-llp/" target="_blank" rel="noopener noreferrer"><span className="icon-text">Water Agro Life Llp</span></a>   
+            <img src={LinkedInImage} className="icon-img-c" alt="LinkedIn Icon" />
+            <a href="https://www.linkedin.com/company/water-agro-life-llp/" target="_blank" rel="noopener noreferrer"><span className="icon-text">Water Agro Life Llp</span></a>
           </div>
-          
-          
+
+
           <div className="button-div">
-          <button className="message" onClick={sendMessage}>
+            <button className="message" onClick={sendMessage}>
               Send us a message
-          </button>
+            </button>
           </div>
-          
+
           <div className="cow-image-container">
             <img src={cowCall} className="cow-image" alt="Cow Calling" />
           </div>
