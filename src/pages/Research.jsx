@@ -28,7 +28,6 @@ const Research = () => {
 
       <div className="research-container">
         <div className="mobile-header-research">
-          {/* Mobile logo - only visible on smaller screens */}
           <Link to="/">
             <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
           </Link>

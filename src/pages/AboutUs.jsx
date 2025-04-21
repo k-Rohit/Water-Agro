@@ -2,11 +2,11 @@ import React, { useRef } from 'react';
 import '../styles/pages/AboutUs.css';
 import Slideshow from '../components/Slideshow';
 import Footer from '../components/Footer';
-import MobileNavigation from '../components/MobileNavigation'; // Import MobileNavigation
+import MobileNavigation from '../components/MobileNavigation';
 import FamerIcon from '../assets/farmer.png';
 import BinoImage from '../assets/binoculars.png';
 import CommitmentImage from '../assets/commitment.png';
-import Logo from '../assets/logo.png'; // Import the logo
+import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import Field from '../assets/field.png'
 import FarmerIconTwo from '../assets/farmer-icon.png'
@@ -22,13 +22,11 @@ import AboutFive from '../assets/about-5.jpg'
 import AboutSix from '../assets/about-6.jpg'
 
 export const AboutUs = () => {
-    // Create refs for scrolling to sections
     const whoWeAreRef = useRef(null);
     const commitmentRef = useRef(null);
     const withFarmersRef = useRef(null);
     const futureFocusRef = useRef(null);
     
-    // Function to handle smooth scrolling to section
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: 'smooth' });
     };
@@ -36,14 +34,12 @@ export const AboutUs = () => {
     return (
         <>
             <div className="aboutus-page">
-                {/* Mobile-only logo with link to landing page */}
                 <div className="mobile-logo-container">
                     <Link to="/">
                         <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
                     </Link>
                 </div>
 
-                {/* Tab Navigation */}
                 <div className="section-tabs">
                     <button onClick={() => scrollToSection(whoWeAreRef)}>Who We Are</button>
                     <button onClick={() => scrollToSection(commitmentRef)}>Our Commitment</button>
@@ -119,7 +115,6 @@ export const AboutUs = () => {
                     </div>
                 </div>
 
-                {/* <Slideshow /> */}
 
                 <div className='card-div' ref={commitmentRef}>
                     <div className='card-left-div'>
