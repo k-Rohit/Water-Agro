@@ -151,6 +151,16 @@ img {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 }
 
+.box-one, .box-three, .box-five{
+  overflow: hidden;
+  position: relative;
+}
+
+.box-one, .box-three, .box-five > img{
+  object-fit: cover;
+}
+
+
 
 .box-two, .box-four, .box-six{
   display: flex;
