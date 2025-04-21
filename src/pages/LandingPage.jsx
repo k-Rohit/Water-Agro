@@ -37,7 +37,6 @@ const LandingPage = () => {
 
         <MobileNavigation />
 
-        {/* Slogan Box */}
         <div className={`slogan-box ${showSlogan ? 'show' : ''}`}>
           {slogans[sloganIndex]}
         </div>

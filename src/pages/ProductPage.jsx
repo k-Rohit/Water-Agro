@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
@@ -7,12 +5,7 @@ import Modal from '../components/Modal';
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
 import SearchBar from '../components/SearchBar';
-
-// import productsData from '../product.json';
-
-// import productsData  from '../product.json';
 import productsData  from '../test.json'
-
 import InsecticideIcon from '../assets/Insecticide-tab.svg';
 import FungicideIcon from '../assets/Fungicide-tab.svg';
 import HerbicideIcon from '../assets/Herbicide-tab.svg';
@@ -20,8 +13,7 @@ import PlantGrowthIcon from '../assets/Plant-growth-promoter.svg';
 import FertilizerIcon from '../assets/Fertilizer-tab.svg';
 import SlideNotification from '../components/SlideNotification';
 
-// Import Logo for mobile view
-import Logo from '../assets/logo.png'; // Make sure this path is correct for your logo
+import Logo from '../assets/logo.png';
 
 import '../styles/pages/ProductPage.css';
 
@@ -29,16 +21,14 @@ export const ProductPage = () => {
   const [category, setCategory] = useState("Insecticides");
   const [enrichedProducts, setEnrichedProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedProduct, setSelectedProduct] = useState(null); // For Modal
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const [searchResults, setSearchResults] = useState(null);
 
-  // Glob import for images
   const productImages = import.meta.glob(
     '../assets/Product/*.{png,jpg,jpeg,gif,svg}', 
     { eager: true }
   );
 
-  // Helper to find actual image URL
   const getImageUrl = (filename) => {
     if (!filename) return null;
     const imageName = filename.split('/').pop();
@@ -49,7 +39,6 @@ export const ProductPage = () => {
     return null;
   };
 
-  // Category icons array
   const categoryIcons = [
     { icon: InsecticideIcon, name: "Insecticides", alt: "Insecticides" },
     { icon: FungicideIcon, name: "Fungicides", alt: "Fungicides" },
@@ -74,7 +63,6 @@ export const ProductPage = () => {
     setIsLoading(false);
   }, [category]);
 
-  // Handle product click for modal
   const handleProductClick = (prodName) => {
     for (let cat of productsData .categories) {
       const found = cat.products.find(p => p.name === prodName);
@@ -85,10 +73,8 @@ export const ProductPage = () => {
     }
   };
 
-  // Handle search results
   const handleSearch = (results) => {
     if (results) {
-      // Add image URLs to search results
       const enrichedResults = results.map((prod) => {
         const imageUrl = getImageUrl(prod.image);
         return { ...prod, image: imageUrl };
@@ -99,7 +85,6 @@ export const ProductPage = () => {
     }
   };
 
-  // Determine which products to display (search results or category products)
   const displayProducts = searchResults || enrichedProducts;
   const isSearchActive = searchResults !== null;
 
@@ -111,7 +96,6 @@ export const ProductPage = () => {
         duration={3000}
       />
       <div className="product-page-container">
-        {/* Mobile Logo and Search Bar Container - only shows on mobile */}
         <div className="mobile-header">
           <Link to="/">
             <div className="mobile-logo">
@@ -122,12 +106,10 @@ export const ProductPage = () => {
           <SearchBar onSearch={handleSearch} />
         </div>
 
-        {/* Desktop Search Container - only shows on desktop */}
         <div className="desktop-search-container">
           <SearchBar onSearch={handleSearch} />
         </div>
 
-        {/* Category icons */}
         {!isSearchActive && (
           <div className="category-icons">
             {categoryIcons.map((cat, index) => (
@@ -142,14 +124,12 @@ export const ProductPage = () => {
           </div>
         )}
 
-        {/* Search results indicator with styled heading */}
         {isSearchActive && (
           <div className="search-results-header">
             <h3>Search Results ({displayProducts.length} {displayProducts.length === 1 ? 'product' : 'products'} found)</h3>
           </div>
         )}
 
-        {/* Products grid */}
         {isLoading ? (
           <div className="loading-container"><p>Loading products...</p></div>
         ) : displayProducts.length === 0 ? (
@@ -170,7 +150,6 @@ export const ProductPage = () => {
         )}
       </div>
 
-      {/* Render modal only if one is selected */}
       {selectedProduct && (
         <Modal 
           product={selectedProduct} 

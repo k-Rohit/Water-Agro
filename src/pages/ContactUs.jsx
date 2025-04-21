@@ -42,15 +42,12 @@ const ContactUs = () => {
   return (
     <>
       <div className="contactus-container">
-        {/* Desktop Navbar - only visible on larger screens */}
         <div className="navbar">
           <TransparentNavbar />
         </div>
 
-        {/* Mobile navigation component - will be handled by CSS media queries */}
         <MobileNavigation currentPage="contact-us" />
 
-        {/* Mobile logo - only visible on smaller screens */}
         <div className="mobile-header-contact">
           <Link to="/">
             <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
