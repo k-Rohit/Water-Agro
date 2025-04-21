@@ -197,7 +197,7 @@
     display: flex;
     gap: 10px;
     height: auto;
-    width: clamp(75%, 100%, 250px);
+    width: clamp(100%, 100%, 250px);
     margin-top: 1rem;
 }
 
@@ -207,7 +207,7 @@
     color: rgb(212, 212, 212);
     font-size: clamp(0.875rem, 2vw, 1.25rem);
     height: 40px;
-    width: 190px;
+    width: 200px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
