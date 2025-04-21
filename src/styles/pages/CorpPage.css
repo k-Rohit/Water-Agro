@@ -142,6 +142,14 @@
         
     }
     
+    .ourcorp-card-right-text {
+        margin-right: 10px;
+        text-align: justify;
+        margin-left: 12px;
+        
+    }
+
+    
     .ourcorp-card-right-heading {
         font-size: 20px;
         margin-right: 30px;
@@ -156,11 +164,11 @@
         margin-left: 10px;
     }
     
-    .ourcorp-card-right-text {
+    /* .ourcorp-card-right-text {
         font-size: 14px;
         margin-right: 30px;
         text-align: justify;
-    }
+    } */
     .ourcorp-icon-image{
         height: 200px;
         width: 200px;
