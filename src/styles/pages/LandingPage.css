@@ -448,12 +448,18 @@
     .landingpage-container {
         padding-bottom: 60px;
     }
-    .logo {
+    /* .logo {
         max-width: 80px;
         margin-left: 50px;
         margin-top: 10px;
         z-index: 999;
 
+    } */
+    .logo{
+        height: 40px;
+        margin-left: 50px;
+        margin-top: 15px;
+        z-index: 999;
     }
     .slogan-button{
         width: 50%;
