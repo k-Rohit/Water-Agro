@@ -165,14 +165,13 @@ img {
   font-size: 18px;
   font-weight: 500;
   line-height: 17px;
-  margin-top: 8px;
 }
 
 .box-content{
   font-size: 13px;
   line-height: 18px;
   font-family: poppins;
-  margin-top: -15px;
+  margin-top: -1px;
 }
 
 .field-img, .farmer-icon-two-img, .transparency-img{
@@ -446,7 +445,7 @@ img {
   
   .box-heading {
     font-size: 16px;
-    margin: 5px 0;
+    margin: 5px;
   }
   
   .box-content {

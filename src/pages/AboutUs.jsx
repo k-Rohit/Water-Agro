@@ -171,7 +171,7 @@ export const AboutUs = () => {
                     </div>
                     <div className="box-first">
                         <div className="box-one">
-                           <img src="" alt="Fast & Reliable Distribution" />
+                           <img src="" alt="Eco-Conscious Approach" />
                         </div>
                         <div className="box-two">
                             <img src={Logistics} className="transparency-img" alt="Transparent Practices - icon" />
@@ -179,7 +179,7 @@ export const AboutUs = () => {
                             <p className="box-content">We ensure timely availability of products through a responsive and growing supply network.</p>
                         </div>
                         <div className="box-three">
-                            <img src="" alt="Farmer-Centric Support icon" />
+                            <img src="" alt="Young, Dynamic, and Future-Ready" />
                         </div>
                     </div>
                     <div className="box-second">
@@ -189,7 +189,7 @@ export const AboutUs = () => {
                             <p className="box-content">Our solutions are developed with care — balancing productivity with sustainability and soil health.</p>
                         </div>
                         <div className="box-five">
-                            <img src="" alt="Young, Dynamic, and Future-Ready" />   
+                            <img src="" alt="Fast & Reliable Distribution" />   
                         </div>
                         <div className="box-six">
                             <img src={Future} className="farmer-icon-two-img" alt="Farmer-Centric Support icon" />
