@@ -97,6 +97,9 @@ import { Link } from 'react-router-dom';
 import Field from '../assets/field.png'
 import FarmerIconTwo from '../assets/farmer-icon.png'
 import Transparency from '../assets/display.png'
+import Future from '../assets/future.png'
+import Logistics from '../assets/logistics.png'
+import Ecological from '../assets/ecological.png'
 
 export const AboutUs = () => {
     // Create refs for scrolling to sections
@@ -158,12 +161,40 @@ export const AboutUs = () => {
                             <p className="box-content">Every product is tested and tuned for real farm conditions — because performance matters where it grows.</p>
                         </div>
                         <div className="box-five">
-                            <img src="" alt="Field-Focused Formulations" />   
+                            <img src="" alt="Transparent Practices" />   
                         </div>
                         <div className="box-six">
                             <img src={FarmerIconTwo} className="farmer-icon-two-img" alt="Farmer-Centric Support icon" />
                             <p className="box-heading">Farmer-Centric Support</p>
                             <p className="box-content">From product guidance to on-ground feedback, our team is actively engaged in helping farmers at every stage.</p>
+                        </div>
+                    </div>
+                    <div className="box-first">
+                        <div className="box-one">
+                           <img src="" alt="Fast & Reliable Distribution" />
+                        </div>
+                        <div className="box-two">
+                            <img src={Logistics} className="transparency-img" alt="Transparent Practices - icon" />
+                            <p className="box-heading">Fast & Reliable Distribution</p>
+                            <p className="box-content">We ensure timely availability of products through a responsive and growing supply network.</p>
+                        </div>
+                        <div className="box-three">
+                            <img src="" alt="Farmer-Centric Support icon" />
+                        </div>
+                    </div>
+                    <div className="box-second">
+                        <div className="box-four">
+                            <img src={Ecological} className="field-img" alt="Eco-Conscious Approach" />
+                            <p className="box-heading">Eco-Conscious Approach</p>
+                            <p className="box-content">Our solutions are developed with care — balancing productivity with sustainability and soil health.</p>
+                        </div>
+                        <div className="box-five">
+                            <img src="" alt="Young, Dynamic, and Future-Ready" />   
+                        </div>
+                        <div className="box-six">
+                            <img src={Future} className="farmer-icon-two-img" alt="Farmer-Centric Support icon" />
+                            <p className="box-heading">Young, Dynamic, and Future-Ready</p>
+                            <p className="box-content">As a next-gen agri company founded in 2024, we bring fresh energy and bold thinking to the industry.</p>
                         </div>
                     </div>
                 </div>
