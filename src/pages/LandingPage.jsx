@@ -45,7 +45,7 @@ const LandingPage = () => {
           <div className="content">
             <div className='comp-name'>
               <h1 className="water">Water</h1>
-              <h1 className="agro-life">AgroLife</h1>
+              <h1 className="agro-life">Agro Life</h1>
             </div>
 
             <div className="content-description">
