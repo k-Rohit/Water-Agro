@@ -44,7 +44,7 @@ export const AboutUs = () => {
                     <button onClick={() => scrollToSection(whoWeAreRef)}>Who We Are</button>
                     <button onClick={() => scrollToSection(commitmentRef)}>Our Commitment</button>
                     <button onClick={() => scrollToSection(withFarmersRef)}>With Farmers</button>
-                    <button onClick={() => scrollToSection(futureFocusRef)}>Future Focus</button>
+                    <button onClick={() => scrollToSection(futureFocusRef)}>Our Future Focus</button>
                 </div>
 
                 <div className='aboutus-container' ref={whoWeAreRef}>

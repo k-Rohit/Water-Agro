@@ -74,36 +74,20 @@ const MobileNavigation = () => {
           <span id='Home'>Home</span>
         </Link>
         <Link 
+          to="/about-us" 
+          className={`mobile-nav-item ${currentPath === '/about-us' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          <div className="mobile-nav-icon about-icon"></div>
+          <span>About Us</span>
+        </Link>
+        <Link 
           to="/products" 
           className={`mobile-nav-item ${currentPath === '/products' ? 'active' : ''}`}
           onClick={() => setMenuOpen(false)}
         >
           <div className="mobile-nav-icon products-icon"></div>
           <span>Products</span>
-        </Link>
-        <Link 
-          to="/about-us" 
-          className={`mobile-nav-item ${currentPath === '/about-us' ? 'active' : ''}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <div className="mobile-nav-icon about-icon"></div>
-          <span>About</span>
-        </Link>
-        <Link 
-          to="/research" 
-          className={`mobile-nav-item ${currentPath === '/research' ? 'active' : ''}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <div className="mobile-nav-icon research-icon"></div>
-          <span>R&I</span>
-        </Link>
-        <Link 
-          to="/contact-us" 
-          className={`mobile-nav-item ${currentPath === '/contact-us' ? 'active' : ''}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <div className="mobile-nav-icon contact-icon"></div>
-          <span>Contact</span>
         </Link>
         <Link 
           to="/ourcorp" 
@@ -113,6 +97,23 @@ const MobileNavigation = () => {
           <div className="mobile-nav-icon contact-icon"></div>
           <span>Our Corp Family</span>
         </Link>
+        <Link 
+          to="/research" 
+          className={`mobile-nav-item ${currentPath === '/research' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          <div className="mobile-nav-icon research-icon"></div>
+          <span>Research & Innovation</span>
+        </Link>
+        <Link 
+          to="/contact-us" 
+          className={`mobile-nav-item ${currentPath === '/contact-us' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          <div className="mobile-nav-icon contact-icon"></div>
+          <span>Contact Us</span>
+        </Link>
+        
       </div>
     </div>
   );
