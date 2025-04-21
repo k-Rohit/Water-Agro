@@ -367,6 +367,7 @@
     
     } */
     .mobile-logo img {
+        height: auto;
         max-width: 40px;
         margin-left: 30%;
         margin-top: 9px;
@@ -400,8 +401,8 @@
         margin-top: 10px;
         margin-bottom: 5px;
         /* Maintain crisp edges on small screens */
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
+        /* image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges; */
     }
     
     /* .category-icon-wrapper {
