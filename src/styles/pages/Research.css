@@ -24,7 +24,6 @@
   height: 100%;
   max-width: 100px;
   object-fit: contain;
-
 }
 
 .image-container-research {
@@ -40,6 +39,7 @@
   object-fit: cover;
   display: block; /* prevents small gaps due to inline spacing */
 }
+
 .headline {
   padding-top: 40px;
   text-align: center;
@@ -50,18 +50,21 @@
   padding-bottom: 30px;
   width: 90%;
   padding-left: 110px;
+  margin: 0 auto; /* Center content */
 }
 
 .r-text{
   width: 90%;
   padding-left: 110px;
   padding-bottom: 30px;
+  margin: 0 auto; /* Center content */
 }
 
 .r-text-2 {
   width: 80%;
   padding-left: 260px;
   padding-bottom: 30px;
+  margin: 0 auto; /* Center content */
 }
 
 .headline h1 {
@@ -86,7 +89,7 @@
 .headline-info-box-container {
   width: 100%;
   background-color: #E0DFDB;
-  margin-bottom:  50px;
+  margin-bottom: 50px;
 }
   
 .info-box {
@@ -112,6 +115,7 @@
   padding-left: 180px;
   padding-right: 120px;
   width: 100%;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
   
 .card {
@@ -176,6 +180,7 @@
   z-index: 1;
   opacity: 0.5;
 }
+
 .h-rule {
   width: 89%;
   height: 2px;
@@ -202,27 +207,47 @@
 .h-rule::after {
   right: -45px; /* Adjust similarly */
 }
+
 .mobile-header-research{
   display: none;
 }
 
-
+/* Responsive Breakpoints */
 @media(max-width: 1200px) {
   .researcher-cards {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  
+  .r-text-2 {
+    padding-left: 160px;
+    width: 85%;
   }
 }
 
 @media(max-width: 1024px) {
   .headline {
     padding-left: 20px;
+    width: 90%;
+    font-size: 40px;
   }
+  
+  .r-text {
+    padding-left: 20px;
+    width: 90%;
+  }
+  
+  .r-text-2 {
+    padding-left: 20px;
+    width: 90%;
+  }
+  
   .info-boxes {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
+  
   .researcher-cards {
     flex-direction: column;
     align-items: center;
@@ -230,20 +255,23 @@
     padding-right: 20px;
     gap: 20px;
   }
+  
   .card {
     width: 90%;
   }
+  
   .vertical-ri-image {
     top: 500px;
     height: 200px;
   }
+  
   .mobile-header-research{
     display: flex;
   }
 }
 
 @media(max-width: 768px) {
-  .mobile-header {
+  .mobile-header-research {
     display: flex;
     position: relative;
     z-index: 10;
@@ -252,6 +280,15 @@
   .headline {
     padding-left: 10px;
     padding-top: 10px;
+    font-size: 36px;
+    width: 95%;
+  }
+  
+  .r-text, .r-text-2 {
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
   }
 
   .researcher-cards .icon-img {
@@ -280,32 +317,76 @@
 }
 
 @media(max-width: 600px) {
+  .headline {
+    font-size: 32px;
+    padding: 20px 15px;
+    text-align: left;
+    width: 90%;
+  }
+  
   .card {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
+  
   .card-header {
     width: 100%;
     margin-bottom: 15px;
   }
+  
   .card-text-div {
     width: 100%;
   }
+  
   .name-spec {
     padding-bottom: 10px;
+  }
+  
+  .researcher-cards {
+    padding: 20px 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .h-rule::before,
+  .h-rule::after {
+    font-size: 60px;
+  }
+  
+  .h-rule::before {
+    left: -30px;
+  }
+  
+  .h-rule::after {
+    right: -30px;
   }
 }
 
 @media(max-width: 480px) {
-  .headline h1 {
-    padding-left: 10px;
-    font-size: 30px;
-    text-align: justify;
+  .headline {
+    font-size: 28px;
+    padding: 20px 10px;
+    width: 95%;
+    text-align: left;
   }
+  
+  .headline h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .r-text, .r-text-2 {
+    font-size: 0.95rem;
+    padding: 0 10px 20px;
+  }
+  
   .vertical-ri-image {
-    top: 1580px;
+    top: 4650px;
     height: 100px;
   }
+  
   .mobile-header-research img {
     max-width: 35px;
     margin-right:300px;
@@ -317,28 +398,78 @@
     position: fixed;
     z-index: 3;
   }
+
   .researcher-cards .icon-img {
     width: 100px;
     height: 100px;
   }
+  
   .name-spec h2 {
     font-size: 1.2rem;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+  }
+  
+  .info-box {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .info-boxes {
+    padding: 0 10px;
+  }
+}
+
+@media(max-width: 380px) {
+  .headline {
+    font-size: 24px;
+    padding: 15px 10px;
+  }
+  
+  .r-text, .r-text-2 {
+    font-size: 0.9rem;
+  }
+  
+  .mobile-header-research img {
+    max-width: 30px;
   }
 }
 
 @media(max-width: 320px) {
   .headline {
-    padding-left: 5px;
+    padding: 10px 5px;
+    font-size: 22px;
   }
+  
   .vertical-ri-image {
     top: 200px;
     height: 80px;
   }
+  
   .card {
-    padding: 15px;
+    padding: 12px;
   }
+  
   .researcher-cards .icon-img {
     width: 80px;
     height: 80px;
+  }
+  
+  .r-text, .r-text-2 {
+    font-size: 0.85rem;
+  }
+  
+  .card-text {
+    font-size: 0.85rem;
+  }
+  
+  .name-spec h2 {
+    font-size: 1.1rem;
   }
 }
