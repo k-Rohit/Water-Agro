@@ -15,51 +15,51 @@
     max-width: 90%;
     opacity: 0;
     pointer-events: none;
-  }
+}
   
-  /* When shown */
-  .slogan-box.show {
+/* When shown */
+.slogan-box.show {
     animation: slideDown 0.6s ease forwards, stayUp 3.4s ease forwards 0.6s, slideUp 0.6s ease forwards 4s;
     pointer-events: auto;
-  }
+}
   
-  /* 🔽 Drop down */
-  @keyframes slideDown {
+/* 🔽 Drop down */
+@keyframes slideDown {
     from {
-      transform: translateX(-50%) translateY(-100%);
-      opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
     }
     to {
-      transform: translateX(-50%) translateY(0%);
-      opacity: 1;
+        transform: translateX(-50%) translateY(0%);
+        opacity: 1;
     }
-  }
+}
   
-  /* ⏸ Stay in place */
-  @keyframes stayUp {
+/* ⏸ Stay in place */
+@keyframes stayUp {
     from {
-      transform: translateX(-50%) translateY(0%);
-      opacity: 1;
+        transform: translateX(-50%) translateY(0%);
+        opacity: 1;
     }
     to {
-      transform: translateX(-50%) translateY(0%);
-      opacity: 1;
+        transform: translateX(-50%) translateY(0%);
+        opacity: 1;
     }
-  }
+}
   
-  /* 🔼 Slide back up */
-  @keyframes slideUp {
+/* 🔼 Slide back up */
+@keyframes slideUp {
     from {
-      transform: translateX(-50%) translateY(0%);
-      opacity: 1;
+        transform: translateX(-50%) translateY(0%);
+        opacity: 1;
     }
     to {
-      transform: translateX(-50%) translateY(-100%);
-      opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
     }
-  }
+}
 
-  .slogan-button {
+.slogan-button {
     background-color: #FEB631;
     font-family: 'Poppins';
     color: #2D2D2D;
@@ -75,53 +75,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  }
+}
   
-  .slogan-button:hover {
+.slogan-button:hover {
     background-color: #f4a600;
     transform: scale(1.05);
-  }
+}
   
-  
-  
-  /* 🐄 Cow bounce */
-  .cow-image img {
+/* 🐄 Cow bounce */
+.cow-image img {
     transition: transform 0.3s ease;
-  }
+}
   
-  .clicked-cow {
+.clicked-cow {
     animation: cowBounce 0.4s ease;
-  }
+}
   
-  /* 🐮 Cow bounce keyframes */
-  @keyframes cowBounce {
+/* 🐮 Cow bounce keyframes */
+@keyframes cowBounce {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
     30% {
-      transform: scale(0.95) translateY(-5px);
+        transform: scale(0.95) translateY(-5px);
     }
     60% {
-      transform: scale(1.05) translateY(3px);
+        transform: scale(1.05) translateY(3px);
     }
     100% {
-      transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
     }
-  }
+}
 
-
+/* Main container - MODIFIED: changed fixed height to min-height */
 .landingpage-container {
-    height: 100vh;
+    min-height: 100vh; /* Changed from height to min-height */
     width: 100%;
     background-color: #E9E8E4;
     display: flex;
     flex-direction: column;
     z-index: 1;
-    overflow-x: hidden;
-    overflow-y: hidden;
     position: relative;
+    overflow-x: hidden; /* Only prevent horizontal scrolling */
 }
 
 /* Desktop header styles - make header relative by default */
@@ -131,23 +127,23 @@
     top: 0;
     width: 100%;
     background-color: #E9E8E4;
-    z-index: 0;
+    z-index: 10; /* Increased z-index */
 }
 
 .water, .agro-life {
     font-family: 'Poppins';
     margin-top: 10%;
     font-weight: 400;
-
-    font-size: clamp(2.5rem, 7vw, 6rem); /* Responsive font size */
+    font-size: clamp(2.5rem, 7vw, 6rem);
     line-height: 0.9;
     padding-bottom: 20px;
-    
 }
 
+/* MODIFIED: Reduced negative margin */
 .water {
-    margin-bottom: clamp(-4rem, -6vw, -8rem);
+    margin-bottom: clamp(-2rem, -3vw, -4rem);
 }
+
 .view-button{
     margin-top: 10px;
 }
@@ -155,30 +151,24 @@
 .content-description {
     font-family: 'Poppins', sans-serif;
     font-size: clamp(0.6rem, 1.8vw, 1rem);
-    margin-top: clamp(-3rem, -3vw, -1rem);
+    margin-top: clamp(-1rem, -1.5vw, -0.5rem); /* MODIFIED: Reduced negative margin */
     text-align: justify;
     max-width: 90%;
 }
 
-/* .logo {
-    height: clamp(40px, 5vh, 80px);
-    margin-left: clamp(40px, 5vw, 70px);
-    margin-top: clamp(15px, 2vh, 30px);
-} */
-
-.logo{
+.logo {
     height: 70px;
     margin-left: 50px;
     margin-top: 15px;
 }
 
+/* MODIFIED: Removed fixed height, added padding-bottom */
 .landingpage-mid {
-    height: 88%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 0;
-    overflow-y: auto;
+    padding-bottom: 50px; /* Added to ensure content has room */
 }
 
 .content {
@@ -187,14 +177,16 @@
     padding-right: clamp(10px, 2vw, 20px);
 }
 
+/* MODIFIED: Adjusted negative margin */
 .sapling-image-div {
     flex: 4;
     z-index: 2;
-    margin-left: clamp(-50px, -5vw, -100px);
+    margin-left: clamp(-20px, -2vw, -50px); /* Reduced negative margin */
 }
 
+/* MODIFIED: Changed fixed height to max-height */
 .sapling-image {
-    height: clamp(600px, 80vh, 630px);
+    max-height: clamp(400px, 80vh, 630px);
     width: auto;
     max-width: 100%;
     margin-top: clamp(10px, 2vh, 20px);
@@ -224,14 +216,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .view-button:hover {
     transform: scale(1.05);
 }
-
 
 .arrow {
     background-color: #FEB631;
@@ -244,7 +234,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -252,11 +241,6 @@
     transform: scale(1.1);
 }
 
-
-.arrow:hover {
-    transform: scale(1.05); /* Grows slightly on hover */
-
-}
 .arrow-img {
     height: 20px;
     width: 20px;
@@ -271,7 +255,6 @@
     align-items: start;
     font-family: "Poppins";
 }
-
 
 .tabs a.tab-button {
     background: linear-gradient(to right, #DEDBD3, #E9E8E4);
@@ -288,7 +271,6 @@
     font-weight: 500;
     text-decoration: none;
     display: block;
-
     transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
@@ -297,8 +279,6 @@
     background: linear-gradient(to right, #D6D3C9, #E9E8E4);
     transform: scale(1.05);
 }
-
-
 
 .tabs .tabs-home, 
 .tabs .tabs-products,
@@ -315,7 +295,6 @@
 }
 
 .cow-image {
-    /* margin-bottom: -30px; */
     z-index: 3;
 }
 
@@ -323,9 +302,10 @@
     max-width: 100%;
     height: auto;
 }
+
 .cow-image-mobile {
     display: none;
-  }
+}
 
 /* Tablet and small laptop styles */
 @media (max-width: 1024px) {
@@ -341,18 +321,19 @@
         align-items: center;
         text-align: center;
         padding-bottom: 70px;
-        margin-top: 60px;
+        margin-top: 60px; /* Space for fixed header */
     }
 
+    /* MODIFIED: Fixed alignment and margin */
     .water, .agro-life {
-        text-align: justify;   
+        text-align: center;   
         font-size: 40px;
         margin-top: 4%;
-        margin-left: -80%;
+        margin-left: 0; /* Removed negative margin */
     }
     
     .water {
-        margin-bottom: clamp(-20px, -3vw, -30px);
+        margin-bottom: 0; /* Adjusted for better spacing */
     }
 
     .content {
@@ -361,11 +342,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Ensure content takes full width */
     }
 
     .content-description {
-        text-align: justify;
-        margin-top: clamp(10px, 3vh, 20px);
+        text-align: center; /* Center text on mobile */
+        margin-top: 20px; /* Positive margin instead of negative */
         max-width: 100%;
     }
 
@@ -382,66 +364,40 @@
     .div-right {
         display: none;
     }
-    .cow-image-mobile {
-        display: none;
-      }
-    
 }
-/* @media (max-width: 768px) {
-    .cow-image-mobile {
-        background-color: #E9E8E4;
+
+@media (max-width: 768px) {
+    .sapling-cow-wrapper {
         display: flex;
         justify-content: center;
+        align-items: flex-end;
+        gap: 10px; 
         margin-top: 20px;
-        width: 100%;
+        margin-bottom: 40px;
+        width: 100%; /* Ensure wrapper takes full width */
+    }
+
+    .sapling-cow-wrapper .sapling-image {
+        width: 100px;
         height: auto;
-        margin-top: -200px;
-      }
-    
-      .cow-image-mobile img {
-        width: 400px;
+    }
+
+    .sapling-cow-wrapper .cow-image-mobile img {
+        width: 120px;
         height: auto;
-        margin-top: -300px;
-        max-width: 300px;
-        margin-left: 230px;
-        height: auto;
-        z-index: 1;
-      }
-  } */
+        object-fit: contain;
+    }
 
-  @media (max-width: 768px) {
-  .sapling-cow-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
+    /* Show mobile cow image */
+    .cow-image-mobile {
+        display: flex;
+        align-items: flex-end;
+    }
 
-  .sapling-cow-wrapper .sapling-image {
-    width: 100px;
-    height: auto;
-  }
-
-  .sapling-cow-wrapper .cow-image-mobile img {
-    width: 120px;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /* Hide the desktop version of cow image */
-  .div-right .cow-image {
-    display: none;
-  }
- 
-
-
-  /* Ensure cow image on mobile is only shown here */
-  /* .cow-image-mobile {
-    display: flex;
-    align-items: flex-end;
-  } */
+    /* Hide desktop cow image */
+    .div-right .cow-image {
+        display: none;
+    }
 }
 
 /* Small phones and portrait-oriented devices */
@@ -449,102 +405,118 @@
     .landingpage-container {
         padding-bottom: 60px;
     }
-    /* .logo {
-        max-width: 80px;
-        margin-left: 50px;
-        margin-top: 10px;
-        z-index: 999;
-
-    } */
+    
     .logo{
         height: 40px;
         margin-left: 50px;
         margin-top: 15px;
         z-index: 999;
     }
+    
     .slogan-button{
         width: 50%;
         font-family: 'poppins';
         margin: 2px;
+        font-size: 12px;
 
     }
+     .water{
+        padding-bottom: 0px;
+        padding-right: 20px;
+        
+    }
+    .agro-life{
+        padding-bottom: 0px;
+    }
+
     
     .landingpage-header {
         height: 50px;
-
     }
     
     .landingpage-mid {
         margin-top: 50px;
     }
-
-    .comp-name{
-        margin-left: -190px;
-        margin-top: 20px;
+    .content-description{
        
+        font-size: 12px;
+        text-align: justify;
     }
-    .water{
-        padding-bottom: 0px;
-    }
-    .agro-life{
-        padding-bottom: 0px;
+
+    /* MODIFIED: Fixed comp-name alignment */
+    .comp-name {
+        margin-left: -200px; /* Removed negative margin */
+        margin-top: 20px;
+        text-align: justify;
+        width: 100%;
     }
     
     .water, .agro-life {
-        font-size: 40px;
+        font-size: 28px; /* Reduced size */
         text-align: justify;
+
+        padding-bottom: 5px;
+        margin: 0 auto; /* Center alignment */
+        max-width: 90%;
     }
 
     .content-buttons {
         width: 100%;
         justify-content: center;
         align-items: center;
-        gap: 1px;
-       
+        gap: 5px; /* Increased gap slightly */
     }
+    
     .arrow{
-       
         height: 40px;
-        width: 50px;
-        
-        margin: 2px;
-        margin-left: -1px;
+        width: 60px;
+        margin: 1px;
+        margin-left: 1px;
+        margin-top: 2px;
     }
 
     .view-button, .arrow {
         transform: scale(0.9);
     }
+    .view-button {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
 
+    /* MODIFIED: Fixed sapling image sizing */
     .sapling-image {
-        height: clamp(180px, 45vh, 250px);
+        max-height: 200px;
+        width: auto;
     }
 
     .mobile-nav-item {
         padding: 5px 2px;
     }
+    
     .sapling-image-div {
-        margin-left: 0;
-        display: flex;
-        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
     }
 }
 
 /* Extra small devices */
 @media (max-width: 320px) {
     .water, .agro-life {
-        font-size: clamp(1.8rem, 8vw, 2.5rem);
-        margin: auto;
-        margin-left: 10px;
-        text-align: justify;
+        font-size: 24px; /* Further reduced size */
+        margin: 0 auto;
+        text-align: center;
+        padding: 5px 0;
     }
     
     .content-description {
         font-size: clamp(0.75rem, 3.5vw, 0.875rem);
+        padding: 0 10px;
     }
     
     .content-buttons {
         transform: scale(0.85);
         transform-origin: center;
+        width: 100%;
     }
     
     .mobile-nav-item {
@@ -573,14 +545,13 @@
 /* For tall/narrow devices (iPhone 12/13/14 Pro Max, etc.) */
 @media (max-height: 900px) and (max-width: 480px) {
     .water, .agro-life {
-        font-size: clamp(1.8rem, 6vw, 2.5rem);
-        margin: auto;
-        margin-left: 10px;
-        text-align: justify;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
     }
     
     .sapling-image {
-        height: clamp(150px, 35vh, 220px);
+        max-height: 180px;
     }
 }
 
@@ -589,12 +560,11 @@
     .landingpage-mid {
         flex-direction: row;
         align-items: center;
-        height: auto;
         margin-top: 50px;
     }
     
     .sapling-image {
-        height: clamp(150px, 80vh, 300px);
+        max-height: 180px;
     }
     
     .content {
@@ -604,14 +574,14 @@
     }
     
     .water, .agro-life {
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
-        margin: auto;
-        margin-left: 10px;
-        text-align: justify;
+        font-size: 22px;
+        margin: 5px 0;
+        text-align: left;
     }
     
     .content-description {
         text-align: left;
         font-size: clamp(0.75rem, 2vw, 0.875rem);
+        margin-top: 10px;
     }
 }

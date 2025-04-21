@@ -162,6 +162,26 @@ img {
   width: auto;
 }
 
+/* Add basic styling for box text */
+.box-heading {
+  font-weight: 600;
+  color: #1b693b;
+  margin: 10px 0 5px 0;
+}
+
+.box-content {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+/* Fix for empty boxes that should display images */
+.box-one, .box-three, .box-five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .box-one, .box-four{
   background-color: aqua;
 }
@@ -305,9 +325,27 @@ img {
   .mobile-logo-container {
     display: flex;
   }
+  
+  /* Added responsive styling for box containers */
+  .box-first, .box-second {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .box-one, .box-two, .box-three, .box-four, .box-five, .box-six {
+    width: 90%;
+    height: auto;
+    min-height: 180px;
+    margin: 0 auto;
+  }
+  
+  .aboutus-container-mid {
+    padding: 15px 0;
+    width: 100%;
+  }
 }
-
-
 
 /* Small phones and portrait-oriented devices */
 @media (max-width: 480px) {
@@ -369,6 +407,32 @@ img {
   .icon-image {
     width: 150px;
   }
+  
+  /* Added responsive styling for box containers on small phones */
+  .box-one, .box-two, .box-three, .box-four, .box-five, .box-six {
+    width: 95%;
+    min-height: 150px;
+    padding: 15px;
+  }
+  
+  .box-first, .box-second {
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .field-img, .farmer-icon-two-img, .transparency-img {
+    height: 35px;
+  }
+  
+  .box-heading {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .box-content {
+    font-size: 14px;
+    margin: 5px 0;
+  }
 }
 
 /* Extra small devices */
@@ -387,6 +451,20 @@ img {
 
   .card-right-heading {
     font-size: 20px;
+  }
+  
+  /* Additional styling for smallest screens */
+  .box-one, .box-two, .box-three, .box-four, .box-five, .box-six {
+    min-height: 140px;
+    padding: 10px;
+  }
+  
+  .box-heading {
+    font-size: 15px;
+  }
+  
+  .box-content {
+    font-size: 13px;
   }
 }
 
@@ -423,5 +501,17 @@ img {
 
   .card-left-div {
     padding-right: 15px;
+  }
+  
+  /* Style for landscape mobile view */
+  .box-first, .box-second {
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .box-one, .box-two, .box-three, .box-four, .box-five, .box-six {
+    width: 30%;
+    height: 160px;
   }
 }

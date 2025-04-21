@@ -150,8 +150,7 @@ const Research = () => {
             </div>
             <div className='card-text-div'>
               <p className='card-text'>
-                With extensive experience in sugarcane cultivation and development, Dr. Dharmendra Singh has played a key role in driving sustainable productivity within the sector. Formerly the Group Head of Cane Development at Uttam Sugarcane Industries
-              </p>
+              Behind every successful agricultural innovation lies a foundation of deep expertise and hands-on experience. At Water Agro Life LLP, we take pride in the invaluable guidance of two esteemed industry veterans whose vision and leadership continually drive our growth and innovation. Their knowledge not only shapes our strategies but also ensures we stay rooted in practical, field-tested solutions that truly make a difference. Dr. Dharmendra Singh, a distinguished chemist, oversees the development of products at Space Crop Protection Ltd., our trusted supplier of high-quality finished formulations.</p>
             </div>
           </div>
         </div>

@@ -168,7 +168,7 @@ export const AboutUs = () => {
                     </div>
                 </div>
 
-                <Slideshow />
+                {/* <Slideshow /> */}
 
                 <div className='card-div' ref={commitmentRef}>
                     <div className='card-left-div'>
