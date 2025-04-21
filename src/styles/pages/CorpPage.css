@@ -149,17 +149,17 @@
         margin-left: 12px;
         
     }
-    .ourcorp-card-right-heading{
-        margin-left: 12px;
-        text-align: center;
-    }
-
+ 
     
     .ourcorp-card-right-heading {
         font-size: 20px;
-        margin-right: 30px;
+        margin-left: 12px;
         text-align: center;
 
+    }
+    .ourcorp-card-left-div{
+        margin-left: 20px;
+        
     }
 
     .ourcorp-text{
