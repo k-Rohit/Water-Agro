@@ -362,10 +362,14 @@
 }
 
 @media (max-width: 480px) {
+    .mobile-header{
+        position: fixed;
+    }
     .mobile-logo img {
         max-width: 80px;
         margin-left: 40px;
         margin-top: 9px;
+      
         
     }
     .search-bar{

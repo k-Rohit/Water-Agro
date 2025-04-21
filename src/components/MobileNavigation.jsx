@@ -105,6 +105,14 @@ const MobileNavigation = () => {
           <div className="mobile-nav-icon contact-icon"></div>
           <span>Contact</span>
         </Link>
+        <Link 
+          to="/ourcorp" 
+          className={`mobile-nav-item ${currentPath === '/ourcorp' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          <div className="mobile-nav-icon contact-icon"></div>
+          <span>Our Corp Family</span>
+        </Link>
       </div>
     </div>
   );
