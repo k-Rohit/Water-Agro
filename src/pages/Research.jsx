@@ -25,7 +25,7 @@ const Research = () => {
   return (
     <>
       <MobileNavigation currentPage="research" />
-       
+
       <div className="research-container">
         <div className="mobile-header-research">
           {/* Mobile logo - only visible on smaller screens */}
@@ -39,8 +39,12 @@ const Research = () => {
         </div>
         <div className='headline-info-box-container'>
           <div className="headline">
-            <h1>Where <span className="green">Agriculture</span></h1>
-            <h1>Meets Innovation</h1>
+            Powered by Innovation:<span className="green"> R&D Support from Our Parent Company</span>
+          </div>
+
+          <div className='r-text'>
+            At Water Agro Life LLP, we are deeply committed to delivering cutting-edge agricultural solutions, even without maintaining an in-house innovation facility. Our strength lies in being backed by the world-class scientific infrastructure and technical expertise of our parent company, Space Crop Protection Limited.Through this powerful collaboration, we gain access to next-generation product development, rigorous scientific validation, and advanced formulation technologies. Every product we bring to market is rooted in a foundation of precision science, field-tested performance, and future-ready innovation
+
           </div>
 
           <div className="info-boxes">
@@ -75,7 +79,7 @@ const Research = () => {
                 We benefit from scientifically developed solutions focused on high efficacy, low environmental impact, and improved plant health outcomes. Our innovative approaches incorporate advanced research methodologies and sustainable practices to ensure optimal results while maintaining ecological balance in agricultural systems.            </p>
             </div>
           </div>
-          <hr className='h-rule'/>
+          <hr className='h-rule' />
           <div className="info-boxes">
             <div className="info-box">
               <img src={PlantImage} alt="Farmer-Centric" className="icon-img" />
@@ -94,17 +98,28 @@ const Research = () => {
               <img src={TestingImage} alt="Rigorous Testing" className="icon-img" />
               <h3>Rigorous Testing & Validation</h3>
               <p>
-              All solutions undergo extensive research trials, performance testing, and safety assessments to ensure consistency, reliability, and farmer satisfaction. Our comprehensive evaluation process includes multiple stages of validation and field testing to guarantee optimal performance and meet rigorous quality standards.              </p>
+                All solutions undergo extensive research trials, performance testing, and safety assessments to ensure consistency, reliability, and farmer satisfaction. Our comprehensive evaluation process includes multiple stages of validation and field testing to guarantee optimal performance and meet rigorous quality standards.              </p>
             </div>
 
             <div className="info-box">
               <img src={SharedVision} alt="Shared Vision" className="icon-img" />
               <h3>Shared Vision for Smarter Agriculture</h3>
               <p>
-              This collaboration between Water Agro Life LLP and Space Crop Protection Limited gives us the unique ability to operate with speed, agility, and trust, while delivering the benefits of high-end agri-science to farmers across the country. It’s innovation made accessible — designed to drive progress from the ground up.            </p>
+                This collaboration between Water Agro Life LLP and Space Crop Protection Limited gives us the unique ability to operate with speed, agility, and trust, while delivering the benefits of high-end agri-science to farmers across the country. It’s innovation made accessible — designed to drive progress from the ground up.            </p>
             </div>
           </div>
 
+
+
+
+        </div>
+
+        <div className="headline">
+          Backbone of<span className="green"> Our Vision</span>
+        </div>
+
+        <div className='r-text-2'>
+          Behind every successful agricultural innovation stands a foundation of deep knowledge and field-tested experience. At Water Agro Life LLP, we are proud to be guided and supported by two highly respected industry experts whose insights and leadership continue to shape our journey.
 
         </div>
         <img src={RIImage} alt="R & I" className="vertical-ri-image" />
