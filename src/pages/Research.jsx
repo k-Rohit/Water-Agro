@@ -42,7 +42,7 @@ const Research = () => {
           </div>
 
           <div className='r-text'>
-            At Water Agro Life LLP, we are deeply committed to delivering cutting-edge agricultural solutions, even without maintaining an in-house innovation facility. Our strength lies in being backed by the world-class scientific infrastructure and technical expertise of our parent company, Space Crop Protection Limited.Through this powerful collaboration, we gain access to next-generation product development, rigorous scientific validation, and advanced formulation technologies. Every product we bring to market is rooted in a foundation of precision science, field-tested performance, and future-ready innovation
+            At Water Agro Life LLP, we are deeply committed to delivering cutting-edge agricultural solutions, even without maintaining an in-house innovation facility. Our strength lies in being backed by the world-class scientific infrastructure and technical expertise of our parent company, Space Crop Protection Limited.Through this powerful collaboration, we gain access to next-generation product development, rigorous scientific validation, and advanced formulation technologies. Every product we bring to market is rooted in a foundation of precision science, field-tested performance, and future-ready innovation.
 
           </div>
 
@@ -59,7 +59,7 @@ const Research = () => {
               <img src={VisionaryIcon} alt="Collaboration" className="icon-img" />
               <h3>Backbone of Our Vision</h3>
               <p>
-                Behind every successful agricultural innovation stands a foundation of deep knowledge and field-tested experience. At Water Agro Life LLP, we are proud to be guided and supported by two highly respected industry experts whose insights and leadership continue to shape our journey.            </p>
+              Behind every successful agricultural innovation stands a foundation of deep knowledge and field-tested experience. At Water Agro Life LLP, we are proud to be guided and supported by Mr. Rajat Kumar, a highly respected industry expert whose insights and leadership continue to shape our journey.</p>
             </div>
 
 
@@ -118,8 +118,7 @@ const Research = () => {
         </div>
 
         <div className='r-text-2'>
-          Behind every successful agricultural innovation stands a foundation of deep knowledge and field-tested experience. At Water Agro Life LLP, we are proud to be guided and supported by two highly respected industry experts whose insights and leadership continue to shape our journey.
-
+        Behind every successful agricultural innovation stands a foundation of deep knowledge and field-tested experience. At Water Agro Life LLP, we are proud to be guided and supported by Mr. Rajat Kumar, a highly respected industry expert whose insights and leadership continue to shape our journey.
         </div>
         <img src={RIImage} alt="R & I" className="vertical-ri-image" />
 
@@ -134,12 +133,11 @@ const Research = () => {
             </div>
             <div className='card-text-div'>
               <p className='card-text'>
-                A recognized authority in micronutrient research, Mr. Rajat Kumar brings a wealth of knowledge in developing advanced nutrient formulations aimed at improving plant vitality and maximizing crop yield. His deep understanding has advanced sustainable agricultural practices.
-              </p>
+              Mr. Rajat Kumar is a recognized expert in micronutrient research with extensive experience in developing advanced nutrient formulations. His work focuses on improving plant vitality, maximizing crop yield, and promoting sustainable agricultural practices. With deep knowledge in micronutrient applications, he continues to lead innovations that enhance soil health and agricultural productivity.              </p>
             </div>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <div className="card-header">
               <div className='name-spec'>
                 <h2>Dr. Dharmendra Singh</h2>
@@ -151,7 +149,7 @@ const Research = () => {
               <p className='card-text'>
               Behind every successful agricultural innovation lies a foundation of deep expertise and hands-on experience. At Water Agro Life LLP, we take pride in the invaluable guidance of two esteemed industry veterans whose vision and leadership continually drive our growth and innovation. Their knowledge not only shapes our strategies but also ensures we stay rooted in practical, field-tested solutions that truly make a difference. Dr. Dharmendra Singh, a distinguished chemist, oversees the development of products at Space Crop Protection Ltd., our trusted supplier of high-quality finished formulations.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
