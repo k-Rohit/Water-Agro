@@ -42,8 +42,7 @@ const CorpPage = () => {
                             <strong>Mr. Dheer Singh – Director of Operations, Marketing and Strategy</strong>
                         </p>
                         <p className='ourcorp-card-right-text'>
-                            Mr. Dheer Singh brings over 30 years of extensive experience in agricultural operations, supply chain management, and strategic marketing. Having worked with leading Indian MNCs as well as renowned international corporations, he has a proven track record in scaling agricultural businesses and optimizing operational efficiency. In his role at Water Agro Life LLP, Mr. Singh helps shape the company's vision and marketing strategies, focusing on expanding its global presence, building relationships with stakeholders, and ensuring that their solutions reach the farmers and markets that need them most.
-                        </p>
+                        Mr. Dheer Singh brings over 30 years of extensive experience in agricultural operations, sales management strategic marketing and supply chain management. Having worked with leading MNCs and Indian MNCs as well as renowned international corporations, he has a proven track record in scaling agricultural businesses and optimizing operational efficiency. In his role at Water Agro Life LLP, Mr. Singh helps shape the company's vision and marketing strategies, focusing on expanding its global presence, building relationships with stakeholders, and ensuring that their solutions reach the farmers and markets that need them most.                        </p>
                     </div>
                     <div className='ourcorp-card-left-div'>
                         <img src={PersonImage} className='ourcorp-icon-image' alt="Mr. Dheer Singh" />
