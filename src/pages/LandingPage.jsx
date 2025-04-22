@@ -55,8 +55,8 @@ const LandingPage = () => {
             </div>
 
             <div className="content-buttons">
-              <Link to='/products' className="view-button">View Products</Link>
-              <Link to='/products' className="arrow">
+              <Link to='/about-us' className="view-button">About Us</Link>
+              <Link to='/about-us' className="arrow">
                 <img src={Arrow} className="arrow-img" alt="Arrow" />
               </Link>
               <button className="slogan-button" onClick={handleSloganClick}>
