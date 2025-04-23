@@ -13,7 +13,9 @@ import MobileNavigation from "../components/MobileNavigation";
 import FacebookImage from "../assets/facebook-yellow.svg"
 import InstagramImage from "../assets/instagram-yellow.svg"
 import LinkedInImage from "../assets/linkedin-yellow.svg"
+import InternerIcon from "../assets/internet.svg"
 import Logo from '../assets/logo.png';
+import BottomNavigation from '../components/BottomNavigation';
 
 const ContactUs = () => {
 
@@ -44,9 +46,11 @@ const ContactUs = () => {
       <div className="contactus-container">
         <div className="navbar">
           <TransparentNavbar />
+          
         </div>
 
         <MobileNavigation currentPage="contact-us" />
+        <BottomNavigation/>
 
         <div className="mobile-header-contact">
           <Link to="/">
@@ -82,6 +86,10 @@ const ContactUs = () => {
           <div className="contact-options">
             <img src={LinkedInImage} className="icon-img-c" alt="LinkedIn Icon" />
             <a href="https://www.linkedin.com/company/water-agro-life-llp/" target="_blank" rel="noopener noreferrer"><span className="icon-text">Water Agro Life Llp</span></a>
+          </div>
+          <div className="contact-options">
+            <img src={InternerIcon} className="icon-img-c" alt="LinkedIn Icon" />
+            <a href="https://wateragrolife.in/" target="_blank" rel="noopener noreferrer"><span className="icon-text">wateragrolife.in</span></a>
           </div>
 
 

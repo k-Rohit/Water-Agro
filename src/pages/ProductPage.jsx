@@ -12,6 +12,7 @@ import HerbicideIcon from '../assets/Herbicide-tab.svg';
 import PlantGrowthIcon from '../assets/Plant-growth-promoter.svg';
 import FertilizerIcon from '../assets/Fertilizer-tab.svg';
 import SlideNotification from '../components/SlideNotification';
+import BottomNavigation from '../components/BottomNavigation';
 
 import Logo from '../assets/logo.png';
 
@@ -91,6 +92,7 @@ export const ProductPage = () => {
   return (
     <>
       <MobileNavigation />
+      <BottomNavigation/>
       <SlideNotification 
         message="Click the products to view more details." 
         duration={3000}

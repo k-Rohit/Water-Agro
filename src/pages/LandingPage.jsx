@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import SlideNotification from '../components/SlideNotification';
 import Capsicum from '../assets/capsicum.svg'
 import HamburgerTooltip from '../components/HamburgerTooltip';
+import BottomNavigation from '../components/BottomNavigation';
 
 
 const isMobile = window.innerWidth <= 480;
@@ -39,7 +40,7 @@ const LandingPage = () => {
 
         {/* <MobileNavigation /> */}
         <MobileNavigation />
-        {isMobile && <HamburgerTooltip />}  
+        <BottomNavigation/>
 
         <div className={`slogan-box ${showSlogan ? 'show' : ''}`}>
           {slogans[sloganIndex]}

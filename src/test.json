@@ -62,6 +62,17 @@
           "Dose/Acre": "300 ml/acre",
           "Packaging Options:": "250 ml, 500 ml, 1 ltr",
           "price": "₹ 1499"
+        },
+        {
+          "name": "SAFAR",
+          "image": "../assets/Product/safar.png",
+          "description": "SAFAR is a powerful combination fungicide containing Tebuconazole and Captan that provides comprehensive protection against a wide spectrum of fungal diseases. Its dual-action formula delivers both preventive and curative benefits for various crops.",
+          "Technical Name": "Tebuconazole 6.7% + Captan 26.9% w/w SC",
+          "Best Used In": "Paddy, Apple, Banana, Chili, Coffee, Corn, Grape, Mango, Mustard, Okra, Onion, Pea, Sugarcane, Tomato, Wheat",
+          "Defends Against": "Scab, powdery mildew, Rust, Smut, Leaf spot, Blotch, Sugarcane red rot, Tea blight, Sheath blight, White rust, Die-back, Anthracnose, Black rot, Brown Spot, White spot, etc.",
+          "Dose/Acre": "2 ml - 2.5 ml / ltr",
+          "Packaging Options:": "250 ml, 500ml, 1ltr",
+          "price": "₹ 1299"
         }
       ]
     },
@@ -111,6 +122,61 @@
           "Dose/Acre": "200 – 400 ml/acre",
           "Packaging Options:": "250 ml, 500 ml, 1 ltr",
           "price": "₹ 799"
+        },
+        {
+          "name": "BRAND-G",
+          "image": "../assets/Product/brand.png",
+          "description": "BRAND-G is a versatile insecticide containing Chlorantraniliprole that effectively controls a wide range of pests across numerous crop types. It provides excellent protection against various borers, caterpillars, and other destructive insects.",
+          "Technical Name": "Chlorantraniliprole 18.5% w/w SC",
+          "Best Used In": "Sugarcane, Soybean, Maize, Groundnut, Cotton, Rice, Pigeon Pea, Black Gram, Bengal Gram, Alfalfa, Brassicas, Corn, Tomatoes, Chili, Brinjal, Cabbage, Bitter Gourd, Okra, Peppers, Leafy Greens, Grapes, Citrus, Pome Fruits, Avocados, Litchis, Pomegranates, Stone Fruits (Peaches, Plums, Nectarines), Tree Nuts",
+          "Defends Against": "Stem borer, Leaf folder, American bollworm, Spotted bollworm, Diamond back moth, Termite, Early Shoot Borer, Top Borer, Fruit Borer, Shoot & Fruit Borer, Pod Borer, Green Semilooper, Stem Fly, Girdle Beetle, Caterpillars",
+          "Dose/Acre": "20ml to 250 ml / acre, depending on the crop type and growth stage",
+          "Packaging Options:": "60ml, 150ml, 250ml",
+          "price": "₹ 1299"
+        },
+        {
+          "name": "LEGAND",
+          "image": "../assets/Product/legand.png",
+          "description": "LEGAND is a dual-action insecticide combining Thiamethoxam and Lambda-cyhalothrin, providing comprehensive protection against various crop pests. It offers both systemic and contact action for effective pest management.",
+          "Technical Name": "Thiamethoxam 12.6% + Lambda-cyhalothrin 9.5% ZC",
+          "Best Used In": "Maize, Cotton, Groundnut, Soybean, Chili, Tea, and Tomato",
+          "Defends Against": "Yellow Rust, Sheath Blight, Early Blight, Late Blight, Anthracnose, Alternaria Leaf Spot, Scab (in apples), Downy Mildew, Powdery Mildew, Fruit Rot, Die Back",
+          "Dose/Acre": "50 ml to 80 ml per acre, depending on the crop type and disease severity",
+          "Packaging Options:": "250 ml, 500ml, 1ltr",
+          "price": "₹ 1099"
+        },
+        {
+          "name": "HIMALAYA 505",
+          "image": "../assets/Product/himalaya.png",
+          "description": "HIMALAYA 505 is a powerful combination insecticide containing Chlorpyrifos and Cypermethrin that delivers broad-spectrum pest control. It is especially effective against sucking pests and borers in various crops.",
+          "Technical Name": "CHLORPYRIFOS 50% + CYPERMETHRIN 5% EC",
+          "Best Used In": "Cotton, Paddy, Vegetables, Soyabean, Chickpeas, Pigeon Pea",
+          "Defends Against": "Aphids, Jassids, Thrips, Whiteflies, Bollworms, and Stem borers",
+          "Dose/Acre": "500ml - 1ltr per acre, depending on the specific crop and pest infestation level",
+          "Packaging Options:": "250ml, 500ml, 1ltr, 5ltr",
+          "price": "₹ 999"
+        },
+        {
+          "name": "AJANTA",
+          "image": "../assets/Product/ajanta.png",
+          "description": "AJANTA is a premium insecticide formulation combining Chlorantraniliprole and Lambda Cyhalothrin, designed to combat a variety of destructive pests. It provides extended protection for multiple crop types through both systemic and contact action.",
+          "Technical Name": "Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC",
+          "Best Used In": "Grapes, Pomegranate, Cotton, Paddy, Tomato, Brinjal, Okra, Chili & Soyabean",
+          "Defends Against": "Moth, Fall armyworm, Pod borer, Bollworms, Thrips, Aphids, Whiteflies",
+          "Dose/Acre": "80 - 100 ml / acre",
+          "Packaging Options:": "250 ml, 500ml, 1ltr",
+          "price": "₹ 1199"
+        },
+        {
+          "name": "MASAL",
+          "image": "../assets/Product/masaal.png",
+          "description": "MASAL is a dual-action insecticide containing Profenofos and Cypermethrin that delivers effective control against a wide range of pests. It is particularly effective against bollworms and sucking pests in cotton and various vegetable crops.",
+          "Technical Name": "Profenofos 40% Ec + Cypermethrin 4% Ec",
+          "Best Used In": "Cotton, Vegetables, Pulses, and Oilseeds",
+          "Defends Against": "Bollworms, Aphids, Thrips, Caterpillars, Beetles, and Mites",
+          "Dose/Acre": "200 ml to 400 ml per acre, depending on the crop variety",
+          "Packaging Options:": "250 ml, 500ml, 1ltr",
+          "price": "₹ 899"
         }
       ]
     },
@@ -127,6 +193,17 @@
           "Dose/Acre": "500–750 ml/acre; Foliar Spray – Vegetative Stage: 1–1.5 ml/litre, Flowering Stage: 2–3 ml/litre, Fruiting Stage: 3–4 ml/litre",
           "Packaging Options:": "250 ml, 500 ml, 1 ltr",
           "price": "₹ 1699"
+        },
+        {
+          "name": "FAISAL",
+          "image": "../assets/Product/faisal frnt.png",
+          "description": "FAISAL is a high-performance plant biostimulant derived from natural seaweed Ascophyllum nodosum extract. It promotes overall plant health and productivity by enhancing root and shoot development, improving nutrient uptake, and building resistance against environmental stress. Its organic formulation makes it safe for both crops and the environment, ideal for sustainable farming practices.",
+          "Technical Name": "Based On Seaweed Ascophyllum nodosum extract",
+          "Best Used In": "Field Crops (Wheat, Paddy, Cotton, Maize), Vegetables (Tomato, Chili, Brinjal, Okra), Fruits (Grapes, Banana, Mango, Citrus), Ornamental Plants (Nursery, Garden Plants, Lawns), Plantation Crops (Tea, Coffee, Sugarcane)",
+          "Defends Against": "Drought stress, salinity stress, temperature stress; improves overall plant vigor and immunity",
+          "Dose/Acre": "Foliar Spray: 2 ml / 1 Liter of water; Per Acre Application: 400 ml/acre",
+          "Packaging Options:": "250 ml, 500 ml, 1 Liter",
+          "price": "₹ 1499"
         }
       ]
     },

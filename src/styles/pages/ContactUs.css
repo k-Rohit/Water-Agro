@@ -226,8 +226,12 @@ text-decoration: none;
 
 @media (max-width: 480px) {
   .contactus-card {
+    height: 500px;
     min-height: 540px;
-    padding-bottom: 70px; /* Space for mobile navigation */
+    padding-bottom:70px;
+
+     /* Space for mobile navigation */
+    
   }
   .mobile-header-contact {
     max-width: 30%;
@@ -244,7 +248,7 @@ text-decoration: none;
     padding-left: 190px;
     margin-top: -42px;
     left: 60%;
-    top: 75px;
+    top: -40px;
     transform: translateX(-50%);
     z-index: 11;
   }
