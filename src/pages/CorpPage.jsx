@@ -4,6 +4,7 @@ import PersonImage from '../assets/person.png';
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
 import Logo from '../assets/logo.png';
+import BottomNavigation from '../components/BottomNavigation';
 
 const CorpPage = () => {
     return (
@@ -14,6 +15,7 @@ const CorpPage = () => {
                     <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo-corp" />
                 </Link>
             </div>
+            <BottomNavigation/>
             <div className='ourcorp-container'>
                 <div className='ourcorp-heading'>
                     <span className='who'>Our </span> Corporate Family

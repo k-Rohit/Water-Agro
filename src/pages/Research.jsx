@@ -20,11 +20,13 @@ import NextGen from '../assets/nextgen.png'
 import MobileNavigation from '../components/MobileNavigation';
 import '../styles/pages/Research.css';
 import Logo from '../assets/logo.png';
+import BottomNavigation from '../components/BottomNavigation';
 
 const Research = () => {
   return (
     <>
       <MobileNavigation currentPage="research" />
+      <BottomNavigation/>
 
       <div className="research-container">
         <div className="mobile-header-research">
