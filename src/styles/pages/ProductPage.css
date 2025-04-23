@@ -387,8 +387,8 @@
     
     .category-icons {
         gap: 5px;
-        /* justify-content: space-around; */
-        justify-content: center;
+        justify-content: space-around;
+        /* justify-content: center; */
         margin-top: -30px;
     }
     
