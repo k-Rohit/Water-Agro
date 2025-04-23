@@ -9,6 +9,8 @@ import MobileNavigation from '../components/MobileNavigation';
 import Footer from '../components/Footer';
 import SlideNotification from '../components/SlideNotification';
 import Capsicum from '../assets/capsicum.svg'
+import HamburgerTooltip from '../components/HamburgerTooltip';
+
 
 const isMobile = window.innerWidth <= 480;
 const slogans = [
@@ -35,7 +37,9 @@ const LandingPage = () => {
           <img src={Logo} className="logo" alt="Water Agro Logo" />
         </div>
 
+        {/* <MobileNavigation /> */}
         <MobileNavigation />
+        {isMobile && <HamburgerTooltip />}  
 
         <div className={`slogan-box ${showSlogan ? 'show' : ''}`}>
           {slogans[sloganIndex]}
