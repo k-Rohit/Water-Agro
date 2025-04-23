@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
 import Logo from '../assets/logo.png';
 import BottomNavigation from '../components/BottomNavigation';
+import MobileFooter from '../components/MobileFooter';
 
 const CorpPage = () => {
     return (
@@ -66,6 +67,7 @@ const CorpPage = () => {
                 </div>
             </div>
             <Footer />
+            <MobileFooter/>
         </>
     );
 };

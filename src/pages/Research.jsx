@@ -21,6 +21,7 @@ import MobileNavigation from '../components/MobileNavigation';
 import '../styles/pages/Research.css';
 import Logo from '../assets/logo.png';
 import BottomNavigation from '../components/BottomNavigation';
+import MobileFooter from '../components/MobileFooter';
 
 const Research = () => {
   return (
@@ -155,6 +156,7 @@ const Research = () => {
         </div>
       </div>
       <Footer />
+      <MobileFooter/>
     </>
   );
 };

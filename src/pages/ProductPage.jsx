@@ -13,6 +13,7 @@ import PlantGrowthIcon from '../assets/Plant-growth-promoter.svg';
 import FertilizerIcon from '../assets/Fertilizer-tab.svg';
 import SlideNotification from '../components/SlideNotification';
 import BottomNavigation from '../components/BottomNavigation';
+import MobileFooter from '../components/MobileFooter';
 
 import Logo from '../assets/logo.png';
 
@@ -160,6 +161,7 @@ export const ProductPage = () => {
       )}
 
       <Footer />
+      <MobileFooter />  
     </>
   );
 };
