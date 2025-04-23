@@ -165,7 +165,7 @@ export const AboutUs = () => {
                 <BottomNavigation/>
             </div>
             <Footer />
-            <MobileFooter />
+            {/* <MobileFooter /> */}
         </>
     );
 };
