@@ -11,6 +11,7 @@ import SlideNotification from '../components/SlideNotification';
 import Capsicum from '../assets/capsicum.svg'
 import HamburgerTooltip from '../components/HamburgerTooltip';
 import BottomNavigation from '../components/BottomNavigation';
+import MobileFooter from '../components/MobileFooter';
 
 
 const isMobile = window.innerWidth <= 480;
@@ -100,6 +101,7 @@ const LandingPage = () => {
       )}
 
       <Footer />
+      <MobileFooter/>
     </>
   );
 };

@@ -1,0 +1,274 @@
+.mobilefooter-container {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #23160E;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: none; /* Hide by default for desktop */
+    flex-direction: column;
+}
+
+.rect-container {
+    position: relative;
+    width: 100%;
+    background-color: #E9E8E4;
+}
+
+.footer-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: -5px; /* Eliminate potential gap between image and bottom section */
+}
+
+.footer-links {
+    position: absolute;
+    top: 82%;
+    left: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 13%;
+    flex-wrap: wrap;
+    transform: translateY(-50%);
+    padding: 0 14%; /* Adjusted to center content properly */
+    box-sizing: border-box;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 17px;
+    padding: 5px 0;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.mobilefooter-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+.mobilefooter-copyright {
+    color: white;
+    font-size: 0.8em;
+}
+
+.footer-terms {
+    display: flex
+}
+
+.footer-terms a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 0.8em;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.footer-links a:hover {
+    color: #229924;
+}
+
+.head-office-div{
+    margin-top: 14px;
+}
+
+.social-links-container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -390px;
+}
+
+.social-link-image-1 {
+    width: 20px;
+    height: 20px; 
+    /* margin-left: 2px; */
+}
+
+.social-link-image-1:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* slight zoom effect */
+    filter: drop-shadow(0 0 4px #229924);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-info-container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -390px;
+}
+
+.mobilephone-number-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    color: white;
+    font-size: small;
+}
+
+.address-container-1 {
+    max-width: 1200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin-top: -390px;
+    overflow: hidden;
+    margin-left: -300px;
+}
+  
+.address-mobile {
+    font-size: 0.9em;
+    color: white;
+    /* padding-left: 8px; */
+    /* padding-top: 5px; */
+    font-size: small;
+}
+
+/* Show the mobile footer ONLY on screens smaller than 768px */
+@media (max-width: 767px) {
+    .mobilefooter-container {
+        display: flex; /* Display the footer on mobile devices */
+    }
+    
+    /* Adjusting for smaller screens */
+    .footer-links {
+        gap: 6%;
+        padding: 0 5%;
+    }
+    
+    .footer-links a {
+        font-size: 15px;
+        margin: 5px;
+    }
+    
+    .mobilefooter-bottom {
+        padding: 0px 20px;
+    }
+    
+    .address-container-1 {
+        margin-left: -150px;
+    }
+    
+    /* Fix any potential overflow issues */
+    .social-links-container-1,
+    .contact-info-container-1,
+    .address-container-1 {
+        margin-top: -200px;
+        
+    }
+}
+
+/* Specific styles for 480px screens */
+@media (max-width: 480px) {
+    .footer-links {
+        /* gap: 5%; */
+        padding: 0 4%;
+    }
+    .mobilefooter-container{
+       scrollbar-width: none;
+       margin-bottom:50px /* Hide scrollbar for Firefox */
+    }
+    
+    .address-container-1 {
+        font: 10px;
+        max-width: 100px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        overflow: hidden;
+        margin-left: -46px;;
+    }
+    
+    .social-links-container-1,
+    .contact-info-container-1,
+    .address-container-1 {
+        margin-top: -110px;
+       
+    }
+    .social-link-image-1 {
+        width: 10px;
+        height: 10px; 
+    }
+    
+
+    .mobilephone-number-container{
+        font-size: 8px;
+        margin-left:4px;
+        
+    }
+    .footer-links a {
+        font-size: 8px;
+        margin: 4px;
+    }
+    
+    .address-mobile {
+        max-width: 1200px;
+        font-size: 0.1em;
+        margin-left: 3px;
+    }
+    
+    .mobilefooter-copyright {
+        font-size: 8px;
+    }
+}
+
+/* For very small screens like iPhone SE */
+@media (max-width: 375px) {
+    .footer-links {
+        gap: 4%;
+    }
+    
+    .address-container-1 {
+        margin-left: -100px;
+    }
+    
+    .social-links-container-1,
+    .contact-info-container-1,
+    .address-container-1 {
+        margin-top: -150px;
+    }
+}
+
+/* Fix for white space below footer */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* For devices with notches and safe areas */
+@supports (padding: max(0px)) {
+    .mobilefooter-container {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+        padding-bottom: max(0px, env(safe-area-inset-bottom));
+    }
+}

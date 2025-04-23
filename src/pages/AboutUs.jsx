@@ -21,6 +21,7 @@ import AboutFour from '../assets/about-4.jpg'
 import AboutFive from '../assets/about-5.jpg'
 import AboutSix from '../assets/about-6.jpg'
 import BottomNavigation from '../components/BottomNavigation';
+import MobileFooter from '../components/MobileFooter';
 
 export const AboutUs = () => {
     const whoWeAreRef = useRef(null);
@@ -164,6 +165,7 @@ export const AboutUs = () => {
                 <BottomNavigation/>
             </div>
             <Footer />
+            <MobileFooter />
         </>
     );
 };
