@@ -156,7 +156,7 @@ const Research = () => {
         </div>
       </div>
       <Footer />
-      <MobileFooter/>
+      {/* <MobileFooter/> */}
     </>
   );
 };

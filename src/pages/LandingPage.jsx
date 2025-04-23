@@ -228,7 +228,7 @@ const LandingPage = () => {
       )}
 
       <Footer />
-      <MobileFooter/>
+      {/* <MobileFooter/> */}
     </>
   );
 };
