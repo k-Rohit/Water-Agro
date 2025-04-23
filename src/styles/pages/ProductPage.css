@@ -387,8 +387,9 @@
     
     .category-icons {
         gap: 5px;
-        justify-content: space-around;
-        margin-top: 5px;
+        /* justify-content: space-around; */
+        justify-content: center;
+        margin-top: -30px;
     }
     
     .category-item {
@@ -398,7 +399,7 @@
     .category-icon {
         width: 100px;
         height: 40px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         margin-bottom: 5px;
         /* Maintain crisp edges on small screens */
         /* image-rendering: -webkit-optimize-contrast;
