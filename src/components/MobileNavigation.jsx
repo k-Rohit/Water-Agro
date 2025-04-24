@@ -95,7 +95,7 @@ const MobileNavigation = () => {
           onClick={() => setMenuOpen(false)}
         >
           <div className="mobile-nav-icon contact-icon"></div>
-          <span>Our Corp Family</span>
+          <span>Our Corp. Family</span>
         </Link>
         <Link 
           to="/research" 
