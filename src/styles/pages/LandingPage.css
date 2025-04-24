@@ -130,11 +130,11 @@
 /* Desktop header styles - make header relative by default */
 .landingpage-header {
     
-    height: 10%;
+    height: 12%;
     position: relative;
     top: 0;
-    left:-20px;
-    width: 120%;
+  
+    width: 100%;
     background-color: #23160e00; /* Dark background for header */
     z-index: 10; /* Increased z-index */
 }
