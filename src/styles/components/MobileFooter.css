@@ -51,7 +51,7 @@
     justify-content: space-between;
     padding: 0px 50px;
     box-sizing: border-box;
-    background-color: #395828;
+    background-color:#23160E;
 }
 
 .mobilefooter-copyright {
@@ -137,7 +137,7 @@
 }
 
 /* Show the mobile footer ONLY on screens smaller than 768px */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .mobilefooter-container {
         display: flex; /* Display the footer on mobile devices */
     }
@@ -225,19 +225,56 @@
 }
 
 /* For very small screens like iPhone SE */
-@media (max-width: 375px) {
+@media (max-width: 360px) {
     .footer-links {
-        gap: 4%;
+        /* gap: 5%; */
+        padding: 0 4%;
+    }
+    .mobilefooter-container{
+       scrollbar-width: none;
+       margin-bottom:50px /* Hide scrollbar for Firefox */
     }
     
     .address-container-1 {
-        margin-left: -100px;
+        font: 10px;
+        max-width: 100px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        overflow: hidden;
+        margin-left: -46px;;
     }
     
     .social-links-container-1,
     .contact-info-container-1,
     .address-container-1 {
-        margin-top: -150px;
+        margin-top: -110px;
+       
+    }
+    .social-link-image-1 {
+        width: 10px;
+        height: 10px; 
+    }
+    
+
+    .mobilephone-number-container{
+        font-size: 8px;
+        margin-left:4px;
+        
+    }
+    .footer-links a {
+        font-size: 8px;
+        margin: 4px;
+    }
+    
+    .address-mobile {
+        max-width: 1200px;
+        font-size: 0.1em;
+        margin-left: 3px;
+    }
+    
+    .mobilefooter-copyright {
+        font-size: 8px;
     }
 }
 

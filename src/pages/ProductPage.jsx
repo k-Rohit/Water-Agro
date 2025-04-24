@@ -161,7 +161,7 @@ export const ProductPage = () => {
       )}
 
       <Footer />
-      {/* <MobileFooter />   */}
+      <MobileFooter />  
     </>
   );
 };
