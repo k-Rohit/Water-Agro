@@ -342,7 +342,7 @@ const LandingPage = () => {
                 <Link to="/" className="tabs-home tab-button">Home</Link>
                 <Link to="/about-us" className="tabs-aboutus tab-button">About Us</Link>
                 <Link to="/products" className="tabs-products tab-button">Products</Link>
-                <Link to="/ourcorp" className="tabs-corp tab-button"> Our Corp Family</Link>
+                <Link to="/ourcorp" className="tabs-corp tab-button"> Our Corp. Family</Link>
                 <Link to="/research" className="tabs-ri tab-button">Research & Innovation</Link>
                 <Link to="/contact-us" className="tabs-contactus tab-button">Contact Us</Link>
               </div>
