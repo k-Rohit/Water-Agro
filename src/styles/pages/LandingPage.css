@@ -119,11 +119,14 @@
     position: relative;
     overflow-x: hidden; /* Only prevent horizontal scrolling */
 }
-
-.page-content  {
+.page-content {
     position: relative;
     z-index: 2;
- } /* Ensure content is above background */
+  }
+  
+
+
+ /* Ensure content is above background */
 /* Desktop header styles - make header relative by default */
 .landingpage-header {
     height: 12%;
