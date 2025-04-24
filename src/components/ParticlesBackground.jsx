@@ -278,7 +278,7 @@ const ParticlesBackground = () => {
     
     // Particle settings
     const particlesArray = [];
-    const numberOfParticles = 100;
+    const numberOfParticles = 80;
     
     class Particle {
       constructor() {
@@ -286,8 +286,8 @@ const ParticlesBackground = () => {
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 5 + 1;
         // Increased speed factor from 1 to 3 for faster movement
-        this.speedX = (Math.random() * 3- 1.5);
-        this.speedY = (Math.random() * 3 - 1.5);
+        this.speedX = (Math.random() * 2- 1.5);
+        this.speedY = (Math.random() * 2 - 1.5);
         this.color = '#000000';
       }
       
