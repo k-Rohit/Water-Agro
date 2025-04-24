@@ -1,0 +1,17 @@
+/* CSS for the particles background */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lower z-index to keep it behind content */
+    background-color: #e9e8e4;
+  }
+  
+  /* Only show particles on desktop */
+  @media (max-width: 1023px) {
+    #particles-js {
+      display: none;
+    }
+  }

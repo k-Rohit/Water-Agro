@@ -67,7 +67,7 @@ const CorpPage = () => {
                 </div>
             </div>
             <Footer />
-            {/* <MobileFooter/> */}
+            <MobileFooter/>
         </>
     );
 };
