@@ -5,13 +5,16 @@ import { AboutUs } from './pages/AboutUs';
 import LandingPage from './pages/LandingPage';
 import { ProductPage } from './pages/ProductPage';
 import Research from './pages/Research';
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from './components/Navbar';
 import CorpPage from './pages/CorpPage';
 
 function App() {
   return (
     <Router>
+            <Analytics/>
         <Routes>
+  
           <Route path="/" element={<LandingWithNoNavbar />} />
           <Route path="/products" element={<WithNavbar Component={ProductPage} />} />
           <Route path="/about-us" element={<WithNavbar Component={AboutUs} />} />
