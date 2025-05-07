@@ -22,8 +22,7 @@ const CorpPage = () => {
                     <span className='who'>Our </span> Corporate Family
                 </div>
                 <div className='ourcorp-text'>
-                    Water Agro Life LLP proudly operates under the guidance of Space Crop Protection Limited, our parent company known for its leadership and innovation in the agricultural industry. Alongside us stands our sister concern, CTL, with whom we share a common vision of delivering progressive crop solutions for farmers across the country.Founded by Mr. Rajat Kumar in 2024, our company benefits from strong leadership, deep industry insight, and a collaborative structure that promotes growth across all entities. Together, we form a dynamic group committed to transforming Indian agriculture — one field at a time.
-                </div>
+                Water Agro Life LLP proudly operates under the guidance of Space Crop Protection Limited, our parent company known for its leadership and innovation in the agricultural industry. Alongside us stands our sister concern, CTL, with whom we share a common vision of delivering progressive crop solutions for farmers across the country. Our company benefits from strong leadership, deep industry insight, and a collaborative structure that promotes growth across all entities. Together, we form a dynamic group committed to transforming Indian agriculture — one field at a time.</div>
 
                 <div className='ourcorp-card-div'>
                     <div className='ourcorp-card-left-div'>
