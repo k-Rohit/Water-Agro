@@ -111,7 +111,7 @@ export const AboutUs = () => {
                         <div className="box-six">
                             <img src={Future} className="farmer-icon-two-img" alt="Farmer-Centric Support icon" />
                             <p className="box-heading">Young, Dynamic, and Future-Ready</p>
-                            <p className="box-content">As a next-gen agri company, we bring fresh energy and bold thinking to the industry,</p>
+                            <p className="box-content">As a next-gen agri company, we bring fresh energy and bold thinking to the industry.</p>
                         </div>
                     </div>
                 </div>
