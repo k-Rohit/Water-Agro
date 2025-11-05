@@ -4,6 +4,8 @@ import PersonImage from '../assets/person.png';
 import Footer from '../components/Footer';
 import MobileNavigation from '../components/MobileNavigation';
 import Logo from '../assets/logo.png';
+import BottomNavigation from '../components/BottomNavigation';
+import MobileFooter from '../components/MobileFooter';
 
 const CorpPage = () => {
     return (
@@ -14,13 +16,13 @@ const CorpPage = () => {
                     <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo-corp" />
                 </Link>
             </div>
+            <BottomNavigation/>
             <div className='ourcorp-container'>
                 <div className='ourcorp-heading'>
                     <span className='who'>Our </span> Corporate Family
                 </div>
                 <div className='ourcorp-text'>
-                    Water Agro Life LLP proudly operates under the guidance of Space Crop Protection Limited, our parent company known for its leadership and innovation in the agricultural industry. Alongside us stands our sister concern, CTL, with whom we share a common vision of delivering progressive crop solutions for farmers across the country.Founded by Mr. Rajat Kumar in 2024, our company benefits from strong leadership, deep industry insight, and a collaborative structure that promotes growth across all entities. Together, we form a dynamic group committed to transforming Indian agriculture — one field at a time.
-                </div>
+                Water Agro Life LLP proudly operates under the guidance of Space Crop Protection Limited, our parent company known for its leadership and innovation in the agricultural industry. Alongside us stands our sister concern, CTL, with whom we share a common vision of delivering progressive crop solutions for farmers across the country. Our company benefits from strong leadership, deep industry insight, and a collaborative structure that promotes growth across all entities. Together, we form a dynamic group committed to transforming Indian agriculture — one field at a time.</div>
 
                 <div className='ourcorp-card-div'>
                     <div className='ourcorp-card-left-div'>
@@ -42,8 +44,7 @@ const CorpPage = () => {
                             <strong>Mr. Dheer Singh – Director of Operations, Marketing and Strategy</strong>
                         </p>
                         <p className='ourcorp-card-right-text'>
-                            Mr. Dheer Singh brings over 30 years of extensive experience in agricultural operations, supply chain management, and strategic marketing. Having worked with leading Indian MNCs as well as renowned international corporations, he has a proven track record in scaling agricultural businesses and optimizing operational efficiency. In his role at Water Agro Life LLP, Mr. Singh helps shape the company's vision and marketing strategies, focusing on expanding its global presence, building relationships with stakeholders, and ensuring that their solutions reach the farmers and markets that need them most.
-                        </p>
+                        Mr. Dheer Singh brings over 30 years of extensive experience in agricultural operations, sales management strategic marketing and supply chain management. Having worked with leading MNCs and Indian MNCs as well as renowned international corporations, he has a proven track record in scaling agricultural businesses and optimizing operational efficiency. In his role at Water Agro Life LLP, Mr. Singh helps shape the company's vision and marketing strategies, focusing on expanding its global presence, building relationships with stakeholders, and ensuring that their solutions reach the farmers and markets that need them most.                        </p>
                     </div>
                     <div className='ourcorp-card-left-div'>
                         <img src={PersonImage} className='ourcorp-icon-image' alt="Mr. Dheer Singh" />
@@ -65,6 +66,7 @@ const CorpPage = () => {
                 </div>
             </div>
             <Footer />
+            <MobileFooter/>
         </>
     );
 };

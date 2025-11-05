@@ -1,0 +1,74 @@
+.hamburger-tooltip {
+    position: fixed;
+    top: 15px;
+    left: 70px;
+    background-color: #FEB631;
+    color: #2D2D2D;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 2000;
+    animation: fadeInTooltip 0.5s ease forwards;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    max-width: 180px;
+  }
+  
+  @keyframes fadeInTooltip {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .hamburger-tooltip-arrow {
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #FEB631;
+  }
+  
+  .hamburger-tooltip-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+  
+  .hamburger-tooltip-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .hamburger-tooltip-close {
+    background: none;
+    border: none;
+    color: #2D2D2D;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 0 4px;
+    line-height: 1;
+  }
+  
+  .hamburger-tooltip-close:hover {
+    color: #000;
+  }
+  
+  /* Media queries for different screen sizes */
+  @media (max-width: 375px) {
+    .hamburger-tooltip {
+      left: 65px;
+      max-width: 150px;
+    }
+    
+    .hamburger-tooltip-content p {
+      font-size: 12px;
+    }
+  }

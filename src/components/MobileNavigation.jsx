@@ -74,6 +74,14 @@ const MobileNavigation = () => {
           <span id='Home'>Home</span>
         </Link>
         <Link 
+          to="/about-us" 
+          className={`mobile-nav-item ${currentPath === '/about-us' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          <div className="mobile-nav-icon about-icon"></div>
+          <span>About Us</span>
+        </Link>
+        <Link 
           to="/products" 
           className={`mobile-nav-item ${currentPath === '/products' ? 'active' : ''}`}
           onClick={() => setMenuOpen(false)}
@@ -82,12 +90,12 @@ const MobileNavigation = () => {
           <span>Products</span>
         </Link>
         <Link 
-          to="/about-us" 
-          className={`mobile-nav-item ${currentPath === '/about-us' ? 'active' : ''}`}
+          to="/ourcorp" 
+          className={`mobile-nav-item ${currentPath === '/ourcorp' ? 'active' : ''}`}
           onClick={() => setMenuOpen(false)}
         >
-          <div className="mobile-nav-icon about-icon"></div>
-          <span>About</span>
+          <div className="mobile-nav-icon contact-icon"></div>
+          <span>Our Corp. Family</span>
         </Link>
         <Link 
           to="/research" 
@@ -95,7 +103,7 @@ const MobileNavigation = () => {
           onClick={() => setMenuOpen(false)}
         >
           <div className="mobile-nav-icon research-icon"></div>
-          <span>R&I</span>
+          <span>Research & Innovation</span>
         </Link>
         <Link 
           to="/contact-us" 
@@ -103,16 +111,9 @@ const MobileNavigation = () => {
           onClick={() => setMenuOpen(false)}
         >
           <div className="mobile-nav-icon contact-icon"></div>
-          <span>Contact</span>
+          <span>Contact Us</span>
         </Link>
-        <Link 
-          to="/ourcorp" 
-          className={`mobile-nav-item ${currentPath === '/ourcorp' ? 'active' : ''}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <div className="mobile-nav-icon contact-icon"></div>
-          <span>Our Corp Family</span>
-        </Link>
+        
       </div>
     </div>
   );
