@@ -151,6 +151,16 @@ img {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 }
 
+.box-one, .box-three, .box-five{
+  overflow: hidden;
+  position: relative;
+}
+
+.box-one, .box-three, .box-five > img{
+  object-fit: cover;
+}
+
+
 
 .box-two, .box-four, .box-six{
   display: flex;
@@ -432,7 +442,18 @@ img {
     width: 95%;
     min-height: 150px;
     padding: 15px;
+   
   }
+  .box-one img, .box-three img, .box-five img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+ 
   
   .box-first, .box-second {
     width: 100%;

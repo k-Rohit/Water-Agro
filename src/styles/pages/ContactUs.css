@@ -226,8 +226,12 @@ text-decoration: none;
 
 @media (max-width: 480px) {
   .contactus-card {
+    height: 500px;
     min-height: 540px;
-    padding-bottom: 70px; /* Space for mobile navigation */
+    padding-bottom:70px;
+
+     /* Space for mobile navigation */
+    
   }
   .mobile-header-contact {
     max-width: 30%;
@@ -240,14 +244,15 @@ text-decoration: none;
   }
   .cow-image-container {
     position: relative;
-    padding-top: 89px;
-    padding-left: 190px;
+    /* padding-top: 89px; */
+    /* padding-left: 190px; */
     margin-top: -42px;
-    left: 60%;
-    top: 75px;
+    left: 110%;
+    top: -100px;
     transform: translateX(-50%);
-    z-index: 11;
   }
+
+
   .contactus-card-heading {
     padding-left: 30px;
     font-size: 28px;
@@ -264,6 +269,8 @@ text-decoration: none;
   .cow-image {
     width: 180px;
   }
+ 
+
 }
 
 @media (max-width: 320px) {

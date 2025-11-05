@@ -5,6 +5,7 @@ import "../styles/pages/ContactUs.css";
 import PhoneImage from "../assets/phone.png";
 import gmailImage from "../assets/gmail-icon.png";
 import wpImage from "../assets/wp-icon.png";
+import Brinjal from "../assets/brinjal.svg"
 import cowCall from "../assets/cow-calling.png";
 import TransparentNavbar from "../components/Transparent";
 import MobileNavigation from "../components/MobileNavigation";
@@ -12,7 +13,9 @@ import MobileNavigation from "../components/MobileNavigation";
 import FacebookImage from "../assets/facebook-yellow.svg"
 import InstagramImage from "../assets/instagram-yellow.svg"
 import LinkedInImage from "../assets/linkedin-yellow.svg"
+import InternerIcon from "../assets/internet.svg"
 import Logo from '../assets/logo.png';
+import BottomNavigation from '../components/BottomNavigation';
 
 const ContactUs = () => {
 
@@ -41,15 +44,14 @@ const ContactUs = () => {
   return (
     <>
       <div className="contactus-container">
-        {/* Desktop Navbar - only visible on larger screens */}
         <div className="navbar">
           <TransparentNavbar />
+          
         </div>
 
-        {/* Mobile navigation component - will be handled by CSS media queries */}
         <MobileNavigation currentPage="contact-us" />
+        <BottomNavigation/>
 
-        {/* Mobile logo - only visible on smaller screens */}
         <div className="mobile-header-contact">
           <Link to="/">
             <img src={Logo} alt="Water Agro Life Logo" className="mobile-logo" />
@@ -85,6 +87,10 @@ const ContactUs = () => {
             <img src={LinkedInImage} className="icon-img-c" alt="LinkedIn Icon" />
             <a href="https://www.linkedin.com/company/water-agro-life-llp/" target="_blank" rel="noopener noreferrer"><span className="icon-text">Water Agro Life Llp</span></a>
           </div>
+          <div className="contact-options">
+            <img src={InternerIcon} className="icon-img-c" alt="LinkedIn Icon" />
+            <a href="https://wateragrolife.in/" target="_blank" rel="noopener noreferrer"><span className="icon-text">wateragrolife.in</span></a>
+          </div>
 
 
           <div className="button-div">
@@ -94,7 +100,7 @@ const ContactUs = () => {
           </div>
 
           <div className="cow-image-container">
-            <img src={cowCall} className="cow-image" alt="Cow Calling" />
+            <img src={Brinjal} className="cow-image" alt="Cow Calling" />
           </div>
         </div>
       </div>
