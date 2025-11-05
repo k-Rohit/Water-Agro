@@ -15,6 +15,17 @@
           "price": "₹ 1699"
         },
         {
+          "name": "Fourtyfos",
+          "image" : "../assets/Product/Fourtyfos (fertilizer).png",
+          "description": "Liquid Fermented Organic Manure ",
+          "Technical Name": "",
+          "Defends Against": "Defends against Phosphorus deficiency and micronutrient imbalance — ensuring healthy root development, vigorous growth, and higher yield.",
+          "Best Used In" : "All the Crops",
+          "Dose/Acre" : "Dosage may vary from crop to crop depending on soil, climate, and local conditions In Wheat: Use 1 liter of product for coating 50–60 kg of wheat seed before sowing.",
+          "price": "₹ 1699",
+          "Packaging Options": "500 ml, 1 ltr."
+        },
+        {
           "name": "BLACK HORSE",
           "image": "../assets/Product/Black-horse ( fertilizer).jpg",
           "description": "Black Horse combines organic fertilizers with essential minerals to enrich soil fertility, improve plant immunity, and support vigorous root and shoot growth. It is 100% eco-friendly and enhances both yield and quality.",
