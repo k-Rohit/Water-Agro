@@ -19,11 +19,11 @@
           "image" : "../assets/Product/Fourtyfos (fertilizer).png",
           "description": "Liquid Fermented Organic Manure ",
           "Technical Name": "",
-          "Defends Against": "Defends against Phosphorus deficiency and micronutrient imbalance — ensuring healthy root development, vigorous growth, and higher yield.",
           "Best Used In" : "All the Crops",
+          "Defends Against": "Defends against Phosphorus deficiency and micronutrient imbalance — ensuring healthy root development, vigorous growth, and higher yield.",
           "Dose/Acre" : "Dosage may vary from crop to crop depending on soil, climate, and local conditions In Wheat: Use 1 liter of product for coating 50–60 kg of wheat seed before sowing.",
-          "price": "₹ 1699",
-          "Packaging Options": "500 ml, 1 ltr."
+          "Packaging Options": "500 ml, 1 ltr.",
+          "price": "₹ 1699"
         },
         {
           "name": "BLACK HORSE",
